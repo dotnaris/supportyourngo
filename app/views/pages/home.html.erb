@@ -1,2 +1,29 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="banner__left">
+    <h1>SUPPORT YOUR NGO WORKS TO CONNECT COMPANIES WHO SEEK FOR A WAY TO CONTRIBUTE TO SOCIETY AND NGOS.</h1>
+      <div class="search__bar search" data-controller="search">
+        <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <form action="/doctors" method="get">
+        <input name="query"
+                type="text"
+                class="search__bar"
+                params="[:query]"
+                placeholder=" Find your NGO"
+                data-navbar-target="input"
+                >
+        </form>
+      </div>
+  </div>
+  <div class="banner__right">
+    <%= image_tag 'ishan-seefromthesky-4xmgrNUbyNA-unsplash.jpg', { class: "photo_banner" } %>
+  </div>
+</div>
+<div class="home__mid">
+  <h2>What we aim</h2>
+  <p>Our planet is facing a drastic change over the last century.<br br class="br__points">
+  The speed of the transition is too quick for people and nature to adapt <br>
+  and, more than 1 million species are facing a serious issue of extinction <br br class="br__points">
+  Pollution continues to harm both our bodies and nature. <br>
+  We as a platform aim to provide a way to get out of this transformation <br br class="br__points">
+  with connecting companies and NGOs which try to do good for the planet.</p>
+</div>

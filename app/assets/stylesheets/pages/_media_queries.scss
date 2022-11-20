@@ -1,0 +1,24 @@
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+}
+
+@media (max-width: 440px) {
+  /* For a screen < 440px, this CSS will be read */
+
+  // font size (only for telephones) //
+
+  h1, h2, h3, h4, h5, h6,strong{
+    font-size: large !important;
+  }
+  p, a, span{
+    font-size: x-small !important;
+  }
+}

@@ -1,0 +1,28 @@
+// search bar set up //
+
+div.search__bar.search{
+  display: flex;
+  padding: 0 10vw;
+}
+
+
+// input bar set up //
+
+.search input{
+  border-radius: 10px;
+  border: solid 1px rgb(254, 254, 254);
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  padding: 5px;
+  outline: 0;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+// icon style set up //
+
+.search button{
+  border: solid 1px transparent;
+  background-color: transparent;
+  margin-right: 20px;
+  color: rgb(115, 115, 115);
+}

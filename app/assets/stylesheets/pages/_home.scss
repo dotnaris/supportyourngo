@@ -1,1 +1,47 @@
 // Specific CSS for your home-page
+
+// banner components position set up //
+
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// banner photo set up //
+
+img.photo_banner{
+  width: 50vw;
+  height: 100vh;
+  background-position: center;
+  object-fit: cover;
+  right: 0;
+}
+
+.banner__left h1{
+  left: 0;
+  height: 500px;
+  width: 50vw;
+  padding: 20vh 5vw;
+  padding-left: 10vw;
+  font-weight: bold;
+}
+
+// home mid //
+
+.home__mid h2{
+  font-weight: bold;
+}
+
+.home__mid{
+  width: 100vw;
+  background-color: #003E63;
+  padding: 30px 10vw;
+  color: rgb(0, 0, 0);
+}
+
+// This is triggered only wth media queries //
+
+.br__points{
+  display: none;
+}
