@@ -1,10 +1,17 @@
 <% if params[:controller] == "pages" && params[:action] == "home" %>
-<div class="nav__home">
+<div class="nav__home" data-controller="navbar"
+                       data-action="scroll@window->navbar#updateNavbar"
+                       data-navbar-target="navbar">
 <% else %>
 <div class="nav">
 <% end %>
-  <div class="icon">
-    <%= link_to image_tag("logo_2.png"), root_path, { class: "logo" } %>
+  <div class="nav__left">
+    <div class="icon">
+      <%= link_to image_tag("logo_2.png"), root_path, { class: "logo" } %>
+    </div>
+    <div>
+      <%= link_to "EXPLORE", root_path, class: "nav__links__left" %>
+    </div>
   </div>
   <div class="nav__right">
       <%= link_to "START PROJECTS", root_path, class: "nav__links" %>

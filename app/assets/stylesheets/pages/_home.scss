@@ -2,6 +2,10 @@
 
 // banner components position set up //
 
+// body{
+//   width: 100vw;
+// }
+
 .banner{
   display: flex;
   align-items: center;
@@ -22,8 +26,8 @@ img.photo_banner{
   left: 0;
   height: 500px;
   width: 50vw;
-  padding: 20vh 5vw;
-  padding-left: 10vw;
+  padding: 20vh 8% 15vh 15%;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -35,13 +39,17 @@ img.photo_banner{
 
 .home__mid{
   width: 100vw;
-  background-color: #003E63;
-  padding: 30px 10vw;
+  height: 200px;
+  background-color: #808B8F;
+  padding: 30px 8%;
   color: rgb(0, 0, 0);
+  font-size: 15px;
 }
 
-// This is triggered only wth media queries //
+// This is controlling line breaks of texts //
 
-.br__points{
-  display: none;
+
+
+.banner__left h1{
+  white-space: nowrap;
 }
