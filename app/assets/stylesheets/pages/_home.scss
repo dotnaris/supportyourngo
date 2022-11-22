@@ -7,7 +7,6 @@
 }
 
 // banner photo set up //
-
 img.photo_banner{
   width: 50vw;
   height: 100vh;
@@ -17,7 +16,7 @@ img.photo_banner{
 }
 
 .banner__left h1{
-  height: 500px;
+  height: 450px;
   width: 50vw;
   padding: 20vh 8% 15vh 12%;
   font-size: 35px;
@@ -38,7 +37,6 @@ a.explore__link__banner{
 }
 
 // home mid //
-
 .home__mid h2{
   font-weight: bold;
   padding-left: 30px;
@@ -54,7 +52,6 @@ a.explore__link__banner{
 }
 
 // This is controlling line breaks of texts //
-
 .banner__left h1{
   white-space: nowrap;
 }
@@ -67,14 +64,13 @@ a.explore__link__banner{
 }
 
 // Suppport Your NGO's.... texts modification //
-
 .video__message h2{
   font-weight: bold;
 }
 
 .video__message h2, p{
   padding-left: 30px;
-  margin-right: 10vw;
+  margin-right: 5vw;
 }
 
 iframe{
