@@ -1,7 +1,14 @@
 <div class="banner">
   <div class="banner__left">
-    <h1><td>SUPPORT YOUR NGO<br class="wrap__copy"> WORKS TO LINK<br class="wrap__copy wrap__copy_under__960"> COMPANIES WHO<br class="wrap__copy"> SEEK FOR A WAY WITH<br class="wrap__copy wrap__copy_under__960"> CONTRIBUTE TO<br class="wrap__copy"> SOCIETY AND NGOS.</h1>
-      <div class="search__bar search" data-controller="search">
+    <h1>                                            SUPPORT YOUR NGO IS A
+      <br class="wrap__copy">                       PLATFORM WHICH AIMES TO
+      <br class="wrap__copy wrap__copy_under__960"> CONNECT COMPANIES AND
+      <br class="wrap__copy">                       NGOS THAT WORK ON A
+      <br class="wrap__copy wrap__copy_under__960"> WIDE RANGE OF SOCIAL
+      <br class="wrap__copy">                       ISSUES. FIND YOUR NGOS
+      <br class="wrap__copy wrap__copy_under__960"> YOU WISH TO WORK WITH
+    </h1>
+      <%# <div class="search__bar search" data-controller="search">
         <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
         <form action="/doctors" method="get">
         <input name="query"
@@ -12,14 +19,17 @@
                 data-navbar-target="input"
                 >
         </form>
-      </div>
+      </div> %>
+    <%= link_to "Learn more about our project", root_path, class: "explore__link__banner" %>
   </div>
   <div class="banner__right">
     <%= image_tag 'naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg', { class: "photo_banner" } %>
   </div>
 </div>
 <div class="home__mid">
-  <h2>What we aim</h2>
+  <div class="message__line">
+    <h2>What we aim</h2>
+  </div>
   <p>Our planet is facing a drastic change over the last century.
   The speed of the transition is too quick for people and nature to adapt
   and, more than 1 million species are facing a serious issue of extinction.
@@ -27,4 +37,20 @@
   We as a platform aim to provide a way to get out of this transformation
   with connecting companies and NGOs which try to do
   good for the planet.</p>
+</div>
+<div class="home__video">
+  <div class="video">
+    <iframe
+            <% video_id = "Np9ChlVnNlY" %>
+            src="https://www.youtube.com/embed/<%= video_id %>?autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+  </div>
+  <div class="video__message message__line">
+    <h2>Suppport Your NGO's envoirment projects</h2>
+    <p>Please find our projects which are fighting for enviromental targets. <br>It is one of the most crucial issues in regards to SDGs goal.</p>
+  </div>
 </div>

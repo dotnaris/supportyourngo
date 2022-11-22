@@ -12,6 +12,18 @@
     <div>
       <%= link_to "EXPLORE", root_path, class: "nav__links__left" %>
     </div>
+    <div class="search__bar__nav search___nav" data-controller="search">
+      <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <form action="/doctors" method="get">
+      <input name="query"
+              type="text"
+              class="search__bar__nav"
+              params="[:query]"
+              placeholder=" Find your NGO"
+              data-navbar-target="input"
+              >
+      </form>
+    </div>
   </div>
   <div class="nav__right">
       <%= link_to "START PROJECTS", root_path, class: "nav__links" %>

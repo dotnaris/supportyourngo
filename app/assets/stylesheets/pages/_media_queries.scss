@@ -15,10 +15,12 @@
   }
 
   .banner__left h1{
-    height: 300px;
-    padding-left: 21vw;
+    height: 260px;
+    width: 100%;
+    padding-left: 7%;
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
   }
 
   // This is disabling br from 960 //
@@ -53,14 +55,22 @@
 
   // relocation of the copy //
   .banner__left h1{
-    height: 200px;
-    padding-left: 15vw;
+    height: 180px;
     font-size: 21px;
+    text-align: center;
+    padding-left: 7%;
   }
 
   .home__mid{
     height: 260px;
   }
+
+  // Hiding start projects //
+
+  a.nav__links{
+    display: none;
+  }
+
 }
 
 @media (max-width: 540px) {
@@ -69,12 +79,33 @@
   // relocation of the copy //
   .banner__left h1{
     height: 180px;
-    padding-left: 14vw;
-    font-size: 19px;
+    font-size: 18px;
+    padding-left: 7%;
+    text-align: center;
   }
 
   .home__mid{
     height: 280px;
+  }
+
+  // changing the positions of the video and texts //
+  div.home__video{
+    display: block;
+  }
+
+  // resizing video width //
+
+  iframe{
+    width: 100vw;
+    height: 300px;
+  }
+
+  .video__message h2, p{
+    margin: 30px 0;
+  }
+
+  a.explore__link__banner{
+    font-size: 15px;
   }
 
 }
@@ -82,10 +113,70 @@
 @media (max-width: 440px) {
   /* For a screen < 440px, this CSS will be read */
 
+  // relocation of the copy //
+  .banner__left h1{
+    font-size: 6px;
+    padding-left: 7%;
+    text-align: center;
+  }
+
+  .home__mid{
+    height: 180px;
+  }
+
+  div.home__video{
+    display: block;
+  }
+
+    // Resizing the search bar //
+  div.search__bar.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .search input{
+    max-width: 200px;
+    min-width: 200px;
+  }
+
+  // resizing video width //
+
+  iframe{
+    width: 100vw;
+    height: 200px;
+  }
+
+  .video__message h2, p{
+    margin: 30px 0;
+  }
+
+  a.explore__link__banner{
+    font-size: 15px;
+  }
+
+  // resizing the search bar //
+  .search___nav input{
+    max-width: 100px;
+    min-width: 100px;
+  }
+
+  // adding less space for the search bar //
+  .search__bar__nav{
+    margin-left: 5px;
+  }
+
+  div.search__bar__nav.search___nav{
+    margin-left: 10px;
+  }
+
   // font size (only for telephones) //
 
   h1, h2, h3, h4, h5, h6,strong{
-    font-size: large !important;
+    font-size: medium !important;
   }
   p, a, span{
     font-size: x-small !important;

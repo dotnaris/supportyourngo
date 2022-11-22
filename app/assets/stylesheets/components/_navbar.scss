@@ -10,7 +10,7 @@
 // Navbar sizing setup //
 
 div.nav__home{
-  padding: 10px 5vw;
+  padding: 7px 5vw;
 }
 
 // .nav__home for homepage and .nav for the othr pages //
@@ -56,10 +56,11 @@ div.nav__home{
 }
 
 a.nav__links__left{
-  text-decoration: none;
-  color: black;
-  margin-left: 30px;
-  font-weight: bold;
+  // text-decoration: none;
+  // color: black;
+  // margin-left: 30px;
+  // font-weight: bold;
+  display: none;
 }
 
 // burger menu setup //
@@ -68,6 +69,7 @@ a.nav__links__left{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 3px;
 }
 
 button.burger__icon{
@@ -84,7 +86,7 @@ button.burger__icon{
 
 a.nav__links{
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 30px !important;
   color: black;
   font-weight: 700;
 }
