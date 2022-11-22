@@ -1,12 +1,92 @@
-.navbar-lewagon {
+// Icon css //
+
+.icon img{
+  background-color: transparent;
+  border-radius: 50%;
+  width: 120px;
+  height: 60px;
+}
+
+// Navbar sizing setup //
+
+div.nav__home{
+  padding: 7px 5vw;
+}
+
+// .nav__home for homepage and .nav for the othr pages //
+
+.nav__home{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  background: white;
+  padding: 20px 0 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20000;
+  transition: 0.2s;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar--white{
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  transition: 0.2s;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20000;
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+}
+
+// Explore link style //
+
+.nav__left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.nav__links__left{
+  // text-decoration: none;
+  // color: black;
+  // margin-left: 30px;
+  // font-weight: bold;
+  display: none;
+}
+
+// burger menu setup //
+
+.nav__right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+button.burger__icon{
+  border: solid 1px transparent;
+  background-color: transparent;
+  padding: 0;
+}
+
+.nav__right i{
+  font-size: x-large;
+}
+
+// project create function set up //
+
+a.nav__links{
+  text-decoration: none;
+  margin-right: 30px !important;
+  color: black;
+  font-weight: 700;
 }

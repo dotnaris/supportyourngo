@@ -1,0 +1,63 @@
+// search bar set up //
+div.search__bar.search{
+  display: flex;
+  padding: 40px 10vw;
+}
+
+
+// input bar set up //
+.search input{
+  border-radius: 10px;
+  border: solid 1px rgb(254, 254, 254);
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  padding: 5px;
+  outline: 0;
+  max-width: 230px;
+  min-width: 230px;
+}
+
+// link spacing modification //
+a.nav__links__left{
+  margin-left: 10px;
+}
+
+a.nav__links{
+  margin-right: 10px;
+}
+
+// icon style set up //
+.search button{
+  border: solid 1px transparent;
+  background-color: transparent;
+  margin-right: 20px;
+  color: rgb(115, 115, 115);
+}
+
+// search bar for nav //
+
+// this is adding some space b/t the search and explore //
+div.search__bar__nav.search___nav{
+  margin-left: 30px;
+}
+
+.search__bar__nav{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.search___nav input{
+  border-radius: 5px;
+  border: solid 2px #003459;
+  // box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  padding: 5px;
+  outline: 0;
+  max-width: 230px;
+  min-width: 230px;
+}
+
+.search__bar__nav button{
+  border: solid 1px transparent;
+  background-color: transparent;
+  color: #003459;
+}
