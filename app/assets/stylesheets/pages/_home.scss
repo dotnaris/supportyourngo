@@ -131,18 +131,60 @@ div.home__bottom__cards__and__info{
 
 // creating a clickable link //
 
+// color link: https://coolors.co/0a8754-a8d0db-003459-e49273-e54f6d
+
+.cards .first__card{
+  background-color: #0A8754;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100px;
+}
+
+.cards .second__card{
+  background-color: #A8D0DB;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100px;
+}
+
+.cards .third__card{
+  background-color: #E49273;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100px;
+}
+
+.cards .forth__card{
+  background-color: #E54F6D;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100px;
+}
+
 .cards{
   position: relative;
-  padding: 10px;
-  margin-bottom: 3px;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
   border-top-left-radius: 3px;
   border-end-start-radius: 3px;
   width: 50vw;
   background-color: #e0e6eb;
-  cursor: pointer;
   &:active{
-    background-color: #003459;
+    background-color: #808B8F;
     color: white;
+    box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+
+  }
+  &:hover{
+    background-color: #808B8F;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+
   }
 }
 
@@ -216,7 +258,6 @@ div.info__left{
 }
 
 div.card__description{
-  cursor: pointer;
   &:hover{
     color: #001F2E;
   }
