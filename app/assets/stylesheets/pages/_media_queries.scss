@@ -7,7 +7,7 @@
     display: block;
   }
 
-  img.photo_banner{
+  img.photo__banner{
     background-position: center;
     object-fit: cover;
     width: 100vw;
@@ -29,7 +29,11 @@
   }
 
   // This is working to keep the br from 960 //
-  .wrap__copy_under__960{
+  .wrap__copy__under__960{
+    display: block;
+  }
+
+  .wrap__home__mid__message__from__960{
     display: block;
   }
 
@@ -46,6 +50,29 @@
   .search input{
     max-width: 400px;
     min-width: 400px;
+  }
+
+  div.home__video{
+    flex-direction: row;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  // resizing video width //
+  iframe{
+    width: 100vw;
+    height: 300px;
+  }
+
+  // adding some space under the video when rapped //
+  div.home__bottom{
+    padding-top: 190px;
+  }
+
+  // smaller texts for description card //
+  div.card__description h5{
+    font-size: medium;
   }
 }
 
@@ -64,9 +91,39 @@
     height: 260px;
   }
 
+  // in case if you want to change the positions //
+
+  // changing the positions of the video and texts //
+  div.home__video{
+    flex-direction: row;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  // resizing video width //
+  iframe{
+    width: 100vw;
+    height: 300px;
+  }
+
   // Hiding start projects //
   a.nav__links{
     display: none;
+  }
+
+  // adding some space under the video when rapped //
+  div.home__bottom{
+    padding-top: 190px;
+  }
+
+  // smaller texts for description card //
+  div.card__description h5{
+    font-size: small;
+  }
+
+  div.card__description p{
+    font-size: small;
   }
 }
 
@@ -85,9 +142,14 @@
     height: 280px;
   }
 
-  // changing the positions of the video and texts //
+  // in case if you want to change the positions //
+
+  changing the positions of the video and texts //
   div.home__video{
+    flex-direction: row;
     display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   // resizing video width //
@@ -96,12 +158,13 @@
     height: 300px;
   }
 
-  .video__message h2, p{
-    margin: 30px 0;
-  }
-
   a.explore__link__banner{
     font-size: 15px;
+  }
+
+  // adding some space under the video when rapped //
+  div.home__bottom{
+    padding-top: 240px;
   }
 }
 
@@ -119,8 +182,13 @@
     height: 180px;
   }
 
+  // in case if you want to change the positions //
+
   div.home__video{
+    flex-direction: row;
     display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
     // Resizing the search bar //
@@ -149,10 +217,6 @@
     height: 200px;
   }
 
-  .video__message h2, p{
-    margin: 30px 0;
-  }
-
   a.explore__link__banner{
     font-size: 15px;
   }
@@ -174,6 +238,26 @@
 
   div.video__message.message__line{
     margin-left: 5vw;
+  }
+
+  // adding some space under the video when rapped //
+  div.home__bottom{
+    padding-top: 70px;
+  }
+
+  // smaller texts for description card //
+  div.card__description h5{
+    font-size: small !important;
+  }
+
+  div.card__description p{
+    font-size: small !important;
+  }
+
+
+  // adjusting to telephone size //
+  .left__description{
+    margin-top: 85px;
   }
 
   // font size (only for telephones) //

@@ -7,7 +7,7 @@
 }
 
 // banner photo set up //
-img.photo_banner{
+img.photo__banner{
   width: 50vw;
   height: 100vh;
   background-position: center;
@@ -37,18 +37,29 @@ a.explore__link__banner{
 }
 
 // home mid //
+
+.wrap__home__mid__message__from__960{
+  display: none;
+}
+
 .home__mid h2{
   font-weight: bold;
   padding-left: 30px;
 }
 
+.home__mid p{
+  margin-right:  5vw;
+}
+
 .home__mid{
   width: 100vw;
-  height: 200px;
+  height: 250px;
   background-color: #808B8F;
-  padding: 30px 8%;
+  padding: 50px 0 0 0;
   color: rgb(0, 0, 0);
   font-size: 15px;
+  padding-left: 5vw;
+  padding-left: 5vw;
 }
 
 // This is controlling line breaks of texts //
@@ -60,25 +71,222 @@ a.explore__link__banner{
 // Changes to block from smaller screen //
 .home__video{
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  background-color: #001F2E;
+  height: 300px;
 }
 
 // Suppport Your NGO's.... texts modification //
 .video__message h2{
   font-weight: bold;
+  padding-left: 30px;
 }
 
-.video__message h2, p{
-  padding-left: 30px;
+.video__message, h2 p{
+  color: white;
   margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 iframe{
-  width:50vw;
-  height:300px;
+  width: 50vw;
+  height: 300px;
+  margin-top: 6px;
 }
 
 .message__line{
-  margin-left: 50px;
   border-left: solid 3px #003459;
+}
+
+// home__bottom //
+
+// adding some space under the video when rapped //
+div.home__bottom{
+  padding-top: 50px;
+  background-color: white;
+}
+
+h2.home__bottom__message.message__line{
+  font-weight: bold;
+  padding-left: 30px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+div.home__bottom__cards__and__info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+  width: 50vw;
+}
+
+// no wrapping for Our projects ... /
+.home__bottom__message__no__wrap{
+  white-space: nowrap
+}
+
+// creating a clickable link //
+
+.cards{
+  position: relative;
+  padding: 10px;
+  margin-bottom: 3px;
+  border-top-left-radius: 3px;
+  border-end-start-radius: 3px;
+  width: 50vw;
+  background-color: #e0e6eb;
+  cursor: pointer;
+  &:active{
+    background-color: #003459;
+    color: white;
+  }
+}
+
+a.card__link{
+  text-decoration: none;
+  color: black;
+  margin: auto 0;
+  vertical-align: middle;
+}
+
+.card__link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
+}
+
+div.info__left{
+  background-color: white;
+  width: 50vw;
+  height:400px;
+}
+
+//creating cards on the right of Our projects ... //
+
+.left__description{
+  margin-top: 70px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 20px;
+  height: 186px;
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  border-radius: 3px;
+}
+
+// clickable description set-up //
+
+.card__description{
+  position: relative;
+}
+
+.card__link__description{
+  height: 186px;
+  border-radius: 3px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: 0;
+  left: -20px;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
+  &:hover{
+    box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
+  }
+}
+
+.card__description h5{
+  padding-bottom: 3px;
+  border-bottom: solid 1px #1e5069;
+}
+
+.card__description p{
+  margin-top: 80px;
+}
+
+div.card__description{
+  cursor: pointer;
+  &:hover{
+    color: #001F2E;
+  }
+}
+
+div.card__description h5{
+  font-size: large;
+  font-weight: bold;
+}
+
+// footer //
+
+.footer--color{
+  background-color: #001F2E;
+}
+
+.footer__syn{
+  color: black;
+  padding: 50px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons{
+  align-content: flex-end;
+}
+
+// Finde the pro... style //
+
+.footer__left  a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  padding-bottom: 3px;
+  border-bottom: solid 1px white;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+// footer icons style //
+
+.icons i{
+  color: white;
+  margin-right: 10px;
+}
+
+// footer right part style //
+
+.footer__right a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+// footer bottom copyright design //
+
+.footer__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+}
+
+.footer__bottom p{
+  color: white;
 }
