@@ -1,0 +1,63 @@
+// footer //
+
+.footer--color{
+  background-color: #194c66;
+}
+
+.footer__syn{
+  color: black;
+  padding: 50px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons{
+  align-content: flex-end;
+}
+
+// Finde the pro... style //
+
+.footer__left  a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  padding-bottom: 3px;
+  border-bottom: solid 1px white;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+// footer icons style //
+
+.icons i{
+  color: white;
+  margin-right: 10px;
+}
+
+// footer right part style //
+
+.footer__right a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+// footer bottom copyright design //
+
+.footer__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+}
+
+.footer__bottom p{
+  color: white;
+}

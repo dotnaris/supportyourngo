@@ -37,6 +37,11 @@
     display: block;
   }
 
+  // resizing home__mid height //
+  .home__mid{
+    height: 300px;
+}
+
   // Resizing the search bar //
   div.search__bar.search{
     display: flex;
@@ -52,27 +57,14 @@
     min-width: 400px;
   }
 
-  div.home__video{
-    flex-direction: row;
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  // resizing video width //
-  iframe{
-    width: 100vw;
-    height: 300px;
-  }
-
-  // adding some space under the video when rapped //
-  div.home__bottom{
-    padding-top: 190px;
+  div.video__message{
+    height: 50%;
+    padding-top: 20px;
   }
 
   // smaller texts for description card //
   div.card__description h5{
-    font-size: medium;
+    font-size: x-large;
   }
 }
 
@@ -88,22 +80,6 @@
   }
 
   .home__mid{
-    height: 260px;
-  }
-
-  // in case if you want to change the positions //
-
-  // changing the positions of the video and texts //
-  div.home__video{
-    flex-direction: row;
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  // resizing video width //
-  iframe{
-    width: 100vw;
     height: 300px;
   }
 
@@ -112,18 +88,51 @@
     display: none;
   }
 
-  // adding some space under the video when rapped //
+  // video section resizing //
+
+  .home__video{
+    display: block;
+    flex-direction: row-reverse;
+    height: 500px;
+    padding-top: 30px;
+    position: relative;
+  }
+
+  .video__message{
+    width: 100%;
+  }
+
+.video{
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  iframe{
+    width: 100vw;
+    height: 100%;
+  }
+
+  // cards display relocation //
+
+  div.info__left{
+    width: 100%;
+    padding-top: 0.1px;
+    padding-bottom: 20px;
+  }
+
   div.home__bottom{
-    padding-top: 190px;
+    display: block;
+    height: auto;
   }
 
-  // smaller texts for description card //
-  div.card__description h5{
-    font-size: small;
+  .card__list__right{
+    padding-top: 5px;
   }
 
-  div.card__description p{
-    font-size: small;
+  .bottom__display{
+    display: block;
   }
 }
 
@@ -139,7 +148,7 @@
   }
 
   .home__mid{
-    height: 280px;
+    height: 300px;
   }
 
   // in case if you want to change the positions //
@@ -152,20 +161,16 @@
     padding-bottom: 50px;
   }
 
-  // resizing video width //
-  iframe{
-    width: 100vw;
-    height: 300px;
-  }
-
   a.explore__link__banner{
     font-size: 15px;
   }
 
-  // adding some space under the video when rapped //
-  div.home__bottom{
-    padding-top: 240px;
+  div.cards{
+    width: 100vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
+
 }
 
 @media (max-width: 440px) {
@@ -179,16 +184,9 @@
   }
 
   .home__mid{
-    height: 180px;
-  }
-
-  // in case if you want to change the positions //
-
-  div.home__video{
-    flex-direction: row;
-    display: block;
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 200px;
   }
 
     // Resizing the search bar //
@@ -208,13 +206,6 @@
 
   div.video__message.message__line{
     margin-left: 5vw;
-  }
-
-  // resizing video width //
-
-  iframe{
-    width: 100vw;
-    height: 200px;
   }
 
   a.explore__link__banner{
@@ -240,11 +231,6 @@
     margin-left: 5vw;
   }
 
-  // adding some space under the video when rapped //
-  div.home__bottom{
-    padding-top: 70px;
-  }
-
   // smaller texts for description card //
   div.card__description h5{
     font-size: small !important;
@@ -254,6 +240,11 @@
     font-size: small !important;
   }
 
+  // support your ngo ... resizing //
+  div.video__message{
+    height: 50%;
+    padding-top: 50px;
+  }
 
   // adjusting to telephone size //
   .left__description{

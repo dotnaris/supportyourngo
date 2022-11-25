@@ -54,7 +54,7 @@ a.explore__link__banner{
 .home__mid{
   width: 100vw;
   height: 250px;
-  background-color: #808B8F;
+  background-color: #C0CDD6;
   padding: 50px 0 0 0;
   color: rgb(0, 0, 0);
   font-size: 15px;
@@ -69,30 +69,42 @@ a.explore__link__banner{
 
 // Video section configuration //
 // Changes to block from smaller screen //
+
 .home__video{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: #001F2E;
-  height: 300px;
+  background-color: #59AC98;
+  height: 400px;
 }
 
 // Suppport Your NGO's.... texts modification //
+
 .video__message h2{
   font-weight: bold;
   padding-left: 30px;
 }
 
+.video__message{
+  width: 50%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+// video sizing //
+
+.video{
+  width: 50%;
+  height: 100%;
+}
+
 .video__message, h2 p{
   color: white;
-  margin-right: 5vw;
-  margin-left: 5vw;
 }
 
 iframe{
   width: 50vw;
-  height: 300px;
-  margin-top: 6px;
+  height: 100%;
 }
 
 .message__line{
@@ -101,27 +113,26 @@ iframe{
 
 // home__bottom //
 
+.home__bottom{
+  display: flex;
+}
+
+.bottom__display{
+  display: flex;
+}
+
+
 // adding some space under the video when rapped //
+
 div.home__bottom{
-  padding-top: 50px;
-  background-color: white;
+  height: 400px;
 }
 
 h2.home__bottom__message.message__line{
   font-weight: bold;
+  margin-top: 30px;
   padding-left: 30px;
   margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-div.home__bottom__cards__and__info{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.info{
-  width: 50vw;
 }
 
 // no wrapping for Our projects ... /
@@ -129,62 +140,49 @@ div.home__bottom__cards__and__info{
   white-space: nowrap
 }
 
+// right and left cards position //
+.card__list__right{
+  padding-top: 10px;
+  background-color: #C0CDD6;
+}
+
+div.info__left{
+  background-color: #e58272;
+}
+
 // creating a clickable link //
 
 // color link: https://coolors.co/0a8754-a8d0db-003459-e49273-e54f6d
 
-.cards .first__card{
-  background-color: #0A8754;
+.cards .inner__box{
   padding: 10px;
   border-radius: 3px;
   display: inline-block;
   width: 100px;
+  font-size: large;
 }
 
-.cards .second__card{
-  background-color: #A8D0DB;
-  padding: 10px;
-  border-radius: 3px;
-  display: inline-block;
-  width: 100px;
-}
 
-.cards .third__card{
-  background-color: #E49273;
-  padding: 10px;
-  border-radius: 3px;
-  display: inline-block;
-  width: 100px;
-}
-
-.cards .forth__card{
-  background-color: #E54F6D;
-  padding: 10px;
-  border-radius: 3px;
-  display: inline-block;
-  width: 100px;
-}
+// cards on the right //
 
 .cards{
   position: relative;
   padding: 15px;
+  padding-left: 80px;
   font-weight: bold;
-  margin-bottom: 5px;
-  border-top-left-radius: 3px;
-  border-end-start-radius: 3px;
   width: 50vw;
-  background-color: #e0e6eb;
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
   &:active{
-    background-color: #808B8F;
+    background-color: #C0CDD6;
     color: white;
-    box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
-
   }
   &:hover{
-    background-color: #808B8F;
+    background-color: #C0CDD6;
     color: white;
-    box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
-
+    padding-left: 130px;
+    transition: 0.3s;
   }
 }
 
@@ -208,53 +206,74 @@ a.card__link{
 }
 
 div.info__left{
-  background-color: white;
   width: 50vw;
-  height:400px;
+  height:100%;
 }
 
-//creating cards on the right of Our projects ... //
+//creating cards on the left, Our projects ... //
 
 .left__description{
-  margin-top: 70px;
+  margin-top: 88px;
   margin-left: 5vw;
   margin-right: 5vw;
   padding: 20px;
-  height: 186px;
+  height: 250px;
   box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
-  border-radius: 3px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 // clickable description set-up //
 
 .card__description{
   position: relative;
+  text-align: center;
 }
 
+.card__description h4{
+  font-size: medium;
+  color: #808080;
+}
+
+
 .card__link__description{
-  height: 186px;
-  border-radius: 3px;
+  height: 250px;
+  border-radius: 10px;
   position: absolute;
-  top: -20px;
-  right: -20px;
-  bottom: 0;
-  left: -20px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   z-index: 1;
   pointer-events: auto;
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  transition: 0.3s;
   content: "";
   background-color: transparent;
   &:hover{
     box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
+    transition: 0.3s;
   }
 }
 
 .card__description h5{
-  padding-bottom: 3px;
-  border-bottom: solid 1px #1e5069;
+  padding-top: 20px;
+  font-size: xx-large;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #2d2d2d;
 }
 
 .card__description p{
-  margin-top: 80px;
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  width: 60%;
+  font-size: medium;
+  background-color: #e58272;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+
 }
 
 div.card__description{
@@ -266,68 +285,4 @@ div.card__description{
 div.card__description h5{
   font-size: large;
   font-weight: bold;
-}
-
-// footer //
-
-.footer--color{
-  background-color: #001F2E;
-}
-
-.footer__syn{
-  color: black;
-  padding: 50px 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer__right{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.icons{
-  align-content: flex-end;
-}
-
-// Finde the pro... style //
-
-.footer__left  a{
-  text-decoration: none;
-  color: white;
-  font-size: large;
-  padding-bottom: 3px;
-  border-bottom: solid 1px white;
-  display: inline-block;
-  margin-bottom: 50px;
-}
-
-// footer icons style //
-
-.icons i{
-  color: white;
-  margin-right: 10px;
-}
-
-// footer right part style //
-
-.footer__right a{
-  text-decoration: none;
-  color: white;
-  list-style-type: none;
-}
-
-// footer bottom copyright design //
-
-.footer__bottom{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 5vw;
-}
-
-.footer__bottom p{
-  color: white;
 }
