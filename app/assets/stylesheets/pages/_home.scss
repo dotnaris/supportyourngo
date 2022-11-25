@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ecf5f7;
 }
 
 // banner photo set up //
@@ -54,7 +55,7 @@ a.explore__link__banner{
 .home__mid{
   width: 100vw;
   height: 250px;
-  background-color: #C0CDD6;
+  background-color: white;
   padding: 50px 0 0 0;
   color: rgb(0, 0, 0);
   font-size: 15px;
@@ -74,7 +75,7 @@ a.explore__link__banner{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: #59AC98;
+  background-color: #007EA7;
   height: 400px;
 }
 
@@ -153,6 +154,7 @@ div.info__left{
 // creating a clickable link //
 
 // color link: https://coolors.co/0a8754-a8d0db-003459-e49273-e54f6d
+           //  https://coolors.co/0a8754-59ac98-a8d0db-003459-726366-ab7b6d-e49273-e58272-e57170-e54f6d
 
 .cards .inner__box{
   padding: 10px;
@@ -172,17 +174,21 @@ div.info__left{
   font-weight: bold;
   width: 50vw;
   background-color: transparent;
+  border-radius: 20px;
   transition: 0.3s;
   cursor: pointer;
   &:active{
-    background-color: #C0CDD6;
+    background-color: #A8D0DB;
     color: white;
+    box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.5);
+
   }
   &:hover{
-    background-color: #C0CDD6;
+    background-color: #A8D0DB;
     color: white;
     padding-left: 130px;
     transition: 0.3s;
+    box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.5);
   }
 }
 
