@@ -2,6 +2,7 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
+@import "config/shadows";
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
@@ -16,4 +17,8 @@
 
 h1, h2, h3, h4, h5, h6,strong, p, a, span{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar__fix{
+  margin-top: 120px;
 }
