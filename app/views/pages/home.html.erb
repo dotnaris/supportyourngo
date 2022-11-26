@@ -1,12 +1,12 @@
 <div class="banner">
   <div class="banner__left">
-    <h1>                                            SUPPORT YOUR NGO IS A
-      <br class="wrap__copy">                       PLATFORM WHICH AIMES TO
-      <br class="wrap__copy wrap__copy_under__960"> CONNECT COMPANIES AND
-      <br class="wrap__copy">                       NGOS THAT WORK ON A
-      <br class="wrap__copy wrap__copy_under__960"> WIDE RANGE OF SOCIAL
-      <br class="wrap__copy">                       ISSUES. FIND YOUR NGOS
-      <br class="wrap__copy wrap__copy_under__960"> YOU WISH TO WORK WITH
+    <h1>                                             SUPPORT YOUR NGO IS A
+      <br class="wrap__copy">                        PLATFORM WHICH AIMES TO
+      <br class="wrap__copy wrap__copy__under__960"> CONNECT COMPANIES AND
+      <br class="wrap__copy">                        NGOS THAT WORK ON A
+      <br class="wrap__copy wrap__copy__under__960"> WIDE RANGE OF SOCIAL
+      <br class="wrap__copy">                        ISSUES. FIND YOUR NGOS
+      <br class="wrap__copy wrap__copy__under__960"> YOU WISH TO WORK WITH.
     </h1>
       <%# <div class="search__bar search" data-controller="search">
         <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -23,39 +23,71 @@
     <%= link_to "Learn more about our project", root_path, class: "explore__link__banner" %>
   </div>
   <div class="banner__right">
-    <%= image_tag 'naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg', { class: "photo_banner" } %>
+    <%= image_tag 'naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg', { class: "photo__banner" } %>
   </div>
 </div>
 <div class="home__mid">
   <div class="message__line">
     <h2>What we aim</h2>
   </div>
-  <p>Our planet is facing a drastic change over the last century.
-  The speed of the transition is too quick for people and nature to adapt
-  and, more than 1 million species are facing a serious issue of extinction.
-  Pollution continues to harm both our bodies and nature.
-  We as a platform aim to provide a way to get out of this transformation
-  with connecting companies and NGOs which try to do
-  good for the planet.</p>
+  <p>                                               Our planet is facing a drastic change over the last century.
+    <br class="wrap__home__mid__message__from__960">The speed of the transition is too quick for people and nature to adapt and,
+    <br>                                            more than 1 million species are facing a serious issue of extinction.
+    <br class="wrap__home__mid__message__from__960">Pollution continues to harm both our bodies and nature.
+    <br>                                            We as a platform aim to provide a way to get out of this transformation
+    <br class="wrap__home__mid__message__from__960">with connecting companies and NGOs which try to dogood for the planet.
+  </p>
 </div>
 <div class="home__video">
+  <div class="video__message">
+    <h2 class="message__line">Support Your NGO's environment projects</h2>
+    <p>Please find our projects which are fighting for environmental targets. <br>It is one of the most crucial issues in regards to SDGs goal.</p>
+  </div>
   <div class="video">
+    <%# Add this at the end of the link to loop and auto play ?autoplay=1&mute=1&loop=1&playlist=<%= video_id %>
     <iframe
             <% video_id = "Np9ChlVnNlY" %>
-            src="https://www.youtube.com/embed/<%= video_id %>?autoplay=1&mute=1&loop=1&playlist=<%= video_id %>"
+            src="https://www.youtube.com/embed/<%= video_id %>"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
     </iframe>
   </div>
-  <div class="video__message message__line">
-    <h2>Suppport Your NGO's environment projects</h2>
-    <p>Please find our projects which are fighting for environmental targets. <br>It is one of the most crucial issues in regards to SDGs goal.</p>
-  </div>
 </div>
 <div class="home__bottom">
-  <div class="cards">
-   <p>Emergent issue</p>
+  <div class="bottom__display">
+    <div class="info__left">
+        <div class="card__description left__description">
+          <i class="fas fa-handshake"></i>
+          <h5>Find you project!</h5>
+          <%= link_to "", root_path, class: "card__link__description" %>
+          <h4>We have a wide range of projects. Let's find your favorite projects.</h4>
+          <p>More detail</p>
+        </div>
+    </div>
+    <div class="card__list__right" data-controller="card" data-action="click->na">
+      <h2 class="home__bottom__message message__line home__bottom__message__no__wrap">Our projects by category</h2>
+      <div class="cards">
+          <i class="fas fa-leaf"></i>
+          <span class="link__cards card__link inner__box">Environment</span>
+          <%# <%= link_to "Environment", root_path, class: "link__cards card__link first__card" %>
+      </div>
+      <div class="cards">
+          <i class="fas fa-graduation-cap"></i>
+          <span class="link__cards card__link inner__box">Education</span>
+          <%# <%= link_to "Education", root_path, class: "link__cards card__link second__card" %>
+      </div>
+      <div class="cards">
+          <i class="fas fa-wine-glass-alt"></i>
+          <span class="link__cards card__link inner__box">Culture</span>
+          <%# <%= link_to "Culture", root_path, class: "link__cards card__link third__card" %>
+      </div>
+      <div class="cards">
+          <i class="fas fa-otter"></i>
+          <span class="link__cards card__link inner__box">Animal</span>
+          <%# <%= link_to "Animal", root_path, class: "link__cards card__link forth__card" %>
+      </div>
+    </div>
   </div>
 </div>

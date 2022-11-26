@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6,strong, p, a, span{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.navbar__fix{
-  margin-top: 120px;
+p {
+  font-size: large;
+}
+
+.fix-spacing{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }

@@ -4,10 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f5f5f5;
+  color: black;
+  flex-direction: row-reverse;
 }
 
 // banner photo set up //
-img.photo_banner{
+img.photo__banner{
   width: 50vw;
   height: 100vh;
   background-position: center;
@@ -26,29 +29,40 @@ img.photo_banner{
 }
 
 a.explore__link__banner{
-  color: black;
+  color: #e58272;
   text-decoration: none;
   display: inline-block;
   margin-left: 8vw !important;
   margin: 30px 0;
   padding-bottom: 3px;
-  border-bottom: solid 1px #003459;
+  border-bottom: solid 2px black;
   font-size: 20px;
 }
 
 // home mid //
+
+.wrap__home__mid__message__from__960{
+  display: none;
+}
+
 .home__mid h2{
   font-weight: bold;
   padding-left: 30px;
 }
 
+.home__mid p{
+  margin-right:  5vw;
+}
+
 .home__mid{
   width: 100vw;
-  height: 200px;
-  background-color: #808B8F;
-  padding: 30px 8%;
+  height: 250px;
+  background-color: white;
+  padding: 50px 0 0 0;
   color: rgb(0, 0, 0);
   font-size: 15px;
+  padding-left: 5vw;
+  padding-left: 5vw;
 }
 
 // This is controlling line breaks of texts //
@@ -58,27 +72,225 @@ a.explore__link__banner{
 
 // Video section configuration //
 // Changes to block from smaller screen //
+
 .home__video{
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  background-color: #003459;
+  height: 400px;
 }
 
 // Suppport Your NGO's.... texts modification //
+
 .video__message h2{
   font-weight: bold;
+  padding-left: 30px;
 }
 
-.video__message h2, p{
-  padding-left: 30px;
-  margin-right: 5vw;
+.video__message{
+  width: 50%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+// video sizing //
+
+.video{
+  width: 50%;
+  height: 100%;
+}
+
+.video__message, h2 p{
+  color: white;
 }
 
 iframe{
-  width:50vw;
-  height:300px;
+  width: 50vw;
+  height: 100%;
 }
 
 .message__line{
-  margin-left: 50px;
-  border-left: solid 3px #003459;
+  border-left: solid 3px #e58272;
+}
+
+// home__bottom //
+
+.home__bottom{
+  display: flex;
+}
+
+.bottom__display{
+  display: flex;
+}
+
+
+// adding some space under the video when rapped //
+
+div.home__bottom{
+  height: 400px;
+}
+
+h2.home__bottom__message.message__line{
+  font-weight: bold;
+  margin-top: 30px;
+  padding-left: 30px;
+  margin-left: 5vw;
+}
+
+// no wrapping for Our projects ... /
+.home__bottom__message__no__wrap{
+  white-space: nowrap
+}
+
+// right and left cards position //
+.card__list__right{
+  padding-top: 10px;
+  background-color: white;
+}
+
+div.info__left{
+  background-color: #003459;
+}
+
+// creating a clickable link //
+
+// color link: https://coolors.co/0a8754-a8d0db-003459-e49273-e54f6d
+           //  https://coolors.co/0a8754-59ac98-a8d0db-003459-726366-ab7b6d-e49273-e58272-e57170-e54f6d
+
+.cards .inner__box{
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100px;
+  font-size: large;
+}
+
+
+// cards on the right //
+
+.cards{
+  position: relative;
+  padding: 15px;
+  padding-left: 80px;
+  font-weight: bold;
+  width: 50vw;
+  background-color: transparent;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  &:active{
+    background-color: #A8D0DB;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.5);
+
+  }
+  &:hover{
+    background-color: #A8D0DB;
+    color: white;
+    padding-left: 130px;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.5);
+  }
+}
+
+a.card__link{
+  text-decoration: none;
+  color: black;
+  margin: auto 0;
+  vertical-align: middle;
+}
+
+.card__link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
+}
+
+div.info__left{
+  width: 50vw;
+  height:100%;
+}
+
+//creating cards on the left, Our projects ... //
+
+.left__description{
+  margin-top: 88px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 20px;
+  height: 250px;
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  background-color: white;
+  border-radius: 10px;
+}
+
+// clickable description set-up //
+
+.card__description{
+  position: relative;
+  text-align: center;
+}
+
+.card__description h4{
+  font-size: medium;
+  color: #808080;
+}
+
+
+.card__link__description{
+  height: 250px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  pointer-events: auto;
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  transition: 0.3s;
+  content: "";
+  background-color: transparent;
+  &:hover{
+    box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
+    transition: 0.3s;
+  }
+}
+
+.card__description h5{
+  padding-top: 20px;
+  font-size: xx-large;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #2d2d2d;
+}
+
+.card__description p{
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  width: 60%;
+  font-size: medium;
+  background-color: #e58272;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+
+}
+
+div.card__description{
+  &:hover{
+    color: #001F2E;
+  }
+}
+
+div.card__description h5{
+  font-size: large;
+  font-weight: bold;
 }

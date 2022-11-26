@@ -7,7 +7,7 @@
     display: block;
   }
 
-  img.photo_banner{
+  img.photo__banner{
     background-position: center;
     object-fit: cover;
     width: 100vw;
@@ -29,9 +29,18 @@
   }
 
   // This is working to keep the br from 960 //
-  .wrap__copy_under__960{
+  .wrap__copy__under__960{
     display: block;
   }
+
+  .wrap__home__mid__message__from__960{
+    display: block;
+  }
+
+  // resizing home__mid height //
+  .home__mid{
+    height: 300px;
+}
 
   // Resizing the search bar //
   div.search__bar.search{
@@ -47,6 +56,16 @@
     max-width: 400px;
     min-width: 400px;
   }
+
+  div.video__message{
+    height: 50%;
+    padding-top: 20px;
+  }
+
+  // smaller texts for description card //
+  div.card__description h5{
+    font-size: x-large;
+  }
 }
 
 @media (max-width: 720px) {
@@ -61,12 +80,65 @@
   }
 
   .home__mid{
-    height: 260px;
+    height: 300px;
   }
 
   // Hiding start projects //
   a.nav__links{
     display: none;
+  }
+
+  // video section resizing //
+
+  .home__video{
+    display: block;
+    flex-direction: row-reverse;
+    height: 500px;
+    padding-top: 30px;
+    position: relative;
+  }
+
+  .video__message{
+    width: 100%;
+  }
+
+.video{
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  iframe{
+    width: 100vw;
+    height: 100%;
+  }
+
+  // cards display relocation //
+
+  div.info__left{
+    width: 100%;
+    padding-top: 0.1px;
+    padding-bottom: 20px;
+  }
+
+  div.home__bottom{
+    display: block;
+    height: auto;
+  }
+
+  .card__list__right{
+    padding-top: 5px;
+  }
+
+  .bottom__display{
+    display: block;
+  }
+
+  div.cards{
+    width: 100vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -82,22 +154,17 @@
   }
 
   .home__mid{
-    height: 280px;
+    height: 400px;
   }
 
-  // changing the positions of the video and texts //
+  // in case if you want to change the positions //
+
+  changing the positions of the video and texts //
   div.home__video{
+    flex-direction: row;
     display: block;
-  }
-
-  // resizing video width //
-  iframe{
-    width: 100vw;
-    height: 300px;
-  }
-
-  .video__message h2, p{
-    margin: 30px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   a.explore__link__banner{
@@ -116,11 +183,9 @@
   }
 
   .home__mid{
-    height: 180px;
-  }
-
-  div.home__video{
-    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 250px;
   }
 
     // Resizing the search bar //
@@ -140,17 +205,6 @@
 
   div.video__message.message__line{
     margin-left: 5vw;
-  }
-
-  // resizing video width //
-
-  iframe{
-    width: 100vw;
-    height: 200px;
-  }
-
-  .video__message h2, p{
-    margin: 30px 0;
   }
 
   a.explore__link__banner{
@@ -174,6 +228,26 @@
 
   div.video__message.message__line{
     margin-left: 5vw;
+  }
+
+  // smaller texts for description card //
+  div.card__description h5{
+    font-size: small !important;
+  }
+
+  div.card__description p{
+    font-size: small !important;
+  }
+
+  // support your ngo ... resizing //
+  div.video__message{
+    height: 50%;
+    padding-top: 10px;
+  }
+
+  // adjusting to telephone size //
+  .left__description{
+    margin-top: 85px;
   }
 
   // font size (only for telephones) //
