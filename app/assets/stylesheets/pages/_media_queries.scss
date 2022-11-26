@@ -134,6 +134,12 @@
   .bottom__display{
     display: block;
   }
+
+  div.cards{
+    width: 100vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -148,7 +154,7 @@
   }
 
   .home__mid{
-    height: 300px;
+    height: 400px;
   }
 
   // in case if you want to change the positions //
@@ -164,13 +170,6 @@
   a.explore__link__banner{
     font-size: 15px;
   }
-
-  div.cards{
-    width: 100vw;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
 }
 
 @media (max-width: 440px) {
@@ -186,7 +185,7 @@
   .home__mid{
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 200px;
+    height: 250px;
   }
 
     // Resizing the search bar //
@@ -243,7 +242,7 @@
   // support your ngo ... resizing //
   div.video__message{
     height: 50%;
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   // adjusting to telephone size //

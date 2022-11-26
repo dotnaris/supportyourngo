@@ -1,19 +1,20 @@
 <div class="footer--color">
   <div class="footer__syn">
     <div class="footer__left">
-      <%= link_to "Find the projects which end soon", root_path %>
+      <%= link_to "Find the projects which end soon!", root_path %>
     </div>
     <div class="footer__right">
       <div class="footer__right__left">
         <ul>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Start Your project</li></a>
+          <li><%= link_to "About", root_path %></li>
+          <li><%= link_to "Start Your Porject", root_path %></li>
+          <%# <a href="#"><li>Start Your project</li></a> %>
         </ul>
       </div>
       <div class="footer__right__left">
         <ul>
-          <a href="#"><li>FAQ</li></a>
-          <a href="#"><li>Terms & conditions</li></a>
+          <li><%= link_to "FAQ", root_path %></li>
+          <li><%= link_to "Terms & conditions", root_path %></li>
         </ul>
       </div>
     </div>

@@ -1,34 +1,38 @@
-<% if params[:controller] == "pages" && params[:action] == "home" %>
-<div class="nav__home" data-controller="navbar"
-                       data-action="scroll@window->navbar#updateNavbar"
-                       data-navbar-target="navbar">
-<% else %>
-<div class="nav">
-<% end %>
-  <div class="nav__left">
-    <div class="icon">
-      <%= link_to image_tag("logo_2.png"), root_path, { class: "logo" } %>
+<div data-controller="burger">
+  <%= render "shared/burger" %>
+
+  <% if params[:controller] == "pages" && params[:action] == "home" %>
+  <div class="nav__home" data-controller="navbar"
+                        data-action="scroll@window->navbar#updateNavbar"
+                        data-navbar-target="navbar">
+  <% else %>
+  <div class="nav">
+  <% end %>
+    <div class="nav__left">
+      <div class="icon">
+        <%= link_to image_tag("logo_2.png"), root_path, { class: "logo" } %>
+      </div>
+      <div>
+        <%= link_to "EXPLORE", root_path, class: "nav__links__left" %>
+      </div>
+      <div class="search__bar__nav search___nav" data-controller="search">
+        <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <form action="/doctors" method="get">
+        <input name="query"
+              type="text"
+              class="search__bar__nav"
+              params="[:query]"
+              placeholder=" Find your NGO"
+              data-navbar-target="input"
+              >
+        </form>
+      </div>
     </div>
-    <div>
-      <%= link_to "EXPLORE", root_path, class: "nav__links__left" %>
+    <div class="nav__right">
+        <%= link_to "START PROJECTS", root_path, class: "nav__links" %>
+        <button class="burger__icon" data-action="click->burger#show">
+          <i class="fa-solid fa-bars"></i>
+        </button>
     </div>
-    <div class="search__bar__nav search___nav" data-controller="search">
-      <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <form action="/doctors" method="get">
-      <input name="query"
-             type="text"
-             class="search__bar__nav"
-             params="[:query]"
-             placeholder=" Find your NGO"
-             data-navbar-target="input"
-             >
-      </form>
-    </div>
-  </div>
-  <div class="nav__right">
-      <%= link_to "START PROJECTS", root_path, class: "nav__links" %>
-      <button class="burger__icon">
-        <i class="fa-solid fa-bars"></i>
-      </button>
   </div>
 </div>

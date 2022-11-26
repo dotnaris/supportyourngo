@@ -4,7 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ecf5f7;
+  background-color: #f5f5f5;
+  color: black;
+  flex-direction: row-reverse;
 }
 
 // banner photo set up //
@@ -27,13 +29,13 @@ img.photo__banner{
 }
 
 a.explore__link__banner{
-  color: black;
+  color: #e58272;
   text-decoration: none;
   display: inline-block;
   margin-left: 8vw !important;
   margin: 30px 0;
   padding-bottom: 3px;
-  border-bottom: solid 1px #003459;
+  border-bottom: solid 2px black;
   font-size: 20px;
 }
 
@@ -75,7 +77,7 @@ a.explore__link__banner{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: #007EA7;
+  background-color: #003459;
   height: 400px;
 }
 
@@ -109,7 +111,7 @@ iframe{
 }
 
 .message__line{
-  border-left: solid 3px #003459;
+  border-left: solid 3px #e58272;
 }
 
 // home__bottom //
@@ -144,11 +146,11 @@ h2.home__bottom__message.message__line{
 // right and left cards position //
 .card__list__right{
   padding-top: 10px;
-  background-color: #C0CDD6;
+  background-color: white;
 }
 
 div.info__left{
-  background-color: #e58272;
+  background-color: #003459;
 }
 
 // creating a clickable link //
