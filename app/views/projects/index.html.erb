@@ -1,4 +1,4 @@
-<header class="navbar__fix">
+<header class="fix-spacing">
   <h1>This is the overview of all projects or filtered by the search function a selected set of projects.</h1>
 </header>
 
@@ -10,6 +10,7 @@
           <%# <%= cl_image_tag project.photo.key, width: 250, height: 250 %>
         <%# <% end %>
         <section class="projects__text">
+          <%= link_to project.name, project_path(project.id), class: "card__link" %><br>
           Name: <%= project.name %> <br>
           Location: <%= project.location %> <br>
           NGO: <%= project.user.name %> <br>
