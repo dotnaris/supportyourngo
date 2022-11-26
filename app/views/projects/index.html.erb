@@ -1,3 +1,20 @@
-<div class="container">
-<h1>This is the overview of all projects or filtered by the search function a selected set of projects.</h1>
-</div>
+<header class="navbar__fix">
+  <h1>This is the overview of all projects or filtered by the search function a selected set of projects.</h1>
+</header>
+
+<main>
+  <article class="projects__list">
+    <% @projects.each do |project|  %>
+      <section class="projects__card">
+        <%# <% if project.photo.attached? %>
+          <%# <%= cl_image_tag project.photo.key, width: 250, height: 250 %>
+        <%# <% end %>
+        <section class="projects__text">
+          Name: <%= project.name %> <br>
+          Location: <%= project.location %> <br>
+          NGO: <%= project.user.name %> <br>
+        </section>
+      </section>
+    <% end %>
+  </article>
+</main>
