@@ -4,7 +4,7 @@
                                     ></i>
   <div class="hi__loggedin">
     <% if user_signed_in? %>
-      <h5 class ="User__info__navbar">Hi, <%= current_user.email %></h5>
+      <h5 class ="User__info__navbar"><%= current_user.email %></h5>
       <p><%= link_to "LOG OUT", destroy_user_session_path, data: {turbo_method: :delete} %></p>
     <% else %>
       <p><%= link_to "LOG IN", new_user_session_path %></p>
@@ -18,9 +18,9 @@
   </div>
   <div class="contents__right">
     <p><%= link_to "ABOUT", root_path %></p>
-    <p><%= link_to "START YOUR PROJECT", root_path %></p>
+    <p><%= link_to "START", root_path %></p>
     <p><%= link_to "FAQ", root_path %></p>
-    <p><%= link_to "TERMS & CONDITIONS", root_path %></p>
+    <p><%= link_to "TERMS", root_path %></p>
         <p><%= link_to "ADD LINKS", root_path %></p>
   </div>
 </div>
