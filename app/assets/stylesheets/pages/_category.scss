@@ -1,0 +1,57 @@
+span.category{
+  margin-bottom: 0px !important;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-bottom: solid 2px $ngo-pink;
+}
+
+// changing the position of the hidden category from the top onto the sceen //
+
+span.category:hover + .category__list{
+  top: 0;
+}
+
+.category__list:hover{
+  top: 0;
+}
+
+// parent position for category //
+
+span.category{
+  position: relative;
+}
+
+// category setion spacing set up //
+
+.category__list{
+  position: absolute;
+  margin-bottom: 5px;
+  padding: 100px 5vw;
+  width: 100vw;
+  background-color: $ngo-black;
+  display: flex;
+  justify-content: space-around;
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  top: -600px;
+  transition: 0.3s;
+}
+
+// category text setup and transitions for the text //
+
+a.category__text{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border-bottom: solid 1px $ngo-black;
+  transition: 0.3s;
+  padding-bottom: 5px;
+  &:hover{
+    border-bottom: solid 1px $ngo-pink;
+    transition: 0.3s;
+  }
+}

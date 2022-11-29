@@ -1,7 +1,7 @@
 .burger__menu__contents{
   padding: 100px 5vw;
   width: 100vw;
-  background-color: #141414;
+  background-color: $ngo-black;
   display: flex;
   justify-content: space-around;
   z-index: 100;
@@ -15,18 +15,16 @@
   transition: 0.3s;
 }
 
-
-
 .burger__menu__contents i{
   position: absolute;
-  color: #e58272;
+  color: $ngo-pink;
   right: 5.5vw;
   top: 30px;
   cursor: pointer;
 }
 
 h5.User__info__navbar{
-  color: #e58272 !important;
+  color: $ngo-pink !important;
 }
 
 div.burger__menu__contents p,
@@ -40,11 +38,11 @@ div.burger__menu__contents a{
 }
 
 div.burger__menu__contents a{
-  border-bottom: solid 1px #141414;
+  border-bottom: solid 1px $ngo-black;
   transition: 0.3s;
   padding-bottom: 5px;
   &:hover{
     transition: 0.3s;
-    border-bottom: solid 1px #e58272;
+    border-bottom: solid 1px $ngo-pink;
   }
 }

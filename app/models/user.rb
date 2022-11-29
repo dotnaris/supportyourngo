@@ -25,6 +25,6 @@ class User < ApplicationRecord
 
   # def pay_should_sync_customer?
   #   # super will invoke Pay's default (e-mail changed)
-  #   super || self.saved_change_to_id? || self.saved_change_to_name?
+  #   super || self.saved_change_to_address? || self.saved_change_to_name?
   # end
 end
