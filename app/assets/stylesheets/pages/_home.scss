@@ -283,6 +283,10 @@ div.info__left{
   border-bottom: solid 2px $ngo-black;
 }
 
+.card__description.left__description__standard span{
+  display: none;
+}
+
 .card__description span{
   position: absolute;
   bottom: 10px;
