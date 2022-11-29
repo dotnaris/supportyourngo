@@ -12,6 +12,11 @@
   flex-grow: 1;
 }
 
+.projects__list a{
+  text-decoration: none;
+  color: #003459;
+}
+
 .projects__card {
   height: 300px;
   background-color: white;
@@ -30,4 +35,17 @@
   padding: 10px 10px 10px 10px;
   color: $ngo-blue;
   text-decoration: none;
+}
+
+
+.card__link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
 }
