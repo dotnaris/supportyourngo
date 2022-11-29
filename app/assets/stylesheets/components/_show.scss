@@ -17,6 +17,8 @@
 // editing upper part of show //
 
 div.price__section__bottom a{
+  display: inline-block;
+  margin-top: 20px;
   text-decoration: none;
   background-color: $ngo-blue;
   color: white;
@@ -24,11 +26,7 @@ div.price__section__bottom a{
   border-radius: 5px;
   cursor: pointer;
   &:hover{
-    transition: 1.3s;
-    &:before{
-      content: " ✔︎";
-      transition-duration: 4s;
-    }
+    box-shadow: $ngo-shadow;
   }
 }
 
@@ -78,6 +76,10 @@ div.price__section__bottom a{
   color: rgb(70, 70, 70);
 }
 
+.contibution__fixed__box li{
+  font-size: 15px;
+}
+
 // your amout card set up //
 
 .contribution__your__amount,
@@ -87,12 +89,27 @@ div.price__section__bottom a{
   justify-content: space-between;
   width: 20vw;
   border: solid 1px white;
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px $ngo-shadow;
+  border-radius: 5px;
+  box-shadow: $ngo-shadow;
   padding: 15px;
   margin: 0 auto;
   margin-top: 5vh;
   height: 300px;
+  position: relative;
+}
+
+// clickable link //
+
+.show__card__link{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
 }
 
 .contribution__your__amount{
@@ -125,6 +142,7 @@ width: 30vw;
 
 .story h4{
   padding-left: 30px;
+  margin-top: 5vh;
   margin-bottom: 5vh;
   border-left: solid 2px $ngo-pink;
 }

@@ -185,14 +185,14 @@ div.info__left{
   &:active{
     background-color: $ngo-light-blue;
     color: white;
-    box-shadow: 0px 5px 10px 0px $ngo-dark-shadow;
+    box-shadow: $ngo-dark-shadow;
   }
   &:hover{
     background-color: $ngo-light-blue;
     color: white;
     padding-left: 130px;
     transition: 0.3s;
-    box-shadow: 0px 5px 10px 0px $ngo-dark-shadow;
+    box-shadow: $ngo-dark-shadow;
   }
 }
 
@@ -228,7 +228,7 @@ div.info__left{
   margin-right: 5vw;
   padding: 20px;
   height: 250px;
-  box-shadow: 0px 5px 10px 0px $ngo-shadow;
+  box-shadow: $ngo-shadow;
   background-color: white;
   border-radius: 10px;
 }
@@ -257,23 +257,23 @@ div.info__left{
 }
 
 .card__link__description{
-  // height: 250px;
-  // border-radius: 10px;
-  // position: absolute;
-  // top: 0px;
-  // right: 0px;
-  // bottom: 0px;
-  // left: 0px;
-  // z-index: 1;
-  // pointer-events: auto;
-  // box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
-  // transition: 0.3s;
-  // content: "";
-  // background-color: transparent;
-  // &:hover{
-  //   box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
-  //   transition: 0.3s;
-  // }
+  height: 250px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  pointer-events: auto;
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  transition: 0.3s;
+  content: "";
+  background-color: transparent;
+  &:hover{
+    box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
+    transition: 0.3s;
+  }
 }
 
 .card__description h5{
@@ -292,7 +292,7 @@ div.info__left{
   background-color: $ngo-pink;
   color: white;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px 0px $ngo-shadow;
+  box-shadow: $ngo-shadow;
 }
 
 div.card__description{
