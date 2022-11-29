@@ -16,6 +16,10 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @project = Project.new
+  end
+
+  def create
     @project = Project.new(project_params)
     @project.user = current_user
     if @project.save
@@ -25,15 +29,12 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def create
-  end
-
   def edit
     @project = Project.find(params[:id])
   end
 
   def update
-    project = Camera.find(params[:id])
+    project = Project.find(params[:id])
     project.update(project_params)
     redirect_to project_path(project)
   end
@@ -45,6 +46,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.permit(:name, :location, :photo)
+    params.require(:project).permit(:name, :location, :photo)
   end
 end
