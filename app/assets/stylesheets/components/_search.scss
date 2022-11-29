@@ -4,12 +4,12 @@ div.search__bar.search{
   padding: 40px 10vw;
 }
 
-
 // input bar set up //
+
 .search input{
   border-radius: 10px;
   border: solid 1px rgb(254, 254, 254);
-  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  box-shadow: 0px 5px 10px 0px $ngo-shadow;
   padding: 5px;
   outline: 0;
   max-width: 230px;
@@ -17,6 +17,7 @@ div.search__bar.search{
 }
 
 // link spacing modification //
+
 a.nav__links__left{
   margin-left: 10px;
 }
@@ -26,6 +27,7 @@ a.nav__links{
 }
 
 // icon style set up //
+
 .search button{
   border: solid 1px transparent;
   background-color: transparent;
@@ -34,8 +36,8 @@ a.nav__links{
 }
 
 // search bar for nav //
-
 // this is adding some space b/t the search and explore //
+
 div.search__bar__nav.search___nav{
   margin-left: 30px;
 }
@@ -48,8 +50,7 @@ div.search__bar__nav.search___nav{
 
 .search___nav input{
   border-radius: 5px;
-  border: solid 2px #003459;
-  // box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  border: solid 2px $ngo-blue;
   padding: 5px;
   outline: 0;
   max-width: 230px;
@@ -59,5 +60,5 @@ div.search__bar__nav.search___nav{
 .search__bar__nav button{
   border: solid 1px transparent;
   background-color: transparent;
-  color: #003459;
+  color: $ngo-blue;
 }

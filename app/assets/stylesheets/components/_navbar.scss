@@ -34,7 +34,7 @@ div.nav{
 
 .navbar--white{
   background-color: white;
-  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  box-shadow: 0px 5px 10px 0px $ngo-shadow;
   transition: 0.2s;
 }
 
@@ -47,8 +47,8 @@ div.nav{
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 20000;
-  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
+  z-index: 50;
+  box-shadow: 0px 5px 10px 0px $ngo-shadow;
 }
 
 // Explore link style //

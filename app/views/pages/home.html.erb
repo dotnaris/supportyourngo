@@ -1,7 +1,7 @@
 <div class="banner">
   <div class="banner__left">
     <h1>                                             SUPPORT YOUR NGO IS A
-      <br class="wrap__copy">                        PLATFORM WHICH AIMES TO
+      <br class="wrap__copy">                        PLATFORM WHICH AIMS TO
       <br class="wrap__copy wrap__copy__under__960"> CONNECT COMPANIES AND
       <br class="wrap__copy">                        NGOS THAT WORK ON A
       <br class="wrap__copy wrap__copy__under__960"> WIDE RANGE OF SOCIAL
@@ -35,13 +35,13 @@
     <br>                                            more than 1 million species are facing a serious issue of extinction.
     <br class="wrap__home__mid__message__from__960">Pollution continues to harm both our bodies and nature.
     <br>                                            We as a platform aim to provide a way to get out of this transformation
-    <br class="wrap__home__mid__message__from__960">with connecting companies and NGOs which try to dogood for the planet.
+    <br class="wrap__home__mid__message__from__960">with connecting companies and NGOs which try to do good for the planet.
   </p>
 </div>
 <div class="home__video">
   <div class="video__message">
-    <h2 class="message__line">Support Your NGO's environment projects</h2>
-    <p>Please find our projects which are fighting for environmental targets. <br>It is one of the most crucial issues in regards to SDGs goal.</p>
+    <h2 class="message__line">Support Your NGO's <br class="wrap__message__video">environment projects</h2>
+    <p>Please find our projects which are fighting for environmental targets. <br>It is one of the most crucial issues in regard to SDGs goal.</p>
   </div>
   <div class="video">
     <%# Add this at the end of the link to loop and auto play ?autoplay=1&mute=1&loop=1&playlist=<%= video_id %>
@@ -56,34 +56,65 @@
   </div>
 </div>
 <div class="home__bottom">
-  <div class="bottom__display">
-    <div class="info__left">
-        <div class="card__description left__description">
+  <div class="bottom__display" data-controller="card">
+    <div class="info__left description__position">
+        <div class="card__description left__description left__description__standard">
           <i class="fas fa-handshake"></i>
           <h5>Find you project!</h5>
-          <%= link_to "", root_path, class: "card__link__description" %>
           <h4>We have a wide range of projects. Let's find your favorite projects.</h4>
-          <p>More detail</p>
+          <span>More detail</span>
+        </div>
+        <div class="card__description left__description left__description__environment">
+          <i class="fas fa-handshake"></i>
+          <h5>Environment matters!</h5>
+          <%= link_to "", projects_path(query: "environment"), class: "card__link__description" %>
+          <h4>Our environment is facing a rapid augmentation of temperature we have never seen. Let's fight together!</h4>
+          <span>More detail</span>
+        </div>
+        <div class="card__description left__description left__description__education">
+          <i class="fas fa-handshake"></i>
+          <h5>Education is a key factor!</h5>
+          <%= link_to "", projects_path(query: "education"), class: "card__link__description" %>
+          <h4>In order for us to rectify the inequality in this world, education is a terrain to be addressed.</h4>
+          <span>More detail</span>
+        </div>
+        <div class="card__description left__description left__description__culture">
+          <i class="fas fa-handshake"></i>
+          <h5>Man of culture!</h5>
+          <%= link_to "", projects_path(query: "culture"), class: "card__link__description" %>
+          <h4>Support projects that address the crisis of cultural heritage inheritance.</h4>
+          <span>More detail</span>
+        </div>
+        <div class="card__description left__description left__description__animal">
+          <i class="fas fa-handshake"></i>
+          <h5>Help our animals!</h5>
+          <%= link_to "", projects_path(query: "animal"), class: "card__link__description" %>
+          <h4>We want to protect our animals and work on animal welfare. Join us on our journey.</h4>
+          <span>More detail</span>
         </div>
     </div>
-    <div class="card__list__right" data-controller="card" data-action="click->na">
+    <div class="card__list__right">
       <h2 class="home__bottom__message message__line home__bottom__message__no__wrap">Our projects by category</h2>
-      <div class="cards">
+      <div class="cards cards__environment" data-controller="card" data-action="click->card#environment"
+                                                                   data-action-target="environment">
           <i class="fas fa-leaf"></i>
           <span class="link__cards card__link inner__box">Environment</span>
           <%# <%= link_to "Environment", root_path, class: "link__cards card__link first__card" %>
       </div>
-      <div class="cards">
+      <div class="cards cards__education" data-action="click->card#education"
+                                          data-action-target="education">
           <i class="fas fa-graduation-cap"></i>
           <span class="link__cards card__link inner__box">Education</span>
           <%# <%= link_to "Education", root_path, class: "link__cards card__link second__card" %>
       </div>
-      <div class="cards">
+      <div class="cards cards__culture" data-action="click->card#culture"
+                                        data-action-target="culture">
           <i class="fas fa-wine-glass-alt"></i>
           <span class="link__cards card__link inner__box">Culture</span>
           <%# <%= link_to "Culture", root_path, class: "link__cards card__link third__card" %>
       </div>
-      <div class="cards">
+      <div class="cards cards__animal" data-action="click->card#animal"
+                                       data-action-target="animal">
           <i class="fas fa-otter"></i>
           <span class="link__cards card__link inner__box">Animal</span>
           <%# <%= link_to "Animal", root_path, class: "link__cards card__link forth__card" %>

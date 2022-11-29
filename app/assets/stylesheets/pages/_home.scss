@@ -4,12 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f5f5f5;
+  background-color: $ngo-light-gray;
   color: black;
   flex-direction: row-reverse;
 }
 
 // banner photo set up //
+
 img.photo__banner{
   width: 50vw;
   height: 100vh;
@@ -29,7 +30,7 @@ img.photo__banner{
 }
 
 a.explore__link__banner{
-  color: #e58272;
+  color: $ngo-pink;
   text-decoration: none;
   display: inline-block;
   margin-left: 8vw !important;
@@ -66,6 +67,7 @@ a.explore__link__banner{
 }
 
 // This is controlling line breaks of texts //
+
 .banner__left h1{
   white-space: nowrap;
 }
@@ -77,7 +79,7 @@ a.explore__link__banner{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: #003459;
+  background-color: $ngo-blue;
   height: 400px;
 }
 
@@ -111,7 +113,7 @@ iframe{
 }
 
 .message__line{
-  border-left: solid 3px #e58272;
+  border-left: solid 3px $ngo-pink;
 }
 
 // home__bottom //
@@ -139,18 +141,19 @@ h2.home__bottom__message.message__line{
 }
 
 // no wrapping for Our projects ... /
+
 .home__bottom__message__no__wrap{
   white-space: nowrap
 }
 
 // right and left cards position //
+
 .card__list__right{
-  padding-top: 10px;
   background-color: white;
 }
 
 div.info__left{
-  background-color: #003459;
+  background-color: $ngo-blue;
 }
 
 // creating a clickable link //
@@ -180,17 +183,16 @@ div.info__left{
   transition: 0.3s;
   cursor: pointer;
   &:active{
-    background-color: #A8D0DB;
+    background-color: $ngo-light-blue;
     color: white;
-    box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.5);
-
+    box-shadow: 0px 5px 10px 0px $ngo-dark-shadow;
   }
   &:hover{
-    background-color: #A8D0DB;
+    background-color: $ngo-light-blue;
     color: white;
     padding-left: 130px;
     transition: 0.3s;
-    box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.5);
+    box-shadow: 0px 5px 10px 0px $ngo-dark-shadow;
   }
 }
 
@@ -220,77 +222,117 @@ div.info__left{
 
 //creating cards on the left, Our projects ... //
 
+.left__description.left__description__standard{
+  margin-top: 88px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 20px;
+  height: 250px;
+  box-shadow: 0px 5px 10px 0px $ngo-shadow;
+  background-color: white;
+  border-radius: 10px;
+}
+
 .left__description{
   margin-top: 88px;
   margin-left: 5vw;
   margin-right: 5vw;
   padding: 20px;
   height: 250px;
-  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
   background-color: white;
   border-radius: 10px;
+  left: 0;
+  right: 0;
 }
 
 // clickable description set-up //
 
 .card__description{
-  position: relative;
   text-align: center;
 }
 
 .card__description h4{
   font-size: medium;
-  color: #808080;
+  color: $ngo-gray;
 }
 
-
 .card__link__description{
-  height: 250px;
-  border-radius: 10px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  z-index: 1;
-  pointer-events: auto;
-  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
-  transition: 0.3s;
-  content: "";
-  background-color: transparent;
-  &:hover{
-    box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
-    transition: 0.3s;
-  }
+  // height: 250px;
+  // border-radius: 10px;
+  // position: absolute;
+  // top: 0px;
+  // right: 0px;
+  // bottom: 0px;
+  // left: 0px;
+  // z-index: 1;
+  // pointer-events: auto;
+  // box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  // transition: 0.3s;
+  // content: "";
+  // background-color: transparent;
+  // &:hover{
+  //   box-shadow: 0px 5px 10px 0px rgba(130, 130, 130, 0.5);
+  //   transition: 0.3s;
+  // }
 }
 
 .card__description h5{
   padding-top: 20px;
   font-size: xx-large;
   padding-bottom: 10px;
-  border-bottom: solid 2px #2d2d2d;
+  border-bottom: solid 2px $ngo-black;
 }
 
-.card__description p{
+.card__description span{
   position: absolute;
   bottom: 10px;
   left: 20%;
   width: 60%;
   font-size: medium;
-  background-color: #e58272;
+  background-color: $ngo-pink;
   color: white;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px 0px rgba(200, 200, 200, 0.5);
-
+  box-shadow: 0px 5px 10px 0px $ngo-shadow;
 }
 
 div.card__description{
   &:hover{
-    color: #001F2E;
+    color: $ngo-black;
   }
 }
 
 div.card__description h5{
   font-size: large;
   font-weight: bold;
+}
+
+// hstimulus set up for home__bottom (some effects on .cards selector)//
+
+.description__position{
+  position: relative;
+}
+
+div.left__description{
+  position: absolute;
+  bottom: 80px;
+}
+
+div.left__description__environment__active,
+div.left__description__education__active,
+div.left__description__culture__active,
+div.left__description__animal__active{
+  display: block;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+}
+
+div.left__description__environment,
+div.left__description__education,
+div.left__description__culture,
+div.left__description__animal{
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  left: -1000px;
 }
