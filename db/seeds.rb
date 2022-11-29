@@ -33,7 +33,6 @@ end
     name: projects_name.sample,
     location: Faker::Address.country,
     user: users.sample,
-
   )
   project.save!
   puts "Project_location: #{project.location}, Project_name: #{project.name}, and Project_user: #{project.user}"
