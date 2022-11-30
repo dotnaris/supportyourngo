@@ -1,0 +1,33 @@
+<main class="dashboard">
+  <div class="dashboard__left">
+    <div class="dashboard__left__top">
+      <div class="search__bar__bashboard search___dashboard">
+          <form action="/projects" method="get">
+          <input name="query"
+                type="text"
+                class="search__bar__nav"
+                params="[:query]"
+                placeholder=" Find your NGO"
+                data-navbar-target="input"
+                >
+          </form>
+      </div>
+      <p class="contents__dashboard"><i class="fas fa-tachometer-alt"></i> STATUS</p>
+      <p class="contents__dashboard"><i class="far fa-edit"></i> EDIT</p>
+      <p class="contents__dashboard"><i class="fas fa-money-check-alt"></i> PAYEMNTS</p>
+      <p class="contents__dashboard"><i class="fas fa-sign-out-alt"></i> LOGOUT</p>
+      <p class="contents__dashboard"><i class="fas fa-home"></i> <%= link_to "HOME", root_path %></p>
+    </div>
+    <div class="dashboard__left__bottom">
+      <p class="contents__dashboard"><%= link_to "NEW PROJECT", new_project_path, class: "" %></p>
+      <p class="contents__dashboard__email"><%= @user.email %></p>
+    </div>
+  </div>
+  <div class="dashboard__right">
+    <div class=dashboard_partials>
+      <%= render "shared/status_dashboard" %>
+      <%= render "shared/edit_dashboard" %>
+      <%= render "shared/payment_dashboard" %>
+    </div>
+  </div>
+</main>

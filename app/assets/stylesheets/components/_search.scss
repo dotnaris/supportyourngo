@@ -62,3 +62,15 @@ div.search__bar__nav.search___nav{
   background-color: transparent;
   color: $ngo-blue;
 }
+
+// search in the dashboard //
+
+.search___dashboard input{
+  border-radius: 5px;
+  border: solid 2px $ngo-blue;
+  padding: 5px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+}

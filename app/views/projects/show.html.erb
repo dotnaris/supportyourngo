@@ -20,7 +20,7 @@
           <p>date started</p>
         </div>
         <div class="price__section__bottom">
-          <%= link_to "Support this project" %>
+          <p><%= link_to "Support this project" %><i class="fas fa-check"></i></p>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
               <li>20x cat food</li>
             </ul>
             <p>8 contributions</p>
-            <%= link_to "", root_path, class: "show__card__link" %>
+            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
           </div>
           <div class="contibution__fixed__box__card">
             <h4>$75 or more</h4>
@@ -73,7 +73,7 @@
               <li>30x cat food</li>
             </ul>
             <p>8 contributions</p>
-            <%= link_to "", root_path, class: "show__card__link" %>
+            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
           </div>
           <div class="contibution__fixed__box__card">
             <h4>$100 or more</h4>
@@ -83,7 +83,7 @@
               <li>40x cat food</li>
             </ul>
             <p>8 contributions</p>
-            <%= link_to "", root_path, class: "show__card__link" %>
+            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
           </div>
           <div class="contibution__fixed__box__card">
             <h4>$200 or more</h4>
@@ -93,10 +93,16 @@
               <li>80x cat food</li>
             </ul>
             <p>8 contributions</p>
-            <%= link_to "", root_path, class: "show__card__link" %>
+            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
           </div>
         </div>
       </div>
     </div>
   </main>
+</div>
+<div class="sign-in">
+  <% if user_signed_in? %>
+    <%= link_to "Edit",  edit_project_path(@project.id) %>
+    <%= link_to "Delete", project_path(@project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{@project.name}?"} %>
+  <% end %>
 </div>

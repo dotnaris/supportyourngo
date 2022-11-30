@@ -1,27 +1,31 @@
-<div class="footer--color">
-  <div class="footer__syn">
-    <div class="footer__syn__left">
-      <%= link_to "Find the projects which end soon!", root_path %>
-    </div>
-      <div class="footer__syn__right">
-        <div class="footer__syn__right__left">
-            <p><%= link_to "About", root_path %></p>
-            <p><%= link_to "Start Your Porject", root_path %></p>
-            <%# <a href="#"><li>Start Your project</li></a> %>
-        </div>
-        <div class="footer__syn__right__right">
-            <p><%= link_to "FAQ", root_path %></p>
-            <p><%= link_to "Terms & conditions", root_path %></p>
-        </div>
+<% if params[:controller] == "users" && params[:action] == "show" %>
+  <div class="footer" style="display:none">
+<% else %>
+  <div class="footer--color footer">
+    <div class="footer__syn">
+      <div class="footer__syn__left">
+        <%= link_to "Find the projects which end soon!", root_path %>
       </div>
-  </div>
-  <div class="footer__bottom">
-    <div class="icons">
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <div class="footer__syn__right">
+          <div class="footer__syn__right__left">
+              <p><%= link_to "About", root_path %></p>
+              <p><%= link_to "Start Your Porject", root_path %></p>
+              <%# <a href="#"><li>Start Your project</li></a> %>
+          </div>
+          <div class="footer__syn__right__right">
+              <p><%= link_to "FAQ", root_path %></p>
+              <p><%= link_to "Terms & conditions", root_path %></p>
+          </div>
+        </div>
     </div>
-      <div class="copy__right">
-        <p>© 2022 Support Your NGO, some rights reserved.</p>
+    <div class="footer__bottom">
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
       </div>
+        <div class="copy__right">
+          <p>© 2022 Support Your NGO, some rights reserved.</p>
+        </div>
+    </div>
   </div>
-</div>
+<% end %>

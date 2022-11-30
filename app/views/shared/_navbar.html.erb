@@ -2,11 +2,13 @@
   <%= render "shared/burger" %>
 
   <% if params[:controller] == "pages" && params[:action] == "home" %>
-  <div class="nav__home" data-controller="navbar"
-                        data-action="scroll@window->navbar#updateNavbar"
-                        data-navbar-target="navbar">
+    <div class="nav__home" data-controller="navbar"
+                          data-action="scroll@window->navbar#updateNavbar"
+                          data-navbar-target="navbar">
+  <% elsif params[:controller] == "users" && params[:action] == "show" %>
+    <div class="nav" style="display:none">
   <% else %>
-  <div class="nav">
+    <div class="nav">
   <% end %>
     <div class="nav__left">
       <div class="icon">
@@ -15,8 +17,8 @@
       <div>
         <%= link_to "EXPLORE", root_path, class: "nav__links__left" %>
       </div>
-      <div class="search__bar__nav search___nav" data-controller="search">
-        <button data-action="click->?????#??????"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div class="search__bar__nav search___nav">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
         <form action="/projects" method="get">
         <input name="query"
               type="text"

@@ -1,3 +1,10 @@
 <div class="fix-spacing">
-  <h1>Edit information of your project.</h1>
+  <h1>Edit your project!</h1>
+  <%# <h1>This is the creation page for a new project which can only be accessed by an NGO user (is-ngo == true). The created project will not show up directly on the website but will have to go through an approval process by the admins of the page.</h1> %>
+  <%= simple_form_for(@project) do |c| %>
+      <%= c.input :name %>
+      <%= c.input :location %>
+      <%# <%= c.input :photo %>
+      <%= c.submit %>
+  <% end %>
 </div>

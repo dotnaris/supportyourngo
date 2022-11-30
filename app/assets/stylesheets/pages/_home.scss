@@ -112,7 +112,7 @@ iframe{
   height: 100%;
 }
 
-.message__line{
+.home__bottom__cards__message__line{
   border-left: solid 3px $ngo-pink;
 }
 
@@ -122,7 +122,7 @@ iframe{
   display: flex;
 }
 
-.bottom__display{
+.home__bottom__display{
   display: flex;
 }
 
@@ -133,7 +133,7 @@ div.home__bottom{
   height: 400px;
 }
 
-h2.home__bottom__message.message__line{
+h2.home__bottom__cards__message.home__bottom__cards__message__line{
   font-weight: bold;
   margin-top: 30px;
   padding-left: 30px;
@@ -142,13 +142,13 @@ h2.home__bottom__message.message__line{
 
 // no wrapping for Our projects ... /
 
-.home__bottom__message__no__wrap{
+.home__bottom__cards__message__no__wrap{
   white-space: nowrap
 }
 
 // right and left cards position //
 
-.card__list__right{
+.home__bottom__card__list__right{
   background-color: white;
 }
 
@@ -161,7 +161,7 @@ div.info__left{
 // color link: https://coolors.co/0a8754-a8d0db-003459-e49273-e54f6d
            //  https://coolors.co/0a8754-59ac98-a8d0db-003459-726366-ab7b6d-e49273-e58272-e57170-e54f6d
 
-.cards .inner__box{
+.home__cards .home__bottom__right__card__inner__box{
   padding: 10px;
   border-radius: 3px;
   display: inline-block;
@@ -172,7 +172,7 @@ div.info__left{
 
 // cards on the right //
 
-.cards{
+.home__cards{
   position: relative;
   padding: 15px;
   padding-left: 80px;
@@ -196,14 +196,14 @@ div.info__left{
   }
 }
 
-a.card__link{
+a.home__bottom__right__card__link{
   text-decoration: none;
   color: black;
   margin: auto 0;
   vertical-align: middle;
 }
 
-.card__link::after {
+.home__bottom__right__card__link::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -222,7 +222,7 @@ div.info__left{
 
 //creating cards on the left, Our projects ... //
 
-.left__description.left__description__standard{
+.home__card__left__description.home__card__left__description__standard{
   margin-top: 88px;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -233,7 +233,7 @@ div.info__left{
   border-radius: 10px;
 }
 
-.left__description{
+.home__card__left__description{
   margin-top: 88px;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -247,16 +247,16 @@ div.info__left{
 
 // clickable description set-up //
 
-.card__description{
+.home__card__description{
   text-align: center;
 }
 
-.card__description h4{
+.home__card__description h4{
   font-size: medium;
   color: $ngo-gray;
 }
 
-.card__link__description{
+.home__bottom__right__card__link__description{
   height: 250px;
   border-radius: 10px;
   position: absolute;
@@ -276,18 +276,18 @@ div.info__left{
   }
 }
 
-.card__description h5{
+.home__card__description h5{
   padding-top: 20px;
   font-size: xx-large;
   padding-bottom: 10px;
   border-bottom: solid 2px $ngo-black;
 }
 
-.card__description.left__description__standard span{
+.home__card__description.home__card__left__description__standard span{
   display: none;
 }
 
-.card__description span{
+.home__card__description span{
   position: absolute;
   bottom: 10px;
   left: 20%;
@@ -299,42 +299,42 @@ div.info__left{
   box-shadow: $ngo-shadow;
 }
 
-div.card__description{
+div.home__card__description{
   &:hover{
     color: $ngo-black;
   }
 }
 
-div.card__description h5{
+div.home__card__description h5{
   font-size: large;
   font-weight: bold;
 }
 
-// hstimulus set up for home__bottom (some effects on .cards selector)//
+// stimulus set up for home__bottom (some effects on .cards selector)//
 
 .description__position{
   position: relative;
 }
 
-div.left__description{
+div.home__card__left__description{
   position: absolute;
   bottom: 80px;
 }
 
-div.left__description__environment__active,
-div.left__description__education__active,
-div.left__description__culture__active,
-div.left__description__animal__active{
+div.home__card__left__description__environment__active,
+div.home__card__left__description__education__active,
+div.home__card__left__description__culture__active,
+div.home__card__left__description__animal__active{
   display: block;
   bottom: 80px;
   left: 0;
   right: 0;
 }
 
-div.left__description__environment,
-div.left__description__education,
-div.left__description__culture,
-div.left__description__animal{
+div.home__card__left__description__environment,
+div.home__card__left__description__education,
+div.home__card__left__description__culture,
+div.home__card__left__description__animal{
   display: none;
   position: absolute;
   bottom: 80px;

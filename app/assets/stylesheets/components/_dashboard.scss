@@ -1,0 +1,49 @@
+.dashboard{
+  display: flex;
+  height: 95vh;
+}
+
+.dashboard__left{
+  background-color: $ngo-dark-blue;
+  color: white;
+}
+
+.dashboard__right{
+  background-color: white;
+}
+
+
+// right side of dashboard set up //
+
+.dashboard__right{
+  width: 60vw;
+  padding: 5vh 5vw;
+  height: 100vh;
+  min-width: 300px;
+}
+
+.dashboard_partials{
+  height: 100vh;
+}
+
+// set up for the left part of the dashboard //
+
+.dashboard__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  min-width: 200px;
+  padding: 5vh 5vw;
+  height: 100vh;
+}
+
+// spacing for the left dashbaord contents //
+
+.contents__dashboard{
+  padding: 10px 10px;
+}
+
+p.contents__dashboard__email{
+  color: $ngo-pink;
+}

@@ -9,5 +9,8 @@ Rails.application.routes.draw do
     # resources :contributions, only: [:new, :show, :create, :edit, :update, :destroy]
   end
 
+  # dashboard -> user show page
+  resources :users, only: [:show]
+
   resources :contributions, only: [:index]
 end
