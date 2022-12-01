@@ -48,13 +48,19 @@
 .ceo__contribution__photo__and__name__and__timer{
   display: flex;
   align-items: center;
+  // white-space: nowrap
 }
 
 .ceo_contribution_price{
+  position: absolute;
   color: $ngo-pink;
+  right: 2vw;
+  bottom: 1.5vh;
+
 }
 
 .ceo__contribution{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

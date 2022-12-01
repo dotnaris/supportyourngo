@@ -1,4 +1,4 @@
-<main class="dashboard">
+<main class="dashboard" data-controller="dashboard">
   <div class="dashboard__left">
     <div class="dashboard__left__top">
       <div class="search__bar__bashboard search___dashboard">
@@ -12,7 +12,7 @@
                 >
           </form>
       </div>
-      <p class="contents__dashboard"><i class="fas fa-tachometer-alt"></i> <span class="contents__dashboard__links">STATUS</span></p>
+      <p class="contents__dashboard"><i class="fas fa-tachometer-alt"></i> <span class="contents__dashboard__links" data-action="click->dashboard#status">STATUS</span></p>
       <p class="contents__dashboard"><i class="far fa-edit"></i> <span class="contents__dashboard__links">EDIT</span></p>
       <p class="contents__dashboard"><i class="fa-solid fa-file-invoice-dollar"></i> <span class="contents__dashboard__links">PAYEMNTS</span></p>
       <p class="contents__dashboard"><i class="fas fa-sign-out-alt"></i> <span class="contents__dashboard__links">LOGOUT</span></p>
