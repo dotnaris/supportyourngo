@@ -16,7 +16,7 @@
 
 // editing upper part of show //
 
-div.price__section__bottom a{
+div.price__section__bottom p{
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
@@ -24,10 +24,20 @@ div.price__section__bottom a{
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
+  white-space: nowrap;
+  transition: 0.3s;
   cursor: pointer;
   &:hover{
     box-shadow: $ngo-shadow;
+    color: $ngo-pink;
+    transition: 0.3s;
   }
+}
+
+div.price__section__bottom a{
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
 }
 
 
@@ -96,11 +106,16 @@ div.price__section__bottom a{
   margin-top: 5vh;
   height: 300px;
   position: relative;
+  transition: 0.3s;
+  &:hover{
+    box-shadow: $ngo-dark-shadow;
+    transition: 0.3s;
+  }
 }
 
 // clickable link //
 
-.show__card__link{
+.show__home__bottom__right__card__link{
   position: absolute;
   top: 0;
   right: 0;
@@ -117,7 +132,7 @@ div.price__section__bottom a{
 }
 
 .contribution__your__amount input{
-  width: 15VW;
+  width: 85%;
 }
 
 // fixed card design //

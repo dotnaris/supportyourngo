@@ -2,14 +2,14 @@
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .show__upper__side{
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1vh;
   }
-  // .show__lower__side{
-  //   display: block;
-  // }
 
   .story{
     width: 80vw;
+    margin-top: -500px;
   }
 
   .show__photo{
@@ -18,7 +18,51 @@
 
   .contribution__your__amount,
   .contibution__fixed__box__card{
-    width: 200px;
+    width: 230px;
+    min-width: 200px;
+    height: 300px;
+    margin-right: 5vw;
+  }
+
+  // change the position of upper part of show page //
+
+  img.show__photo{
+    width: 100%;
+  }
+
+  .price__section{
+    margin: 5vh 0 5vh 5vw;
+    width: 80vw;
+  }
+
+  div.photo__project{
+    margin: 0 auto;
+  }
+
+  // change the position of lower part of show page //
+
+  .show__lower__side{
+    flex-direction: column-reverse;
+    margin-top: 2vh;
+  }
+
+  .story{
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .contribution__cards{
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 50vh;
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  .contibution__fixed__box{
+    display: flex;
   }
 }
 

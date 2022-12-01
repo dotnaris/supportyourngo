@@ -1,17 +1,17 @@
 import { Controller } from "@hotwired/stimulus"
 
 
-const classEnvironment = ["card__description left__description left__description__environment__active"]
-const hideClassEnvironment = ["card__description left__description left__description__environment"]
+const classEnvironment = ["home__card__description home__card__left__description home__card__left__description__environment__active"]
+const hideClassEnvironment = ["home__card__description home__card__left__description home__card__left__description__environment"]
 
-const classEducation = ["card__description left__description left__description__education__active"]
-const hideClassEducation = ["card__description left__description left__description__education"]
+const classEducation = ["home__card__description home__card__left__description home__card__left__description__education__active"]
+const hideClassEducation = ["home__card__description home__card__left__description home__card__left__description__education"]
 
-const classCulture = ["card__description left__description left__description__culture__active"]
-const hideClassCulture = ["card__description left__description left__description__culture"]
+const classCulture = ["home__card__description home__card__left__description home__card__left__description__culture__active"]
+const hideClassCulture = ["home__card__description home__card__left__description home__card__left__description__culture"]
 
-const classAnimal = ["card__description left__description left__description__animal__active"]
-const hideClassAnimal = ["card__description left__description left__description__animal"]
+const classAnimal = ["home__card__description home__card__left__description home__card__left__description__animal__active"]
+const hideClassAnimal = ["home__card__description home__card__left__description home__card__left__description__animal"]
 
 // Connects to data-controller="card"
 export default class extends Controller {

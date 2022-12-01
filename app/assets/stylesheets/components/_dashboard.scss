@@ -1,0 +1,73 @@
+.dashboard{
+  display: flex;
+  height: 95vh;
+  position: relative;
+}
+
+.dashboard__left{
+  background-color: $ngo-dark-blue;
+  color: white;
+  position: fixed;
+  height: 100%;
+}
+
+.dashboard__right{
+  background-color: white;
+  overflow-y: scroll;
+}
+
+
+// right side of dashboard set up //
+
+.dashboard__right{
+  position: absolute;
+  width: 60vw;
+  left: 40vw;
+  // padding: 5vh 5vw;
+  // height: 100vh;
+  // min-width: 300px;
+}
+
+// set up for the left part of the dashboard //
+
+.dashboard__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  min-width: 200px;
+  padding: 5vh 5vw;
+  height: 100vh;
+}
+
+span.contents__dashboard__links{
+  margin-left: 10px;
+}
+
+.contents__dashboard__links a{
+  text-decoration: none;
+  color: white;
+}
+
+.contents__dashboard__links__new__project a{
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+// spacing for the left dashbaord contents //
+
+.contents__dashboard{
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  &:hover{
+    background-color: $ngo-blue;
+    padding-left: 20px;
+    transition: 0.3s;
+  }
+}
+
+p.contents__dashboard__email{
+  color: $ngo-pink;
+}

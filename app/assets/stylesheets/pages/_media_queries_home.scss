@@ -70,7 +70,7 @@
 
   // smaller texts for description card //
 
-  div.card__description h5{
+  div.home__card__description h5{
     font-size: x-large;
   }
 
@@ -143,7 +143,7 @@
     padding-bottom: 20px;
   }
 
-  div.left__description{
+  div.home__card__left__description{
     bottom: 30px;
     left: 0;
     right: 0;
@@ -154,7 +154,7 @@
     height: auto;
   }
 
-  .bottom__display{
+  .home__bottom__display{
     display: block;
   }
 
@@ -252,7 +252,7 @@
     min-width: 200px;
   }
 
-  div.video__message.message__line{
+  div.video__message.home__bottom__cards__message__line{
     margin-left: 5vw;
   }
 
@@ -270,17 +270,17 @@
     margin-left: 10px;
   }
 
-  div.video__message.message__line{
+  div.video__message.home__bottom__cards__message__line{
     margin-left: 5vw;
   }
 
   // smaller texts for description card //
 
-  div.card__description h5{
+  div.home__card__description h5{
     font-size: small !important;
   }
 
-  div.card__description p{
+  div.home__card__description p{
     font-size: small !important;
   }
 
@@ -293,7 +293,7 @@
 
   // adjusting to telephone size //
 
-  .left__description{
+  .home__card__left__description{
     margin-top: 85px;
   }
 

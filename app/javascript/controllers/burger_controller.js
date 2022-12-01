@@ -4,7 +4,6 @@ let counter = 0;
 export default class extends Controller {
   static targets = ["burger"]
   connect() {
-    console.log("Hello from burger");
   }
 
   show() {
@@ -16,6 +15,4 @@ export default class extends Controller {
     console.dir(this.element.firstElementChild);
     this.element.firstElementChild.setAttribute('class', 'burger__menu__contents');
   }
-
-
 }
