@@ -45,8 +45,18 @@
 
 // ceo donation sections setup //
 
+.ceo__contribution__photo__and__name__and__timer{
+  display: flex;
+  align-items: center;
+}
+
+.ceo_contribution_price{
+  color: $ngo-pink;
+}
+
 .ceo__contribution{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #FCFCFD;
   border-radius: 10px;
@@ -71,6 +81,7 @@
 
 .ceo__contribution{
   margin: 10px 0;
+  width: auto;
 }
 
 // change font color and sizes of contributions //

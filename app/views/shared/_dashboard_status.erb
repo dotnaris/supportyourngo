@@ -85,21 +85,24 @@
       <% price = numbers.sample %>
       <% total << price %>
       <div class="ceo__contribution">
-        <div class="ceo__contribution__photo">
-          <img class="ceo__images" src="<%= faces.sample %>" alt="">
-        </div>
-        <div class="ceo__contribution__name__and__timer">
-          <div class="ceo__contribution__name__and__timer__top">
-            <span>CONTRIBUTOR: <%= Faker::Name.name %>, DOATED PRICE: $<%= price %></span>
+        <div class="ceo__contribution__photo__and__name__and__timer">
+          <div class="ceo__contribution__photo">
+            <img class="ceo__images" src="<%= faces.sample %>" alt="">
           </div>
-          <div class="ceo__contribution__name__and__timer__bottom">
-            <% if counter == 1 %>
-              <span><%= counter %><%= unit %></span><span class="time__unit">ago</span>
-            <% else %>
-              <span><%= counter %><%= unit %>s</span><span class="time__unit">ago</span>
-            <% end %>
+          <div class="ceo__contribution__name__and__timer">
+            <div class="ceo__contribution__name__and__timer__top">
+              <span><%= Faker::Name.name %> supported your project.</span>
+            </div>
+            <div class="ceo__contribution__name__and__timer__bottom">
+              <% if counter == 1 %>
+                <div><span><%= counter %><%= unit %></span><span class="time__unit">ago</span></div>
+              <% else %>
+                <div><span><%= counter %><%= unit %>s</span><span class="time__unit">ago</span></div>
+              <% end %>
+            </div>
           </div>
         </div>
+        <span class="ceo_contribution_price">+ $<%= price %></span>
       </div>
     <% end %>
   </div>
