@@ -14,29 +14,40 @@
 
 .projects__list a{
   text-decoration: none;
-  color: #003459;
+  color: $ngo-blue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: $ngo-blue;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .projects__card {
   height: 300px;
-  background-color: white;
+  width: 300px;
+  background-color: $ngo-light-blue;
   color: $ngo-blue;
   border-radius: 5px;
   margin: auto;
   position: relative;
   border: $ngo-blue;
-  box-shadow: $shadow-md;
+  box-shadow: $shadow-lg;
   margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .projects__text {
   display: block;
   right: 0;
   padding: 10px 10px 10px 10px;
-  color: $ngo-blue;
+  color: white;
   text-decoration: none;
 }
-
 
 .card__link::after {
   position: absolute;
