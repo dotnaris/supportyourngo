@@ -1,0 +1,84 @@
+// status setup //
+
+.dashboard_partials{
+  position: relative;
+}
+
+.status__dashboard{
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-left: 2vw;
+  z-index: 5;
+}
+
+.status__dashboard__top{
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: solid 2px $ngo-pink;
+}
+
+// upper part font style //
+
+.status__dashboard__top h2,
+.status__dashboard__top p{
+  color: black;
+  padding-bottom: 0;
+}
+
+.status__dashboard__top h2{
+  font-size: 20px;
+}
+
+.status__dashboard__email{
+  color: $ngo-pink;
+}
+
+// ceo photos //
+
+.ceo__images{
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+// ceo donation sections setup //
+
+.ceo__contribution{
+  display: flex;
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 10px;
+  padding: 5px 20px;
+  box-shadow: $ngo-shadow;
+  transition: 0.3s;
+  &:hover{
+    background-color: #E0E6EB;
+    transition: 0.3s;
+  }
+}
+
+.ceo__contribution__name__and__timer{
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+.time__unit{
+  margin-left: 5px;
+}
+
+.ceo__contribution{
+  margin: 10px 0;
+}
+
+// change font color and sizes of contributions //
+
+.ceo__contribution__name__and__timer__bottom{
+  color: grey;
+}
+
+.dashboard__contribution__line{
+  color: grey;
+}

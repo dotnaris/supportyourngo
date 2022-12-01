@@ -12,22 +12,22 @@
                 >
           </form>
       </div>
-      <p class="contents__dashboard"><i class="fas fa-tachometer-alt"></i> STATUS</p>
-      <p class="contents__dashboard"><i class="far fa-edit"></i> EDIT</p>
-      <p class="contents__dashboard"><i class="fas fa-money-check-alt"></i> PAYEMNTS</p>
-      <p class="contents__dashboard"><i class="fas fa-sign-out-alt"></i> LOGOUT</p>
-      <p class="contents__dashboard"><i class="fas fa-home"></i> <%= link_to "HOME", root_path %></p>
+      <p class="contents__dashboard"><i class="fas fa-tachometer-alt"></i> <span class="contents__dashboard__links">STATUS</span></p>
+      <p class="contents__dashboard"><i class="far fa-edit"></i> <span class="contents__dashboard__links">EDIT</span></p>
+      <p class="contents__dashboard"><i class="fa-solid fa-file-invoice-dollar"></i> <span class="contents__dashboard__links">PAYEMNTS</span></p>
+      <p class="contents__dashboard"><i class="fas fa-sign-out-alt"></i> <span class="contents__dashboard__links">LOGOUT</span></p>
+      <p class="contents__dashboard"><i class="fas fa-home"></i> <span class="contents__dashboard__links"><%= link_to "HOME", root_path %></span></p>
     </div>
     <div class="dashboard__left__bottom">
-      <p class="contents__dashboard"><%= link_to "NEW PROJECT", new_project_path, class: "" %></p>
-      <p class="contents__dashboard__email"><%= @user.email %></p>
+      <p class="contents__dashboard"><i class="fa-solid fa-arrow-right"></i><span class="contents__dashboard__links contents__dashboard__links__new__project"><%= link_to "NEW PROJECT", new_project_path, class: "" %></span></p>
+      <p class="contents__dashboard__email"><span class="contents__dashboard__links"><%= @user.email %></span></p>
     </div>
   </div>
   <div class="dashboard__right">
     <div class=dashboard_partials>
-      <%= render "shared/status_dashboard" %>
-      <%= render "shared/edit_dashboard" %>
-      <%= render "shared/payment_dashboard" %>
+      <%= render "shared/dashboard_status" %>
+      <%# <%= render "shared/dashboard_edit" %>
+      <%# <%= render "shared/dashboard_payment" %>
     </div>
   </div>
 </main>
