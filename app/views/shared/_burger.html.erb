@@ -4,7 +4,7 @@
                                     ></i>
   <div class="hi__loggedin">
     <% if user_signed_in? %>
-      <h5 class ="User__info__navbar"><%= link_to current_user.email, user_path(current_user.id) %></h5>
+      <%= link_to "DASHBOARD", user_path(current_user.id), class: "burger__menu__link__to__dashboard" %>
       <p><%= link_to "LOG OUT", destroy_user_session_path, data: {turbo_method: :delete} %></p>
     <% else %>
       <p><%= link_to "LOG IN", new_user_session_path %></p>

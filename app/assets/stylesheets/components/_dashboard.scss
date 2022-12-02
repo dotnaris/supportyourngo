@@ -23,9 +23,6 @@
   position: absolute;
   width: 60vw;
   left: 40vw;
-  // padding: 5vh 5vw;
-  // height: 100vh;
-  // min-width: 300px;
 }
 
 // set up for the left part of the dashboard //
@@ -44,15 +41,37 @@ span.contents__dashboard__links{
   margin-left: 10px;
 }
 
-.contents__dashboard__links a{
+// clickable links set up //
+
+a.contents__dashboard__links__outside::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
+}
+
+.contents__dashboard__to__outside__link{
+  position: relative;
+}
+
+// style to outside links //
+
+a.contents__dashboard__links{
   text-decoration: none;
   color: white;
+  padding-left: 10px;
 }
 
 .contents__dashboard__links__new__project a{
   font-weight: bold;
   padding-bottom: 3px;
 }
+
 
 // spacing for the left dashbaord contents //
 

@@ -11,7 +11,7 @@
     <%= link_to "Learn more about our project", { anchor: "home__bottom" }, class: "explore__link__banner" %>
   </div>
   <div class="banner__right">
-    <%= image_tag 'naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg', { class: "photo__banner" } %>
+    <%= image_tag 'mark-harpur-foydNaDU-Rg-unsplash.jpg', { class: "photo__banner" } %>
   </div>
 </div>
 <div class="home__mid">
@@ -35,7 +35,7 @@
     <%# Add this at the end of the link to loop and auto play ?autoplay=1&mute=1&loop=1&playlist=<%= video_id %>
     <iframe
             <% video_id = "Np9ChlVnNlY" %>
-            src="https://www.youtube.com/embed/<%= video_id %>"
+            src="https://www.youtube.com/embed/<%= video_id %>?autoplay=1&mute=1&loop=1&playlist=<%= video_id %>"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

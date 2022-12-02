@@ -16,10 +16,19 @@
       <p class="contents__dashboard"><i class="far fa-edit"></i> <span class="contents__dashboard__links">EDIT</span></p>
       <p class="contents__dashboard"><i class="fa-solid fa-file-invoice-dollar"></i> <span class="contents__dashboard__links">PAYEMNTS</span></p>
       <p class="contents__dashboard"><i class="fas fa-sign-out-alt"></i> <span class="contents__dashboard__links">LOGOUT</span></p>
-      <p class="contents__dashboard"><i class="fas fa-home"></i> <span class="contents__dashboard__links"><%= link_to "HOME", root_path %></span></p>
+      <p class="contents__dashboard contents__dashboard__to__outside__link">
+        <i class="fas fa-home"></i>
+        <%= link_to "HOME", root_path, class: "contents__dashboard__links
+                                               contents__dashboard__links__outside" %>
+      </p>
     </div>
     <div class="dashboard__left__bottom">
-      <p class="contents__dashboard"><i class="fa-solid fa-arrow-right"></i><span class="contents__dashboard__links contents__dashboard__links__new__project"><%= link_to "NEW PROJECT", new_project_path, class: "" %></span></p>
+      <p class="contents__dashboard contents__dashboard__to__outside__link">
+        <i class="fa-solid fa-arrow-right"></i>
+        <%= link_to "NEW PROJECT", new_project_path, class: "contents__dashboard__links
+                                                             contents__dashboard__links__outside
+                                                             contents__dashboard__links__new__project" %>
+      </p>
       <p class="contents__dashboard__email"><span class="contents__dashboard__links"><%= @user.email %></span></p>
     </div>
   </div>
