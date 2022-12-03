@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_28_152417) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_03_141957) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -47,6 +47,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_152417) do
     t.bigint "project_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "amount"
     t.index ["project_id"], name: "index_contributions_on_project_id"
     t.index ["user_id"], name: "index_contributions_on_user_id"
   end
@@ -137,6 +138,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_152417) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "pledges", force: :cascade do |t|
+    t.string "title"
+    t.string "reward"
+    t.string "description"
+    t.bigint "project_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_pledges_on_project_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -169,5 +180,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_152417) do
   add_foreign_key "pay_charges", "pay_subscriptions", column: "subscription_id"
   add_foreign_key "pay_payment_methods", "pay_customers", column: "customer_id"
   add_foreign_key "pay_subscriptions", "pay_customers", column: "customer_id"
+  add_foreign_key "pledges", "projects"
   add_foreign_key "projects", "users"
 end
