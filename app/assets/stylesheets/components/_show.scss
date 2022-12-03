@@ -98,13 +98,13 @@ div.price__section__bottom a{
   flex-flow: column;
   justify-content: space-between;
   width: 20vw;
+  min-width: 250px;
   border: solid 1px white;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: $ngo-shadow;
-  padding: 15px;
   margin: 0 auto;
   margin-top: 5vh;
-  height: 300px;
+  height: auto;
   position: relative;
   transition: 0.3s;
   &:hover{
@@ -129,6 +129,9 @@ div.price__section__bottom a{
 
 .contribution__your__amount{
   height: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .contribution__your__amount input{
@@ -141,6 +144,17 @@ div.price__section__bottom a{
 overflow-y: scroll;
 height: 200vh;
 width: 30vw;
+}
+
+.pledge__text{
+  padding: 10px;
+}
+
+// pledge photo //
+
+.pledge__photo{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 // story set up //

@@ -37,13 +37,13 @@
   height: 100vh;
 }
 
-span.contents__dashboard__links{
+span.dashboard__contents__links{
   margin-left: 10px;
 }
 
 // clickable links set up //
 
-a.contents__dashboard__links__outside::after{
+a.dashboard__contents__links__outside::after{
   position: absolute;
   top: 0;
   right: 0;
@@ -55,19 +55,19 @@ a.contents__dashboard__links__outside::after{
   background-color: transparent;
 }
 
-.contents__dashboard__to__outside__link{
+.dashboard__contents__to__outside__link{
   position: relative;
 }
 
 // style to outside links //
 
-a.contents__dashboard__links{
+a.dashboard__contents__links{
   text-decoration: none;
   color: white;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
-.contents__dashboard__links__new__project a{
+.dashboard__contents__links__new__project a{
   font-weight: bold;
   padding-bottom: 3px;
 }
@@ -75,7 +75,7 @@ a.contents__dashboard__links{
 
 // spacing for the left dashbaord contents //
 
-.contents__dashboard{
+.dashboard__contents{
   padding: 10px 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -87,6 +87,6 @@ a.contents__dashboard__links{
   }
 }
 
-p.contents__dashboard__email{
+p.dashboard__contents__email{
   color: $ngo-pink;
 }
