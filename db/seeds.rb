@@ -14,7 +14,6 @@ Project.destroy_all
 Contribution.destroy_all
 User.destroy_all
 
-
 users = []
 
 # rand_paragraph = 'The French government has recently passed a law that will help improve the lives of cats in the country. The new law requires that all cat owners spay or neuter their pets, and it also bans the declawing of cats. This is great news for animal welfare advocates, as it will help reduce the number of homeless cats in France. It will also help improve the overall health of the cat population, as spaying and neutering can help prevent certain health problems. If you love cats and want to help make a difference in their lives, there are a few things you can do. You can spread the word about this new law and encourage others to spay or neuter their own cats. You can also donate to organizations that are working to help improve the lives of cats in France. Every little bit helps!'
@@ -37,7 +36,18 @@ amounts = ["50", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "
   )
   user.save!
   users << user
+  puts "-------------------------"
+  puts "User_name: #{user.name}"
+  puts "User_email: #{user.email}"
+  puts "User_passwors: #{user.password}"
 end
+
+puts ""
+puts "********** Woo Foo!!               **********"
+puts "********** Users created ✔︎         **********"
+puts "**********      -  -               **********"
+puts ""
+sleep 3
 
 50.times do
   project = Project.new(
@@ -48,9 +58,18 @@ end
     paragraph_title: 'The French government has recently passed a law that will help improve the lives of cats in the country. The new law requires that all cat owners spay or neuter their pets, and it also bans the declawing of cats. This is great news for animal welfare advocates, as it will help reduce the number of homeless cats in France. It will also help improve the overall health of the cat population, as spaying and neutering can help prevent certain health problems. If you love cats and want to help make a difference in their lives, there are a few things you can do. You can spread the word about this new law and encourage others to spay or neuter their own cats. You can also donate to organizations that are working to help improve the lives of cats in France. Every little bit helps!'
   )
   project.save!
-  puts "Project_location: #{project.location}, Project_name: #{project.name}, and User_of_the_project: #{project.user.name}"
+  puts "-------------------------"
+  puts "Project_location: #{project.location}"
+  puts "Project_name: #{project.name}"
+  puts "User_of_the_project: #{project.user.name}"
 end
-puts "Projects created"
+
+puts ""
+puts "********** Woo Foo!!               **********"
+puts "********** Projects created ✔︎      **********"
+puts "**********      -  -               **********"
+puts ""
+sleep 3
 
 50.times do
   contribution = Contribution.new(
@@ -59,8 +78,18 @@ puts "Projects created"
     amount: amounts.sample
   )
   contribution.save!
-  puts "user_who_contributed: #{contribution.user.name}, Project_name: #{contribution.project.name}, and amount: #{contribution.amount}"
+  puts "-------------------------"
+  puts "user_who_contributed: #{contribution.user.name}"
+  puts "Project_name_of_the_contribution: #{contribution.project.name}"
+  puts "Amount_of_the_contribution: #{contribution.amount}"
 end
+
+puts ""
+puts "********** Woo Foo!!               **********"
+puts "********** contributions created ✔︎ **********"
+puts "**********      -  -               **********"
+puts ""
+sleep 3
 
 50.times do
   pledge = Pledge.new(
@@ -70,6 +99,15 @@ end
     project: Project.all.sample
   )
   pledge.save!
-  puts "Pledge_title: #{pledge.title}, Pledge_reward: #{pledge.reward}, Pledge_description: #{pledge.description},
-  and Pledge_title: #{pledge.project.name}"
+  puts "-------------------------"
+  puts "Pledge_title: #{pledge.title}"
+  puts "Pledge_reward: #{pledge.reward}"
+  puts "Pledge_description: #{pledge.description}"
+  puts "Project_of_the_pledge: #{pledge.project.name}"
 end
+
+puts ""
+puts "********** Woo Foo!!               **********"
+puts "********** pledges created ✔︎       **********"
+puts "**********      -  -               **********"
+puts ""
