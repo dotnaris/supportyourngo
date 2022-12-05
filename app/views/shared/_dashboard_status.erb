@@ -64,6 +64,32 @@
   </div>
   <div class="dashboard__contribution__section">
     <p class="dashboard__contribution__line">Here's an overview of your performance</p>
+      <% if @user.is_ngo == true %>
+        <div class="ceo__contribution">
+          <div class="ceo__contribution__photo__and__name__and__timer">
+            <div class="ceo__contribution__photo">
+              <% if user.photo.attached? %>
+                <%= cl_image_tag user.photo.key, class: "ceo__images" %>
+              <% else %>
+                <img class="ceo__images" src="https://images.pexels.com/photos/3643714/pexels-photo-3643714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+              <% end %>
+            </div>
+            <div class="ceo__contribution__name__and__timer">
+              <div class="ceo__contribution__name__and__timer__top">
+                <span>"replace with user.name" supported your project.</span>
+              </div>
+              <div class="ceo__contribution__name__and__timer__bottom">
+                <% if counter == 1 %>
+                  <div><span><%= counter %><%= unit %></span><span class="time__unit">ago</span></div>
+                <% else %>
+                  <div><span><%= counter %><%= unit %>s</span><span class="time__unit">ago</span></div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <span class="ceo_contribution_price">+ $<%= price %></span>
+        </div>
+      <% end %>
     <% 50.times do %>
       <% counter_if_first += 1 %>
       <% counter = counter * random_numbers.sample %>

@@ -7,17 +7,17 @@
         <%# <% if @project.photo.attached? %>
           <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <%# <% else %>
-          <img src="https://images.unsplash.com/photo-1490481920145-fc78891bbb99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
+          <img src="https://images.unsplash.com/photo-1495442358998-961b69f45703?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
         <%# <% end %>
       </div>
       <div class="price__section">
         <div class="price__section__details">
           <div>
-            <h4>€3,190,846</h4>
-            <p>pledged of €50,000 goal</p>
-            <h4>38</h4>
+            <h4>€3,190,846 (Ask TA how)</h4>
+            <p>pledged of amount</p>
+            <h4>38 (Ask TA how)</h4>
             <p>Contributions</p>
-            <h4>Jan 25th 2021</h4>
+            <h4>Jan 25th 2021 (Ask TA how)</h4>
             <p>date started</p>
           </div>
         </div>
@@ -30,22 +30,13 @@
     <div class="show__lower__side">
       <div class="story">
         <h2>Story</h2>
-        <img src="https://images.unsplash.com/photo-1526893381913-e311045b8064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" alt="" class="show__photo">
-        <h4>Help cats in France</h4>
-        <p>The French government has recently passed a law that will help improve the lives of cats in the country. The new law requires that all cat owners spay or neuter their pets, and it also bans the declawing of cats. This is great news for animal welfare advocates, as it will help reduce the number of homeless cats in France. It will also help improve the overall health of the cat population, as spaying and neutering can help prevent certain health problems. If you love cats and want to help make a difference in their lives, there are a few things you can do. You can spread the word about this new law and encourage others to spay or neuter their own cats. You can also donate to organizations that are working to help improve the lives of cats in France. Every little bit helps!</p>
-        <img src="https://images.unsplash.com/photo-1660707081729-ca7058bf18b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
-        <h4>Help cats</h4>
-        <p>There are many ways that you can help cats in France. One way is to donate to a local shelter or rescue organization. Another way is to volunteer your time at a shelter or rescue. There are also many opportunities to foster cats in France.</p>
-        <img src="https://images.unsplash.com/photo-1597843786186-826cc3489f56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" class="show__photo">
-        <h4>Cats in France</h4>
-        <p>There are an estimated 3 million stray cats in France. These animals often suffer from hunger, disease, and exposure to the elements. While there are many organizations devoted to helping these cats, they need all the support they can get.
-          <br>You can help the stray cats of France by donating to one of the many organizations working to help them, or by volunteering your time. Even something as simple as sharing information about these organizations can make a difference. Every little bit helps when it comes to helping these animals.</p>
-        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" alt="" class="show__photo">
-        <h4>Hungry cats</h4>
-        <p>There are an estimated 30,000 street cats in France, and many of them are hungry. Fortunately, there are a number of ways you can help feed these hungry felines.
-          <br>One way to help is by donating to organizations that provide food for street cats. One such organization is Chat du Quartier, which provides dry food and water to street cats in Paris. You can also volunteer to help feed the cats yourself.
-          <br>Another way to help is by adopting a street cat. This will not only provide the cat with a loving home, but it will also free up resources that can be used to help other street cats.
-          <br>If you're interested in helping street cats in France, there are a number of ways you can do so. Donate to organizations that provide food for them, volunteer to help feed them, or adopt one of them yourself. Every little bit helps, and your efforts will be greatly appreciated by these hungry felines.</p>
+        <% if @project.photo.attached? %>
+          <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
+        <% else %>
+          <img src="https://images.unsplash.com/photo-1490481920145-fc78891bbb99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
+        <% end %>
+        <h4><%= @project.paragraph_title %></h4>
+        <p><%= @project.description %></p>
       </div>
       <div class="contribution__cards">
         <div class="contribution__your__amount">
@@ -55,57 +46,22 @@
             <span>$</span>
             <input type="text" placeholder="10">
           </div>
-          <p>Support our project with an amout you would like to pay.</p>
+          <p>Support our project with an amout <br>you would like to pay.</p>
           </div>
         </div>
         <div class="contibution__fixed__box">
           <div class="contibution__fixed__box__card">
-            <img class="pledge__photo" src="https://images.pexels.com/photos/8013848/pexels-photo-8013848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <% if @project.photo.attached? %>
+              <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
+            <% else %>
+              <img class="pledge__photo" src="https://images.unsplash.com/photo-1596854236500-a0b80b17154e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" alt="">
+            <% end %>
             <div class="pledge__text">
-              <h4>$50 or more</h4>
+              <h4>$50 or more (Ask TA how)</h4>
               <h5>We buy cat 20 food</h5>
               <p>There are many ways that you can help cats in France. One way is to donate to a local shelter or rescue organization.</p>
               <ul>
-                <li>20x cat food</li>
-              </ul>
-              <p>8 contributions</p>
-            </div>
-            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
-          </div>
-          <div class="contibution__fixed__box__card">
-            <img class="pledge__photo" src="https://images.pexels.com/photos/8013848/pexels-photo-8013848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-            <div class="pledge__text">
-              <h4>$75 or more</h4>
-              <h5>We buy cat 20 food</h5>
-              <p>There are many ways that you can help cats in France. One way is to donate to a local shelter or rescue organization.</p>
-              <ul>
-                <li>30x cat food</li>
-              </ul>
-              <p>8 contributions</p>
-            </div>
-            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
-          </div>
-          <div class="contibution__fixed__box__card">
-            <img class="pledge__photo" src="https://images.pexels.com/photos/8013848/pexels-photo-8013848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-            <div class="pledge__text">
-              <h4>$100 or more</h4>
-              <h5>We buy cat 20 food</h5>
-              <p>There are many ways that you can help cats in France. One way is to donate to a local shelter or rescue organization.</p>
-              <ul>
-                <li>40x cat food</li>
-              </ul>
-              <p>8 contributions</p>
-            </div>
-            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
-          </div>
-          <div class="contibution__fixed__box__card">
-            <img class="pledge__photo" src="https://images.pexels.com/photos/8013848/pexels-photo-8013848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-            <div class="pledge__text">
-              <h4>$200 or more</h4>
-              <h5>We buy cat 20 food</h5>
-              <p>There are many ways that you can help cats in France. One way is to donate to a local shelter or rescue organization.</p>
-              <ul>
-                <li>80x cat food</li>
+                <li>20x cat food (Ask TA how)</li>
               </ul>
               <p>8 contributions</p>
             </div>
@@ -115,10 +71,4 @@
       </div>
     </div>
   </main>
-</div>
-<div class="sign-in">
-  <% if user_signed_in? %>
-    <%= link_to "Edit",  edit_project_path(@project.id) %>
-    <%= link_to "Delete", project_path(@project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{@project.name}?"} %>
-  <% end %>
 </div>

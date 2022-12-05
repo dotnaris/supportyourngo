@@ -5,6 +5,15 @@
     <%= f.error_notification %>
 
     <div class="form-inputs">
+      <%= f.input :name,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "name" }%>
+      <%= f.input :is_ngo?, as: :boolean, include_hidden: false %>
+      <%= f.input :location,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "location" }%>
       <%= f.input :email,
                   required: true,
                   autofocus: true,
