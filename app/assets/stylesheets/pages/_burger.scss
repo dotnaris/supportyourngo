@@ -16,15 +16,12 @@
 }
 
 .burger__menu__contents i{
+  font-size: 25px;
   position: absolute;
   color: $ngo-pink;
-  right: 5.5vw;
+  right: 5vw;
   top: 30px;
   cursor: pointer;
-}
-
-h5.User__info__navbar{
-  color: $ngo-pink !important;
 }
 
 div.burger__menu__contents p,
@@ -41,8 +38,12 @@ div.burger__menu__contents a{
   border-bottom: solid 1px $ngo-black;
   transition: 0.3s;
   padding-bottom: 5px;
-  &:hover{
+&:hover{
     transition: 0.3s;
     border-bottom: solid 1px $ngo-pink;
   }
+}
+
+a.burger__menu__link__to__dashboard{
+  color: $ngo-pink !important;
 }

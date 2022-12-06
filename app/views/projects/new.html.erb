@@ -4,6 +4,8 @@
   <%= simple_form_for(@project) do |c| %>
       <%= c.input :name %>
       <%= c.input :location %>
+      <%= c.input :paragraph_title %>
+      <%= c.input :description %>
       <%# <%= c.input :photo %>
       <%= c.submit %>
   <% end %>

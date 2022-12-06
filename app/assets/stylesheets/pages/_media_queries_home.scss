@@ -4,19 +4,20 @@
   // Changed from flex to block, the position of //
   // the photo and the texts have changed //
   .banner{
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   img.photo__banner{
-    background-position: center;
+    // background-position: bottom;
     object-fit: cover;
     width: 100vw;
-    height: 250px;
+    height: 50vh;
   }
 
   .banner__left h1{
     height: 260px;
-    width: 100%;
+    width: 700px;
     padding-left: 7%;
     font-weight: bold;
     font-size: 25px;
@@ -62,7 +63,7 @@
     margin-bottom: 5vh;
   }
 
-  .search input{
+  input.search__bar__nav{
     max-width: 400px;
     min-width: 400px;
   }
@@ -76,7 +77,7 @@
 
   // resizing the search bar //
 
-  .search___nav input{
+  input.search__bar__nav{
     max-width: 170px;
     min-width: 170px;
   }
@@ -170,6 +171,12 @@
     display: none;
   }
 
+  // category cards resizing //
+
+  .home__cards{
+    width: 100%;
+  }
+
   // footer to no flex //
   .footer__syn__right{
     display: block;
@@ -194,11 +201,18 @@
     height: auto;
   }
 
+  // resizing the banner copy //
+
+  .banner__left h1{
+    width: 500px;
+  }
+
+
   // in case if you want to change the positions //
 
-  changing the positions of the video and texts //
+  // changing the positions of the video and texts //
   div.home__video{
-    flex-direction: row;
+    flex-direction: column;
     display: block;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -247,9 +261,9 @@
     margin-bottom: 1vh;
   }
 
-  .search input{
-    max-width: 200px;
-    min-width: 200px;
+  input.search__bar__nav{
+    max-width: 30vw;
+    min-width: 30vw;
   }
 
   div.video__message.home__bottom__cards__message__line{
@@ -257,7 +271,13 @@
   }
 
   a.explore__link__banner{
-    font-size: 15px;
+    font-size: 15rem;
+  }
+
+  // resizing the banner copy //
+
+  .banner__left h1{
+    width: 90vw;
   }
 
   // adding less space for the search bar //
