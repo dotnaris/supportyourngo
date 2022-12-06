@@ -68,7 +68,7 @@
   </div>
   <div class="dashboard__contribution__section">
     <p class="dashboard__contribution__line">Here's an overview of your performance</p>
-      <% if @user.is_ngo == true %>
+      <% if @user.is_ngo %>
         <% @pledges.each do |pledge| %>
           <div class="ceo__contribution">
             <div class="ceo__contribution__photo__and__name__and__timer">

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @Pledges = Pledge.all
+    @pledges = Pledge.all
   end
 end
