@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.dashboard__remove{
+  display: none;
+}
+
 .dashboard__left{
   background-color: $ngo-dark-blue;
   color: white;
