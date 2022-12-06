@@ -16,13 +16,13 @@ const hideClassAnimal = ["home__card__description home__card__left__description 
 // Connects to data-controller="card"
 export default class extends Controller {
   static targets = ["environment", "education", "culture", "animal"]
-  connect() {
-    console.log("hello from card")
-    console.log(this.element.parentElement.parentElement.children[0].children[1])
-    console.log(this.element.parentElement.parentElement.children[0].children[2])
-    console.log(this.element.parentElement.parentElement.children[0].children[3])
-    console.log(this.element.parentElement.parentElement.children[0].children[4])
-  }
+  // connect() {
+  //   console.log("hello from card")
+  //   console.log(this.element.parentElement.parentElement.children[0].children[1])
+  //   console.log(this.element.parentElement.parentElement.children[0].children[2])
+  //   console.log(this.element.parentElement.parentElement.children[0].children[3])
+  //   console.log(this.element.parentElement.parentElement.children[0].children[4])
+  // }
 
   environment() {
     this.element.parentElement.parentElement.children[0].children[2].setAttribute('class', `${hideClassEducation}`)

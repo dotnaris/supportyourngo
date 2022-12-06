@@ -83,7 +83,7 @@ div.price__section__bottom a{
 .contribution__your__amount p,
 .contibution__fixed__box p{
   font-size: 15px;
-  color: rgb(70, 70, 70);
+  color: rgb(90, 90, 90);
 }
 
 .contibution__fixed__box li{
@@ -98,13 +98,13 @@ div.price__section__bottom a{
   flex-flow: column;
   justify-content: space-between;
   width: 20vw;
+  min-width: 250px;
   border: solid 1px white;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: $ngo-shadow;
-  padding: 15px;
   margin: 0 auto;
   margin-top: 5vh;
-  height: 300px;
+  height: auto;
   position: relative;
   transition: 0.3s;
   &:hover{
@@ -128,19 +128,40 @@ div.price__section__bottom a{
 }
 
 .contribution__your__amount{
-  height: 200px;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .contribution__your__amount input{
   width: 85%;
+  border: solid 1.5px rgb(90, 90, 90);
+  border-radius: 5px;
 }
 
 // fixed card design //
 
 .contribution__cards{
 overflow-y: scroll;
-height: 200vh;
+height:200vh;
 width: 30vw;
+padding: 3vh 0;
+}
+
+.pledge__text{
+  padding: 10px 20px;
+  height: auto;
+}
+
+// pledge photo //
+
+.pledge__photo{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  background-position: center;
 }
 
 // story set up //
@@ -153,6 +174,7 @@ width: 30vw;
 .story p{
   text-align: justify;
   margin-bottom: 5vh;
+  color: rgb(90, 90, 90);
 }
 
 .story h4{
@@ -160,6 +182,7 @@ width: 30vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
   border-left: solid 2px $ngo-pink;
+  font-weight: bold;
 }
 
 .story h2{

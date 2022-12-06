@@ -1,4 +1,8 @@
 .payment__dashboard{
   position: fixed;
-  z-index: 3;
+  z-index: 1;
+}
+
+.dashboard__payment__remove{
+  display: none;
 }
