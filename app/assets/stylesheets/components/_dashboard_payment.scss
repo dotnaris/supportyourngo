@@ -1,8 +1,12 @@
-.payment__dashboard{
-  position: fixed;
-  z-index: 1;
-}
+// .payment__dashboard{
+// }
 
 .dashboard__payment__remove{
   display: none;
+}
+
+.payment__dashboard__top h4{
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: solid 2px #e58272;
 }
