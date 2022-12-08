@@ -42,7 +42,9 @@ projects_name = ["Help our planet", "Plant a tree", "Help a child", "Make water 
 amounts = ["50", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11,600,00", "23,200,00", "46,400,00", "92,800,00", "185,600,00",
            "371,200,00", "742,400,00", "148,400,00", "384,00", "768,00", "1,536,00", "3,072,00", "6,144,00", "12,288,00", "24,576,00", "49,152,00", "98,304,00", "196,608,00", "393,216,00", "786,432,00", "1,572,864,00"]
 
-is_ngo = [ 0, 1 ]
+sample_prices = [10, 20, 30, 50, 100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600]
+
+           is_ngo = [ 0, 1 ]
 
 counter1 = 0
 counter2 = 0
@@ -55,6 +57,7 @@ counter4 = 0
   user = User.new(
     name: Faker::Name.name,
     email: Faker::Internet.email,
+    location: Faker::Address.country,
     password: "******",
     is_ngo: is_ngo.sample
   )
@@ -65,6 +68,7 @@ counter4 = 0
   puts "No. #{counter1}"
   puts "● User_name: #{user.name}"
   puts "● User_email: #{user.email}"
+  puts "● User_location: #{user.location}"
   puts "● User_passwors: #{user.password}"
   puts "● is_ngo: #{user.is_ngo}"
 end
@@ -104,6 +108,7 @@ sleep 3
     title: project.name,
     reward: project.paragraph_title,
     description: "Choose your pledge. (e.g 10 x cat food..)",
+    price: sample_prices.sample,
     project: project
   )
   pledge.save!
@@ -112,6 +117,7 @@ sleep 3
   puts "● Pledge_title: #{pledge.title}"
   puts "● Pledge_reward: #{pledge.reward}"
   puts "● Pledge_description: #{pledge.description}"
+  puts "● Pledge_price: #{pledge.price}"
   puts "● Project_ID_of_this_pledge: #{pledge.project.id}"
   sleep 0.01
 end
@@ -127,7 +133,7 @@ puts "**********      -  -                  **********"
 puts ""
 sleep 5
 
-50.times do
+5000.times do
   contribution = Contribution.new(
     user: users.sample,
     project: Project.all.sample,
@@ -140,12 +146,10 @@ sleep 5
   puts "● user_who_contributed: #{contribution.user.name}"
   puts "● Project_name_of_the_contribution: #{contribution.project.name}"
   puts "● Amount_of_the_contribution: #{contribution.amount}"
-
-  sleep 0.01
 end
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 50 Contributions created ✔︎ **********"
+puts "********** 5000 Contributions created ✔︎ **********"
 puts "************************************************"
 puts ""

@@ -1,0 +1,104 @@
+.dashboard__welcome{
+  height: auto;
+}
+
+.dashboard__welcom__detail_section__display{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+// color set up //
+
+.dashboard__welcome__card--pink{
+  color: $ngo-pink;
+}
+
+// hide the patial. Showen when cliking the links on the left //
+
+.dashboard__welcome__remove{
+  display: none;
+}
+
+.dashboard__welcome__top h4{
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: solid 2px #e58272;
+}
+
+// creating the same design (welcome card top) as other patials //
+
+.dashboard__welcom__detail_section{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  height: 120px;
+  max-height: auto;
+  // justify-content: space-evenly;
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 10px;
+  padding: 5px 20px;
+  box-shadow: $ngo-shadow;
+  transition: 0.3s;
+  &:hover{
+    background-color: #E0E6EB;
+    transition: 0.3s;
+  }
+}
+
+// sub message on the top //
+
+.dashboard__welcome__line{
+  color: grey;
+}
+
+// display set up for the right part of the card //
+
+.dashboard__welcome__card__top{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+
+// Edit text position //
+
+.dashboard__welcome__card__top__edit__text{
+  position: absolute;
+  right: 2vw;
+  bottom: 1.5vh;
+  text-decoration: none;
+  color: black;
+  &:hover{
+    color: $ngo-pink;
+  }
+}
+
+
+// creating the same design (welcome card bottom) as other patials //
+
+.dashboard__welcome__card__bottom{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  height: 120px;
+  max-height: auto;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #FCFCFD;
+  border-radius: 10px;
+  padding: 5px 20px;
+  box-shadow: $ngo-shadow;
+  transition: 0.3s;
+  background-image: url("bg-color.jpg");
+  &:hover{
+    background-color: #E0E6EB;
+    transition: 0.3s;
+  }
+}
+
+.dashboard__welcome__card__bottom__total{
+  font-weight: bold;
+  font-size: larger;
+}

@@ -1,0 +1,43 @@
+<%# Please be careful, flex-deriction reverse is applied b/w top and bottom %>
+<div class="dashboard__welcome
+            dashboard__welcome__top"
+            data-dashboard-target="welcome">
+  <h4>Welcome back</h4>
+  <p class="dashboard__contribution__line">Hey, here is your data!</p>
+  <div class="dashboard__welcom__detail_section__display">
+    <div class="dashboard__welcom__detail_section">
+      <%# <% if pledge.project.user.name.photo.attached? %>
+        <%# <%= cl_image_tag pledge.project.user.name.photo.key, class: "ceo__images" %>
+      <%# <% else %>
+        <img class="ceo__images" src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="">
+      <%# <% end %>
+      <div class="dashboard__welcome__card__top">
+        <span>NAME: <span class="dashboard__welcome__card--pink"><%= @user.name %></span></span>
+        <span>EMAIL: <span class="dashboard__welcome__card--pink"><%= @user.email %></span></span>
+        <% if @user.is_ngo %>
+          <span>Type: <span class="dashboard__welcome__card--pink">NGO</span></span>
+        <% else %>
+          <span>Type: <span class="dashboard__welcome__card--pink">COMPANY</span></span>
+        <% end %>
+      </div>
+      <span><%= link_to "Edit", root_path, class: "dashboard__welcome__card__top__edit__text" %></span>
+    </div>
+        <%# @pledge = Pledge.find_by(project_id: @project.id) %>
+    <% if @user.is_ngo %>
+      <div class="dashboard__welcome__card__bottom">
+      <%# <%= image_tag 'bg-color.png', { class: "" } %>
+        <% sum_of_contribution = [] %>
+        <% @pledges.each do |pledge| %>
+          <% if pledge.project.user.is_ngo != true %>
+            <% pledge.project.contributions.each do |contribution| %>
+              <% if pledge.project.user == contribution.user && contribution.amount != 0 %>
+                <% sum_of_contribution << contribution.amount %>
+              <% end %>
+            <% end %>
+          <% end %>
+        <% end %>
+        <span class="dashboard__welcome__card__bottom__total">You have been donated:</span><span class="dashboard__welcome__card__bottom__total">$ <%= sum_of_contribution.sum %></span>
+      </div>
+    <% end %>
+  </div>
+</div>

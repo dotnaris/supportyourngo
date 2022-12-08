@@ -12,6 +12,7 @@
                 >
           </form>
       </div>
+      <p class="dashboard__contents" data-action="click->dashboard#welcome"><i class="dashboard__icon fa-solid fa-house-user"></i> <span class="dashboard__contents__links">WELCOME</span></p>
       <p class="dashboard__contents" data-action="click->dashboard#status"><i class="dashboard__icon fas fa-tachometer-alt"></i> <span class="dashboard__contents__links">STATUS</span></p>
       <p class="dashboard__contents" data-action="click->dashboard#edit"><i class="dashboard__icon far fa-edit"></i> <span class="dashboard__contents__links">EDIT</span></p>
       <p class="dashboard__contents" data-action="click->dashboard#payment"><i class="dashboard__icon fa-solid fa-file-invoice-dollar"></i> <span class="dashboard__contents__links">PAYEMNTS</span></p>
@@ -29,19 +30,20 @@
                                                              dashboard__contents__links__new__project" %>
       </p>
       <p class="dashboard__contents dashboard__contents__to__outside__link">
-        <i class="fa-solid fa-person-running"></i>
+        <i class="dashboard__icon fa-solid fa-person-running"></i>
         <%= link_to "LOGOUT", destroy_user_session_path, data: {turbo_method: :delete}, class: "dashboard__contents__links dashboard__contents__links__outside" %>
       </p>
-      <p class="dashboard__contents__email">
-        <span class="dashboard__contents__links
-                     dashboard__contents__personal__info">
-        <%= @user.email %>
-        </span>
-      </p>
+      <%# <p class="dashboard__contents__email"> %>
+        <%# <span class="dashboard__contents__links %>
+                     <%# dashboard__contents__personal__info"> %>
+        <%# <%= @user.email %>
+        <%# </span> %>
+      <%# </p> %>
     </div>
   </div>
   <div class="dashboard__right">
     <div class=dashboard_partials>
+      <%= render "shared/dashboard_welcome" %>
       <%= render "shared/dashboard_status" %>
       <%= render "shared/dashboard_edit" %>
       <%= render "shared/dashboard_payment" %>
