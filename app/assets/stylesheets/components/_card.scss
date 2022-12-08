@@ -1,3 +1,5 @@
+
+
 .projects__list {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -44,7 +46,7 @@
 .projects__card img {
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  height: 50%;
+  height: 40%;
   background-position: center;
   object-fit: cover;
 }
@@ -53,8 +55,13 @@
   display: block;
   right: 0;
   padding: 10px 10px 10px 10px;
-  color: $ngo-light-blue;
+  color: $ngo-blue;
   text-decoration: none;
+}
+
+.projects__text strong {
+  font-weight: bold;
+  color: $ngo-blue;
 }
 
 .cameras__card p{

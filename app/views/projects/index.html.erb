@@ -1,20 +1,20 @@
 <header class="fix-spacing">
-  <h1>This is the overview of all projects or filtered by the search function a selected set of projects.</h1>
+  <h1>Your search </h1>
 </header>
 
 <main>
   <article class="projects__list">
     <% @projects.each do |project|  %>
       <div class="projects__card">
-        <% if project.photo.attached? %>
+        <%# <% if project.photo.attached? %>
           <%# <%= image_tag project.photo.key, width: 250, height: 250 %>
-          <img src="https://images.unsplash.com/photo-1571688144157-25db897a81ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8OTUxNzcwOXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" >
-        <% end %>
+          <%# <img src="https://images.unsplash.com/photo-1571688144157-25db897a81ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8OTUxNzcwOXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" > %>
+        <%# <% end %>
         <div class="projects__text">
           <%= link_to project.name, project_path(project.id), class: "card__link" %><br>
-          Location: <%= project.location %> <br>
-          NGO: <%= project.user.name %> <br>
-          Description: Text... <br>
+          <strong> Location: </strong><%= project.location %> <br>
+          <strong> NGO: </strong><%= project.user.name %> <br>
+          <strong> Description: </strong><%= project.description %><br>
         </div>
       </div>
     <% end %>
