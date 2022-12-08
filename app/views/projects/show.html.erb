@@ -13,11 +13,11 @@
       <div class="price__section">
         <div class="price__section__details">
           <div>
-            <h4>€3,190,846 (Ask TA how)</h4>
+            <h4>$ <%= @project.contributions.count * @pledge.price %></h4>
             <p>pledged of amount</p>
-            <h4>38 (Ask TA how)</h4>
+            <h4><%= @project.contributions.count %></h4>
             <p>Contributions</p>
-            <h4>Jan 25th 2021 (Ask TA how)</h4>
+            <h4><%= @project.created_at %></h4>
             <p>date started</p>
           </div>
         </div>
@@ -57,13 +57,16 @@
               <img class="pledge__photo" src="https://images.unsplash.com/photo-1596854236500-a0b80b17154e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" alt="">
             <% end %>
             <div class="pledge__text">
-              <h4>$50 or more (Ask TA how)</h4>
-              <h5><%= @pledge %></h5>
-              <p>There are many ways that you can help cats in France. One way is to donate to a local shelter or rescue organization.</p>
+              <h4>$ <%= @pledge.price %> or more</h4>
+              <h5><%= @pledge.title %></h5>
               <ul>
-                <li>20x cat food (Ask TA how)</li>
+                <li><%= @pledge.description %></li>
               </ul>
-              <p>8 contributions</p>
+              <% if @project.contributions.count == 1 %>
+                <p><%= @project.contributions.count %> person contributed</p>
+              <% else %>
+                <p><%= @project.contributions.count %> people contributed</p>
+              <% end %>
             </div>
             <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
           </div>

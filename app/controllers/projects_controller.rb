@@ -13,7 +13,8 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
-    @pledge = Pledge.where(project_id: @project.id)
+    @pledge = Pledge.find_by(project_id: @project.id)
+    # where = all !!!
   end
 
   def new
@@ -47,6 +48,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :location, :photo)
+    params.require(:project).permit(:name, :location, :Paragraph_title, :Description, :photo)
   end
 end

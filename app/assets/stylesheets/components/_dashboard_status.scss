@@ -2,13 +2,13 @@
 
 .dashboard_partials{
   position: relative;
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-left: 2vw;
 }
 
 .status__dashboard{
   position: relative;
-  margin-top: 5vh;
-  margin-right: 5vw;
-  margin-left: 2vw;
   z-index: 5;
 }
 
@@ -30,9 +30,9 @@
   font-size: 20px;
 }
 
-.status__dashboard__email{
-  color: $ngo-pink;
-}
+// .status__dashboard__email{
+//   color: $ngo-pink;
+// }
 
 // ceo photos //
 
@@ -57,7 +57,6 @@
   color: $ngo-pink;
   right: 2vw;
   bottom: 1.5vh;
-
 }
 
 .ceo__contribution{
