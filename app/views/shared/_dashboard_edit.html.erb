@@ -4,4 +4,32 @@
             data-dashboard-target="edit">
   <h4>Edit</h4>
   <p>This page will be reday soon!</p>
+  <% @user.projects.each do |project| %>
+    <div class="dashboard__welcome__and__edit__card__profile__section__projects">
+      <span>● <span class="dashboard__welcome__and__edit__card--green
+                           dashboard__edit__section__clickable"
+                           data-action="click->dashboard#editProjectInfo"><%= project.name %></span></span>
+      <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
+    </div>
+      <%= simple_form_for(project) do |c| %>
+        <div class="dashboard__edit__section__edit" data-dashboard-target="editProjectInfo">
+          <%= c.input :name %>
+          <%= c.input :location %>
+          <%= c.input :paragraph_title %>
+          <%= c.input :description, as: :text, input_html: {rows: 10}  %>
+          <%= c.submit %>
+        </div>
+      <% end %>
+      <%# <% @user.projects.each.each do |pledge| %>
+        <%# <% if pledge.project.user == current_user %>
+          <%# <%= simple_form_for(pledge) do |c| %>
+            <%# <%= c.input :title %>
+            <%# <%= c.input :reward %>
+            <%# <%= c.input :description %>
+            <%# <%= c.input :price %>
+            <%# <%= c.submit %>
+          <%# <% end %>
+        <%# <% end %>
+      <%# <% end %>
+<% end %>
 </div>

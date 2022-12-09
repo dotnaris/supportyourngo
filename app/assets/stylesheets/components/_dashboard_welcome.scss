@@ -5,8 +5,8 @@
 
 // color set up //
 
-.dashboard__welcome__card--pink{
-  color: $ngo-pink;
+.dashboard__welcome__and__edit__card--green{
+  color: $ngo-green;
   font-weight: bold;
 }
 
@@ -19,7 +19,7 @@
 .dashboard__welcome__top h4{
   margin: 10px 0;
   padding-left: 10px;
-  border-left: solid 2px #e58272;
+  border-left: solid 2px $ngo-green;
 }
 
 // creating the same design (welcome card top) as other patials //
@@ -28,35 +28,16 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  // margin: 10px 0;
-  // height: 120px;
-  // max-height: auto;
-  // justify-content: space-evenly;
   align-items: center;
-  // background-color: #FCFCFD;
-  // border-radius: 10px;
-  // padding: 5px 20px;
-  // box-shadow: $ngo-shadow;
-  // transition: 0.3s;
-  // &:hover{
-  //   background-color: #E0E6EB;
-  //   transition: 0.3s;
-  // }
 }
 
 .dashboard__welcom__detail_section__with__edit{
   margin: 10px 0;
   height: auto;
   max-height: auto;
-  background-color: #FCFCFD;
   border-radius: 10px;
   padding: 3vh 4vw;
   box-shadow: $ngo-shadow;
-  transition: 0.3s;
-  &:hover{
-    background-color: #E0E6EB;
-    transition: 0.3s;
-  }
 }
 
 // sub message on the top //
@@ -77,15 +58,15 @@
 
 .dashboard__welcome__card__profile__section__edit__text{
   position: absolute;
-  right: 2vw;
-  bottom: 1.5vh;
+  right: 0.5vw;
+  top: 0.1vh;
   text-decoration: none;
   color: black;
   transition: 0.3s;
   cursor: pointer;
   &:hover{
     transition: 0.3s;
-    color: $ngo-pink;
+    color: $ngo-green;
   }
 }
 
@@ -122,4 +103,25 @@
 
 .dashboard__welcome__card__profile__edit__section{
   display: none;
+}
+
+.dashboard__welcome__card__profile__edit__section__hide__and__show{
+  display: block;
+}
+
+.dashboard__welcome__and__edit__card__profile__section__projects{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dashboard__projects__delete a{
+  margin-left: 4vw;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  &:hover{
+    color: $ngo-green;
+    transition: 0.3s;
+  }
 }

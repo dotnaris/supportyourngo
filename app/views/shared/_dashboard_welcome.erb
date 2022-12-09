@@ -3,11 +3,11 @@
             data-dashboard-target="welcome">
   <h4>Welcome back</h4>
   <p class="dashboard__contribution__line">Hey, here is your data!</p>
-  <% if @user.is_ngo %>
       <div class="dashboard__welcome__card__total__section">
       <%# <%= image_tag 'bg-color.png', { class: "" } %>
         <% sum_of_contribution = [] %>
         <% @pledges.each do |pledge| %>
+          <%# user is a company %>
           <% if pledge.project.user.is_ngo != true %>
             <% pledge.project.contributions.each do |contribution| %>
               <% if pledge.project.user == contribution.user && contribution.amount != 0 %>
@@ -16,9 +16,12 @@
             <% end %>
           <% end %>
         <% end %>
-        <span class="dashboard__welcome__card__total__section__upper__text">You have been donated:</span><span class="dashboard__welcome__card__total__section__total">$ <%= sum_of_contribution.sum %></span>
+        <% if @user.is_ngo %>
+          <span class="dashboard__welcome__card__total__section__upper__text">You have been donated:</span><span class="dashboard__welcome__card__total__section__total">$ <%= sum_of_contribution.sum %></span>
+        <% else %>
+          <span class="dashboard__welcome__card__total__section__upper__text">Help NGOs you like!</span>
+        <% end %>
       </div>
-    <% end %>
     <div class="dashboard__welcom__detail_section__with__edit">
       <div class="dashboard__welcom__detail_section">
         <%# <% if pledge.project.user.name.photo.attached? %>
@@ -27,26 +30,28 @@
           <img class="ceo__images" src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="">
         <%# <% end %>
         <div class="dashboard__welcome__card__profile__section">
-          <span>NAME: <span class="dashboard__welcome__card--pink"><%= @user.name %></span></span>
-          <span>EMAIL: <span class="dashboard__welcome__card--pink"><%= @user.email %></span></span>
+          <span>NAME: <span class="dashboard__welcome__and__edit__card--green"><%= @user.name %></span></span>
+          <span>EMAIL: <span class="dashboard__welcome__and__edit__card--green"><%= @user.email %></span></span>
           <% if @user.is_ngo %>
-            <span>Type: <span class="dashboard__welcome__card--pink">NGO</span></span>
+            <span>Type: <span class="dashboard__welcome__and__edit__card--green">NGO</span></span>
             <% @user.projects.each do |project| %>
-              <span>Your Project: <span class="dashboard__welcome__card--pink"><%= project.name %></span></span>
+              <div class="dashboard__welcome__and__edit__card__profile__section__projects">
+                <span>Project: <span class="dashboard__welcome__and__edit__card--green"><%= project.name %></span></span>
+                <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
+              </div>
             <% end %>
           <% else %>
-            <span>Type: <span class="dashboard__welcome__card--pink">COMPANY</span></span>
+            <span>Type: <span class="dashboard__welcome__and__edit__card--green">COMPANY</span></span>
           <% end %>
         </div>
-        <span class= "dashboard__welcome__card__profile__section__edit__text">Edit</span>
+        <span class= "dashboard__welcome__card__profile__section__edit__text" data-action="click->dashboard#editUserInfo">Edit</span>
       </div>
-      <div class="dashboard__welcome__card__profile__edit__section">
-        <% if @user.is_ngo %>
-          <%= simple_form_for(@user) do |c| %>
-            <%= c.input :name %>
-            <%= c.input :location %>
-            <%= c.submit %>
-          <% end %>
+      <div class="dashboard__welcome__card__profile__edit__section" data-dashboard-target="editUserInfo">
+        <%= simple_form_for(@user) do |c| %>
+          <%= c.input :name %>
+          <%= c.input :location %>
+          <%= c.input :is_ngo %>
+          <%= c.submit %>
         <% end %>
       </div>
     </div>

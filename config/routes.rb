@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   # dashboard -> user show page
-  resources :users, only: [:show]
+  resources :users, only: [:show, :update]
 
   resources :contributions, only: [:index]
 end

@@ -1,7 +1,7 @@
 <main class="dashboard" data-controller="dashboard">
   <div class="dashboard__left">
     <div class="dashboard__left__top">
-      <div class="search__bar__bashboard search___dashboard">
+      <%# <div class="search__bar__bashboard search___dashboard">
           <form action="/projects" method="get">
           <input name="query"
                 type="text"
@@ -11,10 +11,13 @@
                 data-navbar-target="input"
                 >
           </form>
-      </div>
+      </div> %>
       <p class="dashboard__contents" data-action="click->dashboard#welcome"><i class="dashboard__icon fa-solid fa-house-user"></i> <span class="dashboard__contents__links">WELCOME</span></p>
-      <p class="dashboard__contents" data-action="click->dashboard#status"><i class="dashboard__icon fas fa-tachometer-alt"></i> <span class="dashboard__contents__links">STATUS</span></p>
-      <p class="dashboard__contents" data-action="click->dashboard#edit"><i class="dashboard__icon far fa-edit"></i> <span class="dashboard__contents__links">EDIT</span></p>
+      <% if @user.is_ngo %>
+        <p class="dashboard__contents" data-action="click->dashboard#status"><i class="dashboard__icon fas fa-tachometer-alt"></i> <span class="dashboard__contents__links">STATUS</span></p>
+        <p class="dashboard__contents" data-action="click->dashboard#edit"><i class="dashboard__icon far fa-edit"></i> <span class="dashboard__contents__links">PROJECTS</span></p>
+      <% end %>
+      <%# This "project name was originally called 'edit' Please look into edit function and patials if needed" %>
       <p class="dashboard__contents" data-action="click->dashboard#payment"><i class="dashboard__icon fa-solid fa-file-invoice-dollar"></i> <span class="dashboard__contents__links">PAYEMNTS</span></p>
       <p class="dashboard__contents dashboard__contents__to__outside__link">
         <i class="dashboard__icon fas fa-home"></i>
@@ -26,8 +29,8 @@
       <p class="dashboard__contents dashboard__contents__to__outside__link">
         <i class="dashboard__icon fa-solid fa-arrow-right"></i>
         <%= link_to "PROJECT", new_project_path, class: "dashboard__contents__links
-                                                             dashboard__contents__links__outside
-                                                             dashboard__contents__links__new__project" %>
+                                                         dashboard__contents__links__outside
+                                                         dashboard__contents__links__new__project" %>
       </p>
       <p class="dashboard__contents dashboard__contents__to__outside__link">
         <i class="dashboard__icon fa-solid fa-person-running"></i>

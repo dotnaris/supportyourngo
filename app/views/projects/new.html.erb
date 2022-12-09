@@ -5,7 +5,7 @@
       <%= c.input :name %>
       <%= c.input :location %>
       <%= c.input :paragraph_title %>
-      <%= c.input :description %>
+      <%= c.input :description, as: :text, input_html: {rows: 10}  %>
       <%# <%= c.input :photo %>
       <%= c.submit %>
   <% end %>
