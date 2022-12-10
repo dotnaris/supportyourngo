@@ -4,7 +4,7 @@ span.category{
   font-weight: bold;
   cursor: pointer;
   padding-bottom: 3px;
-  border-bottom: solid 2px $ngo-pink;
+  border-bottom: solid 2px $ngo-green;
 }
 
 // changing the position of the hidden category from the top onto the sceen //
@@ -51,7 +51,7 @@ a.category__text{
   transition: 0.3s;
   padding-bottom: 5px;
   &:hover{
-    border-bottom: solid 1px $ngo-pink;
+    border-bottom: solid 1px $ngo-green;
     transition: 0.3s;
   }
 }

@@ -29,7 +29,7 @@ div.price__section__bottom p{
   cursor: pointer;
   &:hover{
     box-shadow: $ngo-shadow;
-    color: $ngo-pink;
+    color: $ngo-green;
     transition: 0.3s;
   }
 }
@@ -181,7 +181,7 @@ padding: 3vh 0;
   padding-left: 30px;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  border-left: solid 2px $ngo-pink;
+  border-left: solid 2px $ngo-green;
   font-weight: bold;
 }
 

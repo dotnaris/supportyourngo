@@ -1,0 +1,11 @@
+<div class="fix-spacing">
+  <h1>create your pledge!</h1>
+  <%# <h1>This is the creation page for a new pledge which can only be accessed by an NGO user (is-ngo == true). The created pledge will not show up directly on the website but will have to go through an approval process by the admins of the page.</h1> %>
+  <%= simple_form_for([@project, @pledge]) do |c| %>
+      <%= c.input :title %>
+      <%= c.input :reward %>
+      <%= c.input :description %>
+      <%= c.input :price %>
+      <%= c.submit %>
+  <% end %>
+</div>

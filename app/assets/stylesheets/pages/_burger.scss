@@ -18,7 +18,7 @@
 .burger__menu__contents i{
   font-size: 25px;
   position: absolute;
-  color: $ngo-pink;
+  color: $ngo-green;
   right: 5vw;
   top: 30px;
   cursor: pointer;
@@ -40,10 +40,10 @@ div.burger__menu__contents a{
   padding-bottom: 5px;
 &:hover{
     transition: 0.3s;
-    border-bottom: solid 1px $ngo-pink;
+    border-bottom: solid 1px $ngo-green;
   }
 }
 
 a.burger__menu__link__to__dashboard{
-  color: $ngo-pink !important;
+  color: $ngo-green !important;
 }
