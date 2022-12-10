@@ -82,11 +82,12 @@
   max-height: auto;
   justify-content: center;
   align-items: flex-end;
-  background-color: #FCFCFD;
   border-radius: 10px;
   padding: 5px 20px;
   box-shadow: $ngo-shadow;
-  background-image: url("bg-color.jpg");
+  // background-image: url("bg-color.jpg");
+  background-color: $ngo-blue;
+  color: white;
 }
 
 .dashboard__welcome__card__total__section__upper__text{

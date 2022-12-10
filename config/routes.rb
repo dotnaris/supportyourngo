@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :projects do
     # resources :contributions, only: [:new, :show, :create, :edit, :update, :destroy]
+    resources :pledges, only: [:new, :create]
   end
+
+  resources :pledge, only: [:edit, :update]
 
   # dashboard -> user show page
   resources :users, only: [:show, :update]

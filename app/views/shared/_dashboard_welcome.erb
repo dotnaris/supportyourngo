@@ -33,11 +33,11 @@
           <span>NAME: <span class="dashboard__welcome__and__edit__card--green"><%= @user.name %></span></span>
           <span>EMAIL: <span class="dashboard__welcome__and__edit__card--green"><%= @user.email %></span></span>
           <% if @user.is_ngo %>
-            <span>Type: <span class="dashboard__welcome__and__edit__card--green">NGO</span></span>
+            <span>TYPE: <span class="dashboard__welcome__and__edit__card--green">NGO</span></span>
             <% @user.projects.each do |project| %>
               <div class="dashboard__welcome__and__edit__card__profile__section__projects">
-                <span>Project: <span class="dashboard__welcome__and__edit__card--green"><%= project.name %></span></span>
-                <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
+                <span>PROJECT: <span class="dashboard__welcome__and__edit__card--green"><%= project.name %></span></span>
+                <%# <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
               </div>
             <% end %>
           <% else %>
@@ -50,7 +50,7 @@
         <%= simple_form_for(@user) do |c| %>
           <%= c.input :name %>
           <%= c.input :location %>
-          <%= c.input :is_ngo %>
+          <%# <%= c.input :is_ngo %>
           <%= c.submit %>
         <% end %>
       </div>
