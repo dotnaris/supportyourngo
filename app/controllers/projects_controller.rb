@@ -45,6 +45,7 @@ class ProjectsController < ApplicationController
   def destroy
     project = Project.find(params[:id])
     project.destroy
+    redirect_to user_path(current_user.id), notice: "Your successfully deleted the project!"
   end
 
   private
