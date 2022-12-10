@@ -15,8 +15,11 @@ class ContributionsController < ApplicationController
 
   def create
     @contribution = Contribution.new(contribution_params)
+    @project = Project.find(params[:project_id])
+    @contribution.project = @project
+    @contribution.user = current_user
     if @contribution.save
-      redirect_to project_contribution_path, notice: "You have successfully contributed to this project!"
+      redirect_to project_contribution_path(@project, @contribution), notice: "You have successfully contributed to this project!"
     else
       render :new, status: :unprocessable_entity
     end
