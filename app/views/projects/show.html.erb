@@ -7,18 +7,27 @@
         <%# <% if @project.photo.attached? %>
           <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <%# <% else %>
-          <img src="https://images.unsplash.com/photo-1495442358998-961b69f45703?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
+          <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
         <%# <% end %>
       </div>
       <div class="price__section">
         <div class="price__section__details">
           <div>
-            <h4>$ <%= @project.contributions.count * @pledge.price %></h4>
-            <p>pledged of amount</p>
-            <h4><%= @project.contributions.count %></h4>
-            <p>Contributions</p>
-            <h4><%= @project.created_at.to_date %></h4>
-            <p>date started</p>
+            <% if @pledge %>
+              <h4>$ <%= @project.contributions.count * @pledge.price %></h4>
+              <p>pledged of amount</p>
+              <h4><%= @project.contributions.count %></h4>
+              <p>Contributions</p>
+              <h4><%= @project.created_at %></h4>
+              <p>date started</p>
+            <% else %>
+              <h4>$80,161</h4>
+              <p>pledged of amount</p>
+              <h4>1,396</h4>
+              <p>Contributions</p>
+              <h4>13</h4>
+              <p>date started</p>
+            <% end %>
           </div>
         </div>
         <div class="price__section__bottom">
@@ -30,11 +39,11 @@
     <div class="show__lower__side">
       <div class="story">
         <h2>Story</h2>
-        <%# <% if @project.photo.attached? %>
-          <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
-        <%# <% else %>
-          <img src="https://images.unsplash.com/photo-1490481920145-fc78891bbb99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
-        <%# <% end %>
+        <% if @project.photo.attached? %>
+          <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
+        <% else %>
+          <img src="https://images.unsplash.com/photo-1654727317152-b8178b6083ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1401&q=80" alt="" class="show__photo">
+        <% end %>
         <h4><%= @project.paragraph_title %></h4>
         <p><%= @project.description %></p>
       </div>
@@ -51,17 +60,25 @@
         </div>
         <div class="contibution__fixed__box">
           <div class="contibution__fixed__box__card">
-            <%# <% if @project.photo.attached? %>
-              <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
-            <%# <% else %>
-              <img class="pledge__photo" src="https://images.unsplash.com/photo-1596854236500-a0b80b17154e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" alt="">
-            <%# <% end %>
+            <% if @project.photo.attached? %>
+              <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
+            <% else %>
+              <img class="pledge__photo" src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="">
+            <% end %>
             <div class="pledge__text">
-              <h4>$ <%= @pledge.price %> or more</h4>
-              <h5><%= @pledge.title %></h5>
-              <ul>
-                <li><%= @pledge.description %></li>
-              </ul>
+              <% if @pledge %>
+                <h4>$ <%= @pledge.price %> or more</h4>
+                <h5><%= @pledge.title %></h5>
+                <ul>
+                  <li><%= @pledge.description %></li>
+                </ul>
+              <% else %>
+                <h4>$ 100 or more</h4>
+                <h5>Add your title</h5>
+                <ul>
+                  <li>Add your description</li>
+                </ul>
+              <% end %>
               <% if @project.contributions.count == 1 %>
                 <p><%= @project.contributions.count %> person contributed</p>
               <% else %>

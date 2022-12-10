@@ -8,5 +8,47 @@
 .dashboard__edit__top h4{
   margin: 10px 0;
   padding-left: 10px;
-  border-left: solid 2px #e58272;
+  border-left: solid 2px $ngo-green;
 }
+
+// Creating a same card design //
+
+.dashboard__edit__section__edit{
+  margin: 30px 0;
+  height: auto;
+  max-height: auto;
+  border-radius: 10px;
+  padding: 3vh 4vw;
+  box-shadow: $ngo-shadow;
+}
+
+// making the project name clickable
+
+.dashboard__edit__section__clickable{
+  cursor: pointer;
+  font-size: larger;
+  color: black !important;
+  transition: 0.3s;
+  padding-bottom: 3px;
+  &:hover{
+    color: $ngo-green !important;
+    transition: 0.3s;
+  }
+}
+
+// font size change - pledge //
+
+.dashboard__welcome__and__edit__card__profile__section__projects__pledge{
+  font-size: larger;
+  font-weight: bold;
+}
+
+// // this is used to hide and show the cards //
+
+// .test__ds{
+//   display: block;
+// }
+
+// .dashboard__edit__section__edit__hide__and__show{
+//   display: none;
+// }
