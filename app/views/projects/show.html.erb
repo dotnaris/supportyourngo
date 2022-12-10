@@ -85,7 +85,7 @@
                 <p><%= @project.contributions.count %> people contributed</p>
               <% end %>
             </div>
-            <%= link_to "", root_path, class: "show__home__bottom__right__card__link" %>
+            <%= link_to "", new_project_contribution_path(@project.id), class: "show__home__bottom__right__card__link" %>
           </div>
         </div>
       </div>
