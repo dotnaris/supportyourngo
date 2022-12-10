@@ -1,8 +1,8 @@
 <div class="fix-spacing">
-  <h1>Contribute now to the </h1>
+  <h1>Donate now to <%= @project.name %></h1>
   <%# <h1>This is the creation page for a new project which can only be accessed by an NGO user (is-ngo == true). The created project will not show up directly on the website but will have to go through an approval process by the admins of the page.</h1> %>
-  <%= simple_form_for(@contribution) do |c| %>
-      <%= c.input :name, input_html: {id: "contributor_name", value: params[:q]} %>
+  <%= simple_form_for [@project, @contribution] do |c| %>
+      <%# <%= c.input :name, input_html: {id: "contributor_name", value: params[:current_user.name]} %>
       <%= c.input :amount %>
       <%= c.submit %>
   <% end %>
