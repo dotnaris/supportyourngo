@@ -11,6 +11,7 @@ class ContributionsController < ApplicationController
   def new
     @project = Project.find(params[:project_id])
     @contribution = Contribution.new
+    @project = Project.find(params[:project_id])
   end
 
   def create
@@ -37,7 +38,6 @@ class ContributionsController < ApplicationController
   private
 
   def contribution_params
-    params.require(:contribution).permit(:amount)
+    params.require(:contribution).permit(:name, :amount)
   end
-
 end
