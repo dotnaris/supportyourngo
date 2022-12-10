@@ -1,3 +1,5 @@
+
+
 .projects__list {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -29,24 +31,43 @@
 .projects__card {
   height: 300px;
   width: 300px;
-  background-color: $ngo-light-blue;
-  color: $ngo-blue;
+  background-color: white;
+  color: white;
   border-radius: 5px;
   margin: auto;
   position: relative;
-  border: $ngo-blue;
+  border-color: $ngo-blue;
   box-shadow: $shadow-lg;
   margin-left: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.projects__card img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 40%;
+  background-position: center;
+  object-fit: cover;
+}
+
 .projects__text {
   display: block;
   right: 0;
   padding: 10px 10px 10px 10px;
-  color: white;
+  color: $ngo-blue;
   text-decoration: none;
+}
+
+.projects__text strong {
+  font-weight: bold;
+  color: $ngo-blue;
+}
+
+.cameras__card p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
 }
 
 .card__link::after {
@@ -59,4 +80,25 @@
   pointer-events: auto;
   content: "";
   background-color: transparent;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .cameras__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .cameras__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .cameras__list {
+    grid-template-columns: 1fr;
+  }
 }

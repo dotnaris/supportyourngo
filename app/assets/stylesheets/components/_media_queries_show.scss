@@ -16,16 +16,11 @@
     width: 80vw;
   }
 
-  .contribution__your__amount{
-    width: 230px;
-    min-width: 230px;
-    height: 150px;
-    margin-right: 5vw;
-  }
-
+  .contribution__your__amount,
   .contibution__fixed__box__card{
     width: 230px;
-    height: auto;
+    min-width: 200px;
+    height: 300px;
     margin-right: 5vw;
   }
 
@@ -61,16 +56,9 @@
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    height:auto;
+    height: 50vh;
     margin: 0 auto;
     width: 80vw;
-    margin-bottom: 10vh;
-    padding-bottom: 3vh;
-  }
-
-  .pledge__photo{
-    height: 140px;
-    min-height: 140px;
   }
 
   .contibution__fixed__box{

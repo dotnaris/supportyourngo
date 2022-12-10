@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :projects do
-    # resources :contributions, only: [:new, :show, :create, :edit, :update, :destroy]
     resources :pledges, only: [:new, :create]
+    resources :contributions, only: [:new, :show, :create, :edit, :update, :destroy]
   end
 
-  resources :pledge, only: [:edit, :update]
+  resources :pledges, only: [:edit, :update]
 
   # dashboard -> user show page
   resources :users, only: [:show, :update]
