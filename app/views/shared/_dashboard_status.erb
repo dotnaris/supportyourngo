@@ -64,7 +64,7 @@
 
 <div class="status__dashboard dashboard__remove" data-dashboard-target="status">
   <div class="status__dashboard__top">
-    <h4>Your contributors</h4>
+    <h4>YOUR CONTRIBUTORS</h4>
   </div>
   <div class="dashboard__contribution__section">
     <p class="dashboard__contribution__line">Here's an overview of your performance</p>
@@ -72,6 +72,7 @@
         <%# - If users are not ngo owners %>
         <%# - Find contributions  %>
         <%# - The user needs to be the same user who payed money %>
+        <%# - Numbers might not be the same as seed file adds contribution to ngos as well.. %>
         <% @pledges.each do |pledge| %>
           <% if pledge.project.user.is_ngo != true %>
             <% pledge.project.contributions.each do |contribution| %>

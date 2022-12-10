@@ -2,6 +2,24 @@
             dashboard__payment__remove
             payment__dashboard__top"
             data-dashboard-target="payment">
-  <h4>Payment</h4>
-  <p>This page will be reday soon!</p>
+  <h4>PAYMENT</h4>
+  <p class="dashboard__edit__line">Amount you have donated!</p>
+  <%# /// Those who have payed to your(NGO's owners) project/// %>
+    <% @user.contributions.each do |contribution| %>
+  <div class="dashboard__payments__cards">
+    <span>You have spend <span class="dashboard__payments__cards__amount__spent">$<%= contribution.amount %></span> to:</span>
+    <span class="dashboard__payments__cards__projects__names">"<%= contribution.project.name %>"</span>
+  </div>
+    <% end %>
+
 </div>
+
+
+
+<%# /// Those who have payed to your(NGO's owners) project/// %>
+<%# Again, the number might not be the same compare to the status partial (Ngos' payments are included)  %>
+
+  <%# <%= @user.project_contributions.count %>
+  <%# <% @user.project_contributions.each do |contribution| %>
+    <%# <p><%= contribution.amount %>
+  <%# <% end %>

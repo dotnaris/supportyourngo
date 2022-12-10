@@ -9,6 +9,7 @@ class User < ApplicationRecord
 
   has_many :contributions
   has_many :projects
+  has_many :project_contributions, through: :projects, foreign_key: "project_id", source: :contributions
 
   # def stripe_attributes(pay_customer)
   #   {
