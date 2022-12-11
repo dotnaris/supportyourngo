@@ -14,32 +14,46 @@
   margin-right: 5vw;
 }
 
-// editing upper part of show //
+// clickabale link to contribution new (support this project) //
 
-div.price__section__bottom p{
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  background-color: $ngo-blue;
+i.price__section__bottom__text__check{
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  white-space: nowrap;
   transition: 0.3s;
-  cursor: pointer;
+}
+
+.price__section__bottom{
+  background-color: $ngo-blue;
+  width: 250px;
+  padding: 5px 10px;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  border-radius: 5px;
+  white-space: nowrap
+}
+
+.price__section__bottom__text{
+  text-decoration: none;
+  color: white;
   &:hover{
-    box-shadow: $ngo-shadow;
     color: $ngo-green;
     transition: 0.3s;
   }
 }
 
-div.price__section__bottom a{
-  text-decoration: none;
-  color: white;
-  margin-right: 10px;
+.price__section__bottom__text::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
 }
 
+// show upper //
 
 .show__upper__side{
   display: flex;

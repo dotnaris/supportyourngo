@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="price__section__bottom">
-          <p><%= link_to "Support this project" %><i class="fas fa-check"></i></p>
+          <span><%= link_to "Support this project", new_project_contribution_path(@project.id), class: "price__section__bottom__text" %> <i class="price__section__bottom__text__check fas fa-check"></i></span>
         </div>
       </div>
     </div>
