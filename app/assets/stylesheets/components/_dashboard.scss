@@ -94,3 +94,17 @@ a.dashboard__contents__links{
 p.dashboard__contents__email{
   color: $ngo-green;
 }
+
+// dashboard links to projects and contribution show //
+
+.dashboard__links__to__projects__and__contribution__show{
+  text-decoration: none;
+  color: $ngo-green;
+  border-bottom: solid 2px $ngo-green;
+  transition: 0.2s;
+  &:hover{
+    color: $ngo-blue;
+    border-bottom: solid 2px $ngo-blue;
+    transition: 0.2s;
+  }
+}

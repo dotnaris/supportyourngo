@@ -36,7 +36,7 @@
             <span>TYPE: <span class="dashboard__welcome__and__edit__card--green">NGO</span></span>
             <% @user.projects.each do |project| %>
               <div class="dashboard__welcome__and__edit__card__profile__section__projects">
-                <span>PROJECT: <span class="dashboard__welcome__and__edit__card--green"><%= project.name %></span></span>
+                <span>PROJECT: <span class="dashboard__welcome__and__edit__card--green"><%= link_to "#{project.name}", project_path(project.id), class: "dashboard__links__to__projects__and__contribution__show" %></span></span>
                 <%# <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
               </div>
             <% end %>
