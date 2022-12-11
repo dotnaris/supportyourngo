@@ -1,0 +1,39 @@
+.contibution__show__fixed__box__card{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 20vw;
+  min-width: 250px;
+  border: solid 1px white;
+  border-radius: 10px;
+  box-shadow: $ngo-shadow;
+  margin: 1vh auto;
+  margin-top: 5vh;
+  height: auto;
+  position: relative;
+  transition: 0.3s;
+  &:hover{
+    box-shadow: $ngo-dark-shadow;
+    transition: 0.3s;
+  }
+}
+
+.contibution__show__pledge__photo{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.contibution__show__pledge__text{
+  padding: 10px 20px;
+  height: auto;
+}
+
+// change the position of the card and p tag //
+
+.contibution__show{
+  display: flex;
+  align-items: center;
+}
