@@ -53,7 +53,7 @@ counter4 = 0
 
 ################################################################################
 
-50.times do
+30.times do
   user = User.new(
     name: Faker::Name.name,
     email: Faker::Internet.email,
@@ -75,7 +75,7 @@ end
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 50 Users created ✔︎         **********"
+puts "********** 30 Users created ✔︎         **********"
 puts "**********      -  -                  **********"
 puts ""
 sleep 3
@@ -109,7 +109,7 @@ sleep 3
     reward: project.paragraph_title,
     description: "Choose your pledge. (e.g 10 x cat food..)",
     price: sample_prices.sample,
-    project: project
+    project_id: project.id
   )
   pledge.save!
   counter4 += 1
@@ -119,7 +119,7 @@ sleep 3
   puts "● Pledge_description: #{pledge.description}"
   puts "● Pledge_price: #{pledge.price}"
   puts "● Project_ID_of_this_pledge: #{pledge.project.id}"
-  sleep 0.01
+  sleep 0.001
 end
 puts ""
 puts "========================="
@@ -131,7 +131,7 @@ puts "**********      -  -                  **********"
 puts "********** And 50 Pledges created ✔︎   **********"
 puts "**********      -  -                  **********"
 puts ""
-sleep 5
+sleep 3
 
 1000.times do
   contribution = Contribution.new(
