@@ -6,15 +6,9 @@
       <div class="dashboard__welcome__card__total__section">
       <%# <%= image_tag 'bg-color.png', { class: "" } %>
         <% sum_of_contribution = [] %>
-        <% @pledges.each do |pledge| %>
+        <% @user.project_contributions.each do |contribution| %>
           <%# user is a company %>
-          <% if pledge.project.user.is_ngo != true %>
-            <% pledge.project.contributions.each do |contribution| %>
-              <% if pledge.project.user == contribution.user && contribution.amount != 0 %>
-                <% sum_of_contribution << contribution.amount %>
-              <% end %>
-            <% end %>
-          <% end %>
+          <% sum_of_contribution << contribution.amount %>
         <% end %>
         <% if @user.is_ngo %>
           <span class="dashboard__welcome__card__total__section__upper__text">You have been donated:</span><span class="dashboard__welcome__card__total__section__total">$ <%= sum_of_contribution.sum %></span>

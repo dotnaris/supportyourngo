@@ -133,7 +133,7 @@ puts "**********      -  -                  **********"
 puts ""
 sleep 5
 
-2500.times do
+1000.times do
   contribution = Contribution.new(
     user: users.sample,
     project: Project.all.sample,
@@ -150,6 +150,6 @@ end
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 2500 Contributions created ✔︎ **********"
+puts "********** 1000 Contributions created ✔︎ **********"
 puts "************************************************"
 puts ""
