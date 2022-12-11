@@ -53,11 +53,13 @@
 }
 
 a.contibution__show__detail__and__dashboard{
+  text-decoration: none;
   color: $ngo-green;
+  border-bottom: solid 2px $ngo-green;
   transition: 0.2s;
   &:hover{
-    color: $ngo-dark-blue;
-    border-bottom: solid 1px $ngo-dark-blue;
+    color: $ngo-blue;
+    border-bottom: solid 2px $ngo-blue;
     transition: 0.2s;
   }
 }

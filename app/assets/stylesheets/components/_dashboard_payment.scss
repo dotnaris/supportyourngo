@@ -20,7 +20,7 @@
   align-items: center;
   background-color: #FCFCFD;
   border-radius: 10px;
-  padding: 15px 25px;
+  padding: 15px 15px 15px 25px;
   box-shadow: $ngo-shadow;
   transition: 0.3s;
   margin: 20px 0;
@@ -36,6 +36,8 @@
 .dashboard__payments__cards__projects__names{
   color: $ngo-green;
   font-weight: bold;
+  margin-left: 10vw;
+  white-space: nowrap;
 }
 
 .dashboard__payments__cards__amount__spent{

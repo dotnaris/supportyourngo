@@ -23,6 +23,15 @@
   .dashboard__contents__personal__info{
     display: none;
   }
+
+  // payments texts' position //
+
+  .dashboard__payments__cards{
+    flex-direction: column;
+  }
+  .dashboard__payments__cards__projects__names{
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 540px) {
