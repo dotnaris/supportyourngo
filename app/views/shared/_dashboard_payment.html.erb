@@ -5,7 +5,7 @@
   <h4>PAYMENT</h4>
   <p class="dashboard__edit__line">Amount you have donated!</p>
   <%# /// Those who have payed to your(NGO's owners) project/// %>
-    <% @user.contributions.each do |contribution| %>
+    <% @user.contributions.reverse_each do |contribution| %>
   <div class="dashboard__payments__cards">
     <span>You have spend <span class="dashboard__payments__cards__amount__spent">$<%= contribution.amount %></span> to:</span>
     <span class="dashboard__payments__cards__projects__names">"<%= contribution.project.name %>"</span>

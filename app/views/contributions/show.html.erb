@@ -31,9 +31,12 @@
         <%# <% end %>
       </div>
     </div>
-    <div class="contibution__show__thankyou__message">
-      <h4>Thank you for your support!</h4>
-      <p>Donation for <%= @contribution.project.name %> Amount: $<%= @contribution.amount %></p>
+    <div class="contibution__show__right">
+      <div class="contibution__show__thankyou__message">
+        <h4>THANK YOU FOR YOUR SUPPORT!</h4>
+      </div>
+      <p>Donation for <span class="contibution__show__detail__and__dashboard"><%= @contribution.project.name %></span> Amount: $<span class="contibution__show__detail__and__dashboard"><%= @contribution.amount %></span>.</p>
+      <p>Visit your <%= link_to "DASHBOARD", user_path(current_user.id), class: "contibution__show__detail__and__dashboard" %>.</p>
     </div>
   </div>
 </div>

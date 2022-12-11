@@ -7,7 +7,7 @@
   border: solid 1px white;
   border-radius: 10px;
   box-shadow: $ngo-shadow;
-  margin: 1vh auto;
+  margin: 1vh 15vw;
   margin-top: 5vh;
   height: auto;
   position: relative;
@@ -36,4 +36,34 @@
 .contibution__show{
   display: flex;
   align-items: center;
+}
+
+// text style set up //
+
+
+.contibution__show__thankyou__message{
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: solid 2px $ngo-green;
+}
+
+.contibution__show__detail__and__dashboard{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.contibution__show__detail__and__dashboard{
+  color: $ngo-green;
+  transition: 0.2s;
+  &:hover{
+    color: $ngo-dark-blue;
+    border-bottom: solid 1px $ngo-dark-blue;
+    transition: 0.2s;
+  }
+}
+
+// add some space on the right //
+
+.contibution__show__right{
+  margin-right: 5vw;
 }
