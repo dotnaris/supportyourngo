@@ -1,35 +1,20 @@
 <div class="fix-spacing">
   <div class="contibution__show">
     <div class="contibution__show__fixed__box__card">
-      <%# <% if @project.photo.attached? %>
-        <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
-      <%# <% else %>
-        <img class="contibution__show__pledge__photo" src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="">
-      <%# <% end %>
-      <div class="contibution__show__pledge__text">
-        <% if @pledge %>
-          <h4>$ <%= @pledge.price %> or more</h4>
-          <h5><%= @pledge.title %></h5>
-          <ul>
-            <li><%= @pledge.description %></li>
-          </ul>
-        <% else %>
-          <h4>$ 100 or more</h4>
-          <h5>Add your title</h5>
-          <ul>
-            <li>Add your description</li>
-          </ul>
-        <% end %>
-        <%# <% if @project.contributions.count == 1 %>
-          <%# <p><%= @project.contributions.count %>
-            <%# person contributed %>
-          <%# </p> %>
+      <% @contribution.project.pledges.each do |pledge| %>
+        <%# <% if @project.photo.attached? %>
+          <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <%# <% else %>
-          <%# <p><%= @project.contributions.count %>
-            <%# people contributed %>
-          <%# </p> %>
+          <img class="contibution__show__pledge__photo" src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="">
         <%# <% end %>
-      </div>
+        <div class="contibution__show__pledge__text">
+          <h4>$ <%= pledge.price %> or more</h4>
+          <h5><%= pledge.title %></h5>
+          <ul>
+            <li><%= pledge.description %></li>
+          </ul>
+        </div>
+      <% end %>
     </div>
     <div class="contibution__show__right">
       <div class="contibution__show__thankyou__message">

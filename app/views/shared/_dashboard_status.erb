@@ -81,7 +81,7 @@
             </div>
             <div class="ceo__contribution__name__and__timer">
               <div class="ceo__contribution__name__and__timer__top">
-                <span><%= contribution.user.name %> supported your project <%= link_to "#{contribution.project.name}", project_path(contribution.project.id), class: "dashboard__links__to__projects__and__contribution__show" %>.</span>
+                <span><%= contribution.user.name %> supported your project, <%= link_to "#{contribution.project.name}", project_path(contribution.project.id), class: "dashboard__links__to__projects__and__contribution__show" %>.</span>
               </div>
               <div class="ceo__contribution__name__and__timer__bottom">
                 <% contribution.project.pledges.each do |pledge| %>

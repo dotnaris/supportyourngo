@@ -11,7 +11,7 @@
           <% sum_of_contribution << contribution.amount %>
         <% end %>
         <% if @user.is_ngo %>
-          <span class="dashboard__welcome__card__total__section__upper__text">You have been donated:</span><span class="dashboard__welcome__card__total__section__total">$ <%= sum_of_contribution.sum %></span>
+          <span class="dashboard__welcome__card__total__section__upper__text">You have been donated</span><span class="dashboard__welcome__card__total__section__total">$ <%= sum_of_contribution.sum %></span>
         <% else %>
           <span class="dashboard__welcome__card__total__section__upper__text">Help NGOs you like!</span>
         <% end %>

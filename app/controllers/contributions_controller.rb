@@ -6,8 +6,6 @@ class ContributionsController < ApplicationController
 
   def show
     @contribution = Contribution.find(params[:id])
-    # @project = Project.find(params[:Project_id])
-    # # @pledge = pledge.find(params[:id])
   end
 
   def new
