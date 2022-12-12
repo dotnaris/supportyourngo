@@ -7,7 +7,7 @@
   <%# /// Those who have payed to your(NGO's owners) project/// %>
     <% @user.contributions.reverse_each do |contribution| %>
   <div class="dashboard__payments__cards">
-    <span>You have spent <span class="dashboard__payments__cards__amount__spent">$<%= link_to "#{contribution.amount}", project_contribution_path(contribution.project.id, contribution.id), class: "dashboard__links__to__projects__and__contribution__show"%></span> to:</span>
+    <span>You have spent <span class="dashboard__payments__cards__amount__spent">$<%= link_to "#{contribution.amount}", project_contribution_path(contribution.project.id, contribution.id), class: "dashboard__links__to__projects__and__contribution__show"%></span> to</span>
     <span class="dashboard__payments__cards__projects__names"><%= link_to "#{contribution.project.name}", project_path(contribution.project.id), class: "dashboard__links__to__projects__and__contribution__show" %></span>
   </div>
     <% end %>
