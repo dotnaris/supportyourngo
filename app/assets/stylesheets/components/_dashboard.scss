@@ -27,6 +27,7 @@
   position: absolute;
   width: 60vw;
   left: 40vw;
+  height: 100vh;
 }
 
 // set up for the left part of the dashboard //
@@ -97,12 +98,13 @@ p.dashboard__contents__email{
 
 // dashboard links to projects and contribution show //
 
-.dashboard__links__to__projects__and__contribution__show{
+.dashboard__links__to__projects__profile__edit__and__contribution__show{
   text-decoration: none;
   font-weight: bold;
   color: $ngo-green;
   border-bottom: solid 2px $ngo-green;
   transition: 0.2s;
+  cursor: pointer;
   &:hover{
     color: $ngo-blue;
     border-bottom: solid 2px $ngo-blue;

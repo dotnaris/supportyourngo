@@ -81,38 +81,36 @@
             </div>
             <div class="ceo__contribution__name__and__timer">
               <div class="ceo__contribution__name__and__timer__top">
-                <span><%= contribution.user.name %> supported your project, <%= link_to "#{contribution.project.name}", project_path(contribution.project.id), class: "dashboard__links__to__projects__and__contribution__show" %>.</span>
+                <span><%= contribution.user.name %> supported your project, <%= link_to "#{contribution.project.name}", project_path(contribution.project.id), class: "dashboard__links__to__projects__profile__edit__and__contribution__show" %>.</span>
               </div>
               <div class="ceo__contribution__name__and__timer__bottom">
-                <% contribution.project.pledges.each do |pledge| %>
-                  <% $created_time = (time_now - pledge.created_at).floor %>
-                  <% if $created_time.floor >= 60 && unit == "sec" %>
+                <% $created_time = (time_now - contribution.created_at).floor %>
+                <% if $created_time >= 60 && unit == "sec" %>
+                  <% $created_time = $created_time / 60 %>
+                  <% unit = "min" %>
+                  <% if $created_time >= 60 && unit == "min" %>
                     <% $created_time = $created_time / 60 %>
-                    <% unit = "min" %>
-                    <% if $created_time >= 60 && unit == "min" %>
-                      <% $created_time = $created_time / 60 %>
-                      <% unit = "hour" %>
-                      <% if $created_time >= 24 && unit == "hour" %>
-                        <% $created_time = $created_time / 24 %>
-                        <% unit = "day" %>
-                        <% if $created_time >= 30 && unit == "day" %>
-                          <% $created_time = $created_time / 30 %>
-                          <% unit = "month" %>
-                          <% if $created_time >= 12 && unit == "month" %>
-                            <% $created_time = $created_time / 12 %>
-                            <% unit = "year" %>
-                          <% end %>
+                    <% unit = "hour" %>
+                    <% if $created_time >= 24 && unit == "hour" %>
+                      <% $created_time = $created_time / 24 %>
+                      <% unit = "day" %>
+                      <% if $created_time >= 30 && unit == "day" %>
+                        <% $created_time = $created_time / 30 %>
+                        <% unit = "month" %>
+                        <% if $created_time >= 12 && unit == "month" %>
+                          <% $created_time = $created_time / 12 %>
+                          <% unit = "year" %>
                         <% end %>
                       <% end %>
                     <% end %>
-                  <% if $created_time != 1 %>
-                    <div><span><%= $created_time %><%= unit %>s</span><span class="time__unit">ago</span></div>
-                    <% unit = "sec" %>
-                  <% else %>
-                    <div><span><%= $created_time %><%= unit %></span><span class="time__unit">ago</span></div>
-                    <% unit = "sec" %>
                   <% end %>
                 <% end %>
+              <% if $created_time != 1 %>
+                <div><span><%= $created_time %><%= unit %>s</span><span class="time__unit">ago</span></div>
+                <% unit = "sec" %>
+              <% else %>
+                <div><span><%= $created_time %><%= unit %></span><span class="time__unit">ago</span></div>
+                <% unit = "sec" %>
               <% end %>
               </div>
             </div>

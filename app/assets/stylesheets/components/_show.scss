@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 5vh;
-  border-bottom: solid 1px rgb(200, 200, 200);
+  border-bottom: solid 2px $ngo-light-gray;
 }
 // photo sizing //
 
@@ -60,7 +60,7 @@ i.price__section__bottom__text__check{
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 10vh;
-  border-bottom: solid 1px rgb(200, 200, 200);
+  border-bottom: solid 2px $ngo-light-gray;
   margin-top: 10vh;
 }
 

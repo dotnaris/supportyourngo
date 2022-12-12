@@ -18,10 +18,12 @@
     </div>
     <div class="contibution__show__right">
       <div class="contibution__show__thankyou__message">
-        <h4>THANK YOU FOR YOUR SUPPORT!</h4>
+        <h4>THANK YOU <span class="contibution__show__detail__and__dashboard"><%= @contribution.user.name %></span> FOR YOUR SUPPORT!</h4>
       </div>
-      <p>Donation for <span class="contibution__show__detail__and__dashboard"><%= @contribution.project.name %></span> Amount: $<span class="contibution__show__detail__and__dashboard"><%= @contribution.amount %></span>.</p>
-      <p>Visit your <%= link_to "DASHBOARD", user_path(current_user.id), class: "contibution__show__detail__and__dashboard" %>.</p>
+      <p>Donation for <span class="contibution__show__detail__and__dashboard"><%= @contribution.project.name %></span>, amount of $<span class="contibution__show__detail__and__dashboard"><%= @contribution.amount %></span>.</p>
+      <p>Your payment has been made in <span class="contibution__show__detail__and__dashboard"><%= @contribution.created_at.to_date %></span>.</p>
+      <p>The payment will be processed within 7 business days.</p>
+      <p>See more details in your <%= link_to "DASHBOARD", user_path(current_user.id), class: "contibution__show__detail__and__dashboard" %>.</p>
     </div>
   </div>
 </div>

@@ -36,7 +36,7 @@
   height: auto;
   max-height: auto;
   border-radius: 10px;
-  padding: 3vh 4vw;
+  padding: 3vh 2vw;
   box-shadow: $ngo-shadow;
 }
 
@@ -83,7 +83,7 @@
   justify-content: center;
   align-items: flex-end;
   border-radius: 10px;
-  padding: 5px 20px;
+  padding: 5px 4vw;
   box-shadow: $ngo-shadow;
   // background-image: url("https://images.unsplash.com/photo-1502251468545-35c689568055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80");
   background-color: $ngo-dark-blue;
@@ -129,4 +129,26 @@
     color: $ngo-green;
     transition: 0.3s;
   }
+}
+
+// photo //
+
+.welcome__profile__image{
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+  display: none;
+}
+
+// adding some space bt texts //
+
+.dashboard__welcome__and__edit__profile{
+  margin-left: 7px;
+}
+
+.dashboard__welcome__spacer{
+  display: inline-block;
+  width: 60px;
 }
