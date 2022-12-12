@@ -17,6 +17,7 @@
         <% end %>
       </div>
     <div class="dashboard__welcom__detail_section__with__edit">
+    <% project_number = 1 %>
       <div class="dashboard__welcom__detail_section">
         <%# <% if pledge.project.user.name.photo.attached? %>
           <%# <%= cl_image_tag pledge.project.user.name.photo.key, class: "ceo__images" %>
@@ -36,8 +37,9 @@
             <span>● <span class="dashboard__welcome__spacer">TYPE</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile">NGO</span></span>
             <% @user.projects.each do |project| %>
               <div class="dashboard__welcome__and__edit__card__profile__section__projects">
-                <span>● <span class="dashboard__welcome__spacer">PROJECT</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile"><%= link_to "#{project.name}", project_path(project.id), class: "dashboard__links__to__projects__profile__edit__and__contribution__show" %></span></span>
+                <span>● <span class="dashboard__welcome__spacer">PROJECT(<%= project_number %>)</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile"><%= link_to "#{project.name}", project_path(project.id), class: "dashboard__links__to__projects__profile__edit__and__contribution__show" %></span></span>
                 <%# <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
+                <% project_number += 1 %>
               </div>
             <% end %>
           <% else %>
