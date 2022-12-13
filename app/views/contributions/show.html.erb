@@ -8,7 +8,7 @@
           <img class="contibution__show__pledge__photo" src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="">
         <%# <% end %>
         <div class="contibution__show__pledge__text">
-          <h4>$ <%= pledge.price %> or more</h4>
+          <h4><%= number_to_currency(pledge.price, precision: 0) %> or more</h4>
           <h5><%= pledge.title %></h5>
           <ul>
             <li><%= pledge.description %></li>
@@ -20,7 +20,7 @@
       <div class="contibution__show__thankyou__message">
         <h4>THANK YOU <span class="contibution__show__detail__and__dashboard"><%= @contribution.user.name %></span> FOR YOUR SUPPORT!</h4>
       </div>
-      <p>Donation for <span class="contibution__show__detail__and__dashboard"><%= @contribution.project.name %></span>, amount of $<span class="contibution__show__detail__and__dashboard"><%= @contribution.amount %></span>.</p>
+      <p>Donation for <span class="contibution__show__detail__and__dashboard"><%= @contribution.project.name %></span>, amount of <span class="contibution__show__detail__and__dashboard"><%= number_to_currency(@contribution.amount, precision: 0) %></span>.</p>
       <p>Your payment has been made in <span class="contibution__show__detail__and__dashboard"><%= @contribution.created_at.to_date %></span>.</p>
       <p>The payment will be processed within 7 business days.</p>
       <p>See more details in your <%= link_to "DASHBOARD", user_path(current_user.id), class: "contibution__show__detail__and__dashboard" %>.</p>

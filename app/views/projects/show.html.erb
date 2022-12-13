@@ -14,7 +14,7 @@
         <div class="price__section__details">
           <div>
             <% if @pledge %>
-              <h4>$ <%= @project.contributions.count * @pledge.price %></h4>
+              <h4> <%= number_to_currency(@project.contributions.count * @pledge.price, precision: 0) %></h4>
               <p>pledged of amount</p>
               <h4><%= @project.contributions.count %></h4>
               <p>Contributions</p>
@@ -67,7 +67,7 @@
             <% end %>
             <div class="pledge__text">
               <% if @pledge %>
-                <h4>$ <%= @pledge.price %> or more</h4>
+                <h4><%= number_to_currency(@pledge.price, precision: 0) %> or more</h4>
                 <h5><%= @pledge.title %></h5>
                 <ul>
                   <li><%= @pledge.description %></li>

@@ -70,7 +70,7 @@
     <p class="dashboard__contribution__line">Here's an overview of your performance</p>
       <% @user.project_contributions.reverse_each do |contribution| %>
         <div class="ceo__contribution">
-          <span class="ceo_contribution_price">+ $<%= contribution.amount %></span>
+          <span class="ceo_contribution_price">+ <%= number_to_currency(contribution.amount, precision: 0) %></span>
           <div class="ceo__contribution__photo__and__name__and__timer">
             <div class="ceo__contribution__photo">
               <%# <% if pledge.project.user.name.photo.attached? %>
