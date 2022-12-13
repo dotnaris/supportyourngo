@@ -17,6 +17,14 @@
   color: $ngo-blue;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
+}
+
+.projects__card__background {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
 }
 
 .card__link {
@@ -24,6 +32,7 @@
   color: $ngo-blue;
   font-weight: bold;
   font-size: 20px;
+  padding: 5px;
 }
 
 .projects__card {
@@ -37,19 +46,19 @@
   border-color: $ngo-blue;
   box-shadow: $shadow-lg;
   margin-left: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.projects__card img {
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
-  height: 40%;
-  background-position: center;
-  object-fit: cover;
-}
+// .projects__card img {
+//   border-radius: 10px 10px 0px 0px;
+//   width: 100%;
+//   height: 40%;
+//   background-position: center;
+//   object-fit: cover;
+// }
 
 .projects__text {
+  position: relative;
+  text-align: center;
   display: block;
   right: 0;
   padding: 10px 10px 10px 10px;
@@ -57,15 +66,16 @@
   text-decoration: none;
 }
 
+.projects__text__description {
+  overflow: hidden;
+  max-width: 150ch;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .projects__text strong {
   font-weight: bold;
   color: $ngo-blue;
-}
-
-.cameras__card p{
-  margin-left: auto;
-  margin-right: auto;
-  width: 8em
 }
 
 .card__link::after {
