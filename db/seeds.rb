@@ -35,9 +35,9 @@ sample_texts = ["Coffee is a popular beverage loved by people of all ages. Many 
                 "Support Your NGO is an excellent method for non-profit organizations seeking funds for their projects without incurring costly conventional methods. While unconventional at first glance, innovative ngo sites offer great opportunities for both potential donors and nonprofit organizations alike. Considering the factors that determine which platform is best for you can make all the difference when successfully promoting a ngo fundraising campaign!"]
 
 projects_name = ["Help our planet", "Plant a tree", "Help a child", "Make water accessible", "Water is a human right", "Save biodiversity", "Let's collect plastics from the ocean",
-                 "Education for everyone", "We can do it", "Zero hunger", "Help pandas from extinction", "Clean up street garbages", "Hygiene for everyone", "Help us with creating paper cups",
+                 "Education for everyone", "We can do it", "Zero hunger", "Help pandas from extinction", "Clean up street garbage", "Hygiene for everyone", "Help us with creating paper cups",
                  "Stop climate change", "Burger distribution challenge", "1.5 degrees", "Gender equality and equity", "No more fast fashion", "Spread some love", "Stop child abuse", "Help coffee farmers",
-                 "Stop human trafficking", "NO MORE SHEIN", "6 cents is not for one t-shirt", "help us with seed file", "Help animals! Cat food project", "Help animals project 2.0", "Fight for environment"]
+                 "Stop human trafficking", "NO MORE SHEIN", "6 cents is not for one t-shirt", "help us with seed file", "Help animals! Cat food project", "Help animals project 2.0", "Fight for the environment"]
 
 amounts = ["50", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11,600,00", "23,200,00", "46,400,00", "92,800,00", "185,600,00",
            "371,200,00", "742,400,00", "148,400,00", "384,00", "768,00", "1,536,00", "3,072,00", "6,144,00", "12,288,00", "24,576,00", "49,152,00", "98,304,00", "196,608,00", "393,216,00", "786,432,00", "1,572,864,00"]
