@@ -29,15 +29,15 @@ sample_titles = ["Support your NGO with a donation",
                 "How to support an Non Profit Organization",
                 "How to support an non profit organization"]
 
-sample_texts = ["Support Your NGO is an innovative way for non-profit organizations to raise money for their projects. Fundraising campaigns are usually costly and time-consuming; Support Your NGO is a more cost-effective alternative that does not require organizers to travel to different communities. This makes it ideal for organizations that lack the resources or manpower to undertake conventional fundraising methods. It also provides a way for people who would normally feel unable to actively participate in organizational initiatives to become involved in making change happen",
+sample_texts = ["Coffee is a popular beverage loved by people of all ages. Many people love drinking coffee and supporting farmers. Coffee is purchased through different channels including grocery stores, cafes, and social networks. On the other hand, farmers earn money by selling their coffee to local buyers. Although coffee is a delicious commodity, it's also an expensive one due to high labor costs. That's where crowdfunding comes in. Coffee is a major source of revenue for many farmers. Farmers spend a lot of time and money growing coffee beans. They need to protect their crops from pests and disease. They also need to provide their animals with food during the harvest season. However, buyers are willing to pay high prices for quality coffee beans. They're willing to cover the cost of high salaries and healthy farms. That allows farmers to make money from their hard work, all they need is a platform to sell on.",
                 "Support Your NGO is an acronym for non-profit organization fundraising utilizing the Internet. Support Your NGO's campaign is a method whereby non-profit organizations seek funding from a wide network of donors. Essentially, it's a way to run an organized donation drive without the expense of traveling to different communities. Donations are generally made online, and platforms allow individuals to donate money directly to the cause. In this essay, we will discuss the concept of Support Your NGO, outline the factors to consider when choosing a Support Your NGO platform, and provide advice on how to effectively promote your fundraising campaign.",
                 "Support Your NGO differs from conventional fundraising in several ways. Firstly, Support Your NGO sites are primarily focused on raising money for nonprofit organizations rather than business ventures. This means that the platform itself is chiefly concerned with helping non-profit organizations achieve their goals rather than making profit itself. Because of this, platforms typically have charity and cause-related themes such as food banks, animal shelters, and disaster relief campaigns. Since ngo fundraising is open to any non-profit organization, there are numerous possibilities for what can be funded and by whom.",
                 "Support Your NGO is an excellent method for non-profit organizations seeking funds for their projects without incurring costly conventional methods. While unconventional at first glance, innovative ngo sites offer great opportunities for both potential donors and nonprofit organizations alike. Considering the factors that determine which platform is best for you can make all the difference when successfully promoting a ngo fundraising campaign!"]
 
 projects_name = ["Help our planet", "Plant a tree", "Help a child", "Make water accessible", "Water is a human right", "Save biodiversity", "Let's collect plastics from the ocean",
                  "Education for everyone", "We can do it", "Zero hunger", "Help pandas from extinction", "Clean up street garbages", "Hygiene for everyone", "Help us with creating paper cups",
-                 "Stop climate change", "Burger distribution challenge", "1.5 degrees", "Gender equality and equity", "No more fast fashion", "Spread some love", "Stop child abuse",
-                 "Stop human trafficking", "NO MORE SHEIN", "6 cents is not for one t-shirt", "help us with seed file", "Help animals! Cat food project"]
+                 "Stop climate change", "Burger distribution challenge", "1.5 degrees", "Gender equality and equity", "No more fast fashion", "Spread some love", "Stop child abuse", "Help coffee farmers",
+                 "Stop human trafficking", "NO MORE SHEIN", "6 cents is not for one t-shirt", "help us with seed file", "Help animals! Cat food project", "Help animals project 2.0", "Fight for environment"]
 
 amounts = ["50", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11,600,00", "23,200,00", "46,400,00", "92,800,00", "185,600,00",
            "371,200,00", "742,400,00", "148,400,00", "384,00", "768,00", "1,536,00", "3,072,00", "6,144,00", "12,288,00", "24,576,00", "49,152,00", "98,304,00", "196,608,00", "393,216,00", "786,432,00", "1,572,864,00"]
@@ -53,7 +53,7 @@ counter4 = 0
 
 ################################################################################
 
-50.times do
+30.times do
   user = User.new(
     name: Faker::Name.name,
     email: Faker::Internet.email,
@@ -75,7 +75,7 @@ end
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 50 Users created ✔︎         **********"
+puts "********** 30 Users created ✔︎         **********"
 puts "**********      -  -                  **********"
 puts ""
 sleep 3
@@ -109,7 +109,7 @@ sleep 3
     reward: project.paragraph_title,
     description: "Choose your pledge. (e.g 10 x cat food..)",
     price: sample_prices.sample,
-    project: project
+    project_id: project.id
   )
   pledge.save!
   counter4 += 1
@@ -119,7 +119,7 @@ sleep 3
   puts "● Pledge_description: #{pledge.description}"
   puts "● Pledge_price: #{pledge.price}"
   puts "● Project_ID_of_this_pledge: #{pledge.project.id}"
-  sleep 0.01
+  sleep 0.001
 end
 puts ""
 puts "========================="
@@ -131,9 +131,9 @@ puts "**********      -  -                  **********"
 puts "********** And 50 Pledges created ✔︎   **********"
 puts "**********      -  -                  **********"
 puts ""
-sleep 5
+sleep 3
 
-5000.times do
+1000.times do
   contribution = Contribution.new(
     user: users.sample,
     project: Project.all.sample,
@@ -150,6 +150,6 @@ end
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 5000 Contributions created ✔︎ **********"
+puts "********** 1000 Contributions created ✔︎ **********"
 puts "************************************************"
 puts ""

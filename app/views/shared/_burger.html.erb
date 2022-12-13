@@ -14,13 +14,11 @@
     <p><%= link_to "EXPLORE", projects_path %></p>
     <% if user_signed_in? %>
     <% end %>
-    <p><%= link_to "ADD LINKS", root_path %></p>
+    <p><%= link_to "START", new_project_path %></p>
   </div>
   <div class="contents__right">
-    <p><%= link_to "ABOUT", root_path %></p>
-    <p><%= link_to "START", root_path %></p>
-    <p><%= link_to "FAQ", root_path %></p>
-    <p><%= link_to "TERMS", root_path %></p>
+    <p><a href="https://youtu.be/Np9ChlVnNlY">VIDEO</a></p>
+    <p><%= link_to "MORE", { anchor: "home__bottom" } %></p>
     <%# <p><%= link_to "DASHBOARD", users_path(@user.id) %>
     <%# </p> %>
   </div>

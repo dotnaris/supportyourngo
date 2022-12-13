@@ -17,7 +17,7 @@
 
   .banner__left h1{
     height: 260px;
-    width: 700px;
+    width: 100vw;
     padding-left: 7%;
     font-weight: bold;
     font-size: 25px;
@@ -49,7 +49,7 @@
   // video section resizing //
 
   div.video__message{
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   // Resizing the search bar //
@@ -89,7 +89,7 @@
   // relocation of the copy //
 
   .banner__left h1{
-    height: 180px;
+    height: 100px;
     font-size: 21px;
     text-align: center;
     padding-left: 7%;
@@ -204,7 +204,7 @@
   // resizing the banner copy //
 
   .banner__left h1{
-    width: 500px;
+    width: 100vw;
   }
 
 
@@ -214,7 +214,7 @@
   div.home__video{
     flex-direction: column;
     display: block;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
   }
 
@@ -225,7 +225,7 @@
   // video section resizing //
 
   div.video__message{
-    padding-top: 0px;
+    padding-top: 20px;
   }
 
   // this works from 560 to stop <br>//
@@ -240,7 +240,7 @@
   // relocation of the copy //
 
   .banner__left h1{
-    font-size: 6px;
+    font-size: 15px;
     padding-left: 7%;
     text-align: center;
   }
@@ -319,9 +319,9 @@
 
   // font size (only for telephones) //
 
-  h1, h2, h3, h4, h5, h6,strong{
-    font-size: large !important;
-  }
+  // h1, h2, h3, h4, h5, h6,strong{
+  //   font-size: large !important;
+  // }
   p, a, span{
     font-size: medium !important;
   }

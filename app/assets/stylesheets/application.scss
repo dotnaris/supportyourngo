@@ -24,7 +24,7 @@ p {
 }
 
 .fix-spacing{
-  margin-top: 30vh;
+  margin-top: 20vh;
   margin-bottom: 100px;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -32,4 +32,16 @@ p {
 
 html {
   font-size: 90.5%;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.title__quick__design{
+  margin: 5vh 0;
+  padding-left: 10px;
+  border-left: solid 2px $ngo-green;
 }
