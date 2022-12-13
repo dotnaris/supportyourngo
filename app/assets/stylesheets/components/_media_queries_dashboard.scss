@@ -23,6 +23,27 @@
   .dashboard__contents__personal__info{
     display: none;
   }
+
+  // payments texts' position //
+
+  .dashboard__payments__cards{
+    flex-direction: column;
+  }
+  .dashboard__payments__cards__projects__names{
+    margin-left: 0px;
+  }
+
+  // hide ceo photos from this dimension //
+
+  .ceo__images{
+    display: none;
+  }
+
+  // hide some of the contents //
+
+  .dashboard__welcome__spacer{
+    display: none;
+  }
 }
 
 @media (max-width: 540px) {

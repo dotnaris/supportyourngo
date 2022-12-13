@@ -1,0 +1,71 @@
+.contibution__show__fixed__box__card{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 20vw;
+  min-width: 250px;
+  border: solid 1px white;
+  border-radius: 10px;
+  box-shadow: $ngo-shadow;
+  margin: 1vh 15vw;
+  margin-top: 5vh;
+  height: auto;
+  position: relative;
+  transition: 0.3s;
+  &:hover{
+    box-shadow: $ngo-dark-shadow;
+    transition: 0.3s;
+  }
+}
+
+.contibution__show__pledge__photo{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.contibution__show__pledge__text{
+  padding: 10px 20px;
+  height: auto;
+}
+
+// change the position of the card and p tag //
+
+.contibution__show{
+  display: flex;
+  align-items: center;
+}
+
+// text style set up //
+
+
+.contibution__show__thankyou__message{
+  margin: 5vh 0;
+  padding-left: 10px;
+  border-left: solid 2px $ngo-green;
+}
+
+.contibution__show__detail__and__dashboard{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.contibution__show__detail__and__dashboard{
+  text-decoration: none;
+  color: $ngo-green;
+  border-bottom: solid 2px $ngo-green;
+  transition: 0.2s;
+  &:hover{
+    color: $ngo-blue;
+    border-bottom: solid 2px $ngo-blue;
+    transition: 0.2s;
+  }
+}
+
+// add some space on the right //
+
+.contibution__show__right{
+  margin-right: 5vw;
+}

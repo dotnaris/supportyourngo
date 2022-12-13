@@ -64,69 +64,59 @@
 
 <div class="status__dashboard dashboard__remove" data-dashboard-target="status">
   <div class="status__dashboard__top">
-    <h4>Your contributors</h4>
+    <h4>YOUR CONTRIBUTORS</h4>
   </div>
   <div class="dashboard__contribution__section">
     <p class="dashboard__contribution__line">Here's an overview of your performance</p>
-        <%#   pseudocode :) %>
-        <%# - If users are not ngo owners %>
-        <%# - Find contributions  %>
-        <%# - The user needs to be the same user who payed money %>
-        <% @pledges.each do |pledge| %>
-          <% if pledge.project.user.is_ngo != true %>
-            <% pledge.project.contributions.each do |contribution| %>
-              <% if pledge.project.user == contribution.user && contribution.amount != 0 %>
-                <div class="ceo__contribution">
-                  <span class="ceo_contribution_price">+ $<%= contribution.amount %></span>
-                  <div class="ceo__contribution__photo__and__name__and__timer">
-                    <div class="ceo__contribution__photo">
-                      <%# <% if pledge.project.user.name.photo.attached? %>
-                        <%# <%= cl_image_tag pledge.project.user.name.photo.key, class: "ceo__images" %>
-                      <%# <% else %>
-                        <img class="ceo__images" src="<%= faces.sample %>" alt="">
-                      <%# <% end %>
-                    </div>
-                    <div class="ceo__contribution__name__and__timer">
-                      <div class="ceo__contribution__name__and__timer__top">
-                        <span><%= pledge.project.user.name %> supported your project.</span>
-                      </div>
-                      <div class="ceo__contribution__name__and__timer__bottom">
-                        <% created_time = (time_now - pledge.created_at).floor %>
-                        <% if created_time.floor >= 60 && unit == "sec" %>
-                          <% created_time = created_time.floor / 60 %>
-                          <% unit = "min" %>
-                          <% if created_time >= 60 && unit == "min" %>
-                            <% created_time =  created_time / 60 %>
-                            <% unit = "hour" %>
-                            <% if created_time >= 24 && unit == "hour" %>
-                              <% created_time =  created_time / 24 %>
-                              <% unit = "day" %>
-                              <% if created_time >= 30 && unit == "day" %>
-                                <% created_time =  created_time / 30 %>
-                                <% unit = "month" %>
-                                <% if created_time >= 12 && unit == "month" %>
-                                  <% created_time =  created_time / 12 %>
-                                  <% unit = "year" %>
-                                <% end %>
-                              <% end %>
-                            <% end %>
-                          <% end %>
+      <% @user.project_contributions.reverse_each do |contribution| %>
+        <div class="ceo__contribution">
+          <span class="ceo_contribution_price">+ $<%= contribution.amount %></span>
+          <div class="ceo__contribution__photo__and__name__and__timer">
+            <div class="ceo__contribution__photo">
+              <%# <% if pledge.project.user.name.photo.attached? %>
+                <%# <%= cl_image_tag pledge.project.user.name.photo.key, class: "ceo__images" %>
+              <%# <% else %>
+                <img class="ceo__images" src="<%= faces.sample %>" alt="">
+              <%# <% end %>
+            </div>
+            <div class="ceo__contribution__name__and__timer">
+              <div class="ceo__contribution__name__and__timer__top">
+                <span><%= contribution.user.name %> supported your project, <%= link_to "#{contribution.project.name}", project_path(contribution.project.id), class: "dashboard__links__to__projects__profile__edit__and__contribution__show" %>.</span>
+              </div>
+              <div class="ceo__contribution__name__and__timer__bottom">
+                <% $created_time = (time_now - contribution.created_at).floor %>
+                <% if $created_time >= 60 && unit == "sec" %>
+                  <% $created_time = $created_time / 60 %>
+                  <% unit = "min" %>
+                  <% if $created_time >= 60 && unit == "min" %>
+                    <% $created_time = $created_time / 60 %>
+                    <% unit = "hour" %>
+                    <% if $created_time >= 24 && unit == "hour" %>
+                      <% $created_time = $created_time / 24 %>
+                      <% unit = "day" %>
+                      <% if $created_time >= 30 && unit == "day" %>
+                        <% $created_time = $created_time / 30 %>
+                        <% unit = "month" %>
+                        <% if $created_time >= 12 && unit == "month" %>
+                          <% $created_time = $created_time / 12 %>
+                          <% unit = "year" %>
                         <% end %>
-                        <% if created_time.floor != 1 %>
-                          <div><span><%= created_time.floor %><%= unit %>s</span><span class="time__unit">ago</span></div>
-                          <% unit = "sec" %>
-                        <% else %>
-                          <div><span><%= created_time.floor %><%= unit %></span><span class="time__unit">ago</span></div>
-                          <% unit = "sec" %>
-                        <% end %>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+                <% end %>
+              <% if $created_time != 1 %>
+                <div><span><%= $created_time %><%= unit %>s</span><span class="time__unit">ago</span></div>
+                <% unit = "sec" %>
+              <% else %>
+                <div><span><%= $created_time %><%= unit %></span><span class="time__unit">ago</span></div>
+                <% unit = "sec" %>
               <% end %>
-            <% end %>
-          <% end %>
-        <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     <%# <%= render "shared/dashboard_status_test" %>
   </div>
 </div>
