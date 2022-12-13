@@ -20,6 +20,20 @@
   text-align: center;
 }
 
+.projects__card {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+  position: relative;
+  border-color: $ngo-blue;
+  box-shadow: $shadow-lg;
+  margin-left: auto;
+  overflow: hidden;
+}
+
 .projects__card__background {
   height: 140px;
   background-size: cover;
@@ -33,19 +47,6 @@
   font-weight: bold;
   font-size: 20px;
   padding: 5px;
-}
-
-.projects__card {
-  height: 300px;
-  width: 300px;
-  background-color: white;
-  color: white;
-  border-radius: 5px;
-  margin: auto;
-  position: relative;
-  border-color: $ngo-blue;
-  box-shadow: $shadow-lg;
-  margin-left: auto;
 }
 
 // .projects__card img {

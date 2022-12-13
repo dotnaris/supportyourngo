@@ -16,7 +16,11 @@
             <image href="assets/images/location.png" height="10" width="10">
           </svg>
           <%= project.location %> <br>
-          <%# $ <%= project.contributions.count * project.contributions.amount%> $80,105 pledged total
+          <% sum = 0 %>
+          <% project.contributions.each do |contribution| %>
+            <% sum += contribution.amount %>
+          <% end %>
+          $ <%= sum %> pledged until today!
         </div>
       </div>
     <% end %>
