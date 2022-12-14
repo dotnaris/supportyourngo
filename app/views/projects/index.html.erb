@@ -58,11 +58,9 @@
     <% @projects.each do |project|  %>
       <%= link_to project_path(project.id) do %><br>
         <div class="projects__card">
-          <div class="projects__card__background"> </div>
-          <%# <% if project.photo.attached? %>
-            <%# <%= image_tag project.photo.key, width: 250, height: 250 %>
-            <%# <img src="https://images.unsplash.com/photo-1571688144157-25db897a81ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8OTUxNzcwOXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" > %>
-          <%# <% end %>
+          <% $counter << project.id %>
+          <% $photo << photos.sample %>
+          <img src="<%= $photo[$counter.index(project.id)] %>" alt="" class="index__show__photo">
           <div class="projects__text">
             <div class="card__name"> <%= project.name %></div>
             <div class="projects__text__description"> <%= project.description.length >= 75 ? "#{project.description[0..75]}..." : project.description %><br></div>
