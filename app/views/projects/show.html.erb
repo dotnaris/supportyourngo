@@ -1,5 +1,5 @@
 <div class="fix-spacing show__title">
-  <h1><%= @project.name %></h1>
+  <h1><strong><%= @project.name %></strong></h1>
   <h5></h5>
   <main>
     <div class="show__upper__side">
@@ -14,17 +14,21 @@
         <div class="price__section__details">
           <div>
             <% if @pledge %>
-              <h4> <%= number_to_currency(@project.contributions.count * @pledge.price, precision: 0) %></h4>
-              <p>pledged of amount</p>
+              <% sum = 0 %>
+              <% @project.contributions.each do |contribution| %>
+                <% sum += contribution.amount %>
+              <% end %>
+              <h4><%= number_to_currency(sum, precision: 0) %></h4>
+              <p>pledged until today!</p>
               <h4><%= @project.contributions.count %></h4>
-              <p>contributions</p>
+              <p>contributions in total!</p>
               <h4><%= @project.created_at.to_date %></h4>
               <p>date started</p>
             <% else %>
               <h4>$80,161</h4>
-              <p>pledged of amount</p>
+              <p>pledged until today!</p>
               <h4>1,396</h4>
-              <p>Contributions</p>
+              <p>contributions in total!</p>
               <h4>13</h4>
               <p>date started</p>
             <% end %>
