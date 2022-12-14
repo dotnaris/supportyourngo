@@ -54,13 +54,13 @@
   <h1 class="title__quick__design">Find your favourite project</h1>
   <div class="projects__list">
     <% $counter = [] %>
-    <% $photo = [] %>
+    <% $photos = [] %>
     <% @projects.each do |project|  %>
       <%= link_to project_path(project.id) do %><br>
         <div class="projects__card">
           <% $counter << project.id %>
-          <% $photo << photos.sample %>
-          <img src="<%= $photo[$counter.index(project.id)] %>" alt="" class="index__show__photo">
+          <% $photos << photos.sample %>
+          <img src="<%= $photos[$counter.index(project.id)] %>" alt="" class="index__show__photo">
           <div class="projects__text">
             <div class="card__name"> <%= project.name %></div>
             <div class="projects__text__description"> <%= project.description.length >= 75 ? "#{project.description[0..75]}..." : project.description %><br></div>
