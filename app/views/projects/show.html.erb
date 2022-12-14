@@ -5,9 +5,9 @@
     <div class="show__upper__side">
       <div class="photo__project">
         <%# <% if @project.photo.attached? %>
-          <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
+        <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <%# <% else %>
-          <img src="https://images.unsplash.com/photo-1527596428171-7885b82c91c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=737&q=80" alt="" class="show__photo">
+          <img src="<%= $photos[$counter.index(@project.id)] %>" alt="" class="show__photo">
         <%# <% end %>
       </div>
       <div class="price__section">
@@ -42,7 +42,7 @@
         <% if @project.photo.attached? %>
           <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <% else %>
-          <img src="https://images.unsplash.com/photo-1654564706005-b7828ace2cbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="show__photo">
+          <img src="https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" alt="" class="show__photo">
         <% end %>
         <h4><%= @project.paragraph_title %></h4>
         <p><%= @project.description %></p>
@@ -63,7 +63,7 @@
             <% if @project.photo.attached? %>
               <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
             <% else %>
-              <img class="pledge__photo" src="https://images.unsplash.com/photo-1562051036-e0eea191d42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+              <img class="pledge__photo" src="https://images.unsplash.com/photo-1553532435-93d532a45f15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80" alt="">
             <% end %>
             <div class="pledge__text">
               <% if @pledge %>

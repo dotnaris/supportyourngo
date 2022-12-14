@@ -25,19 +25,19 @@
           <img class="welcome__profile__image" src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="">
         <%# <% end %>
         <div class="dashboard__welcome__card__profile__section">
-          <span>● <span class="dashboard__welcome__spacer">NAME</span> <span class="dashboard__welcome__and__edit__card--green
+          <span><span class="dashboard__welcome__spacer">NAME</span> <span class="dashboard__welcome__and__edit__card--green
                                    dashboard__welcome__and__edit__profile
                                    dashboard__links__to__projects__profile__edit__and__contribution__show"
                                    data-action="click->dashboard#editUserInfo"><%= @user.name %></span></span>
-          <span>● <span class="dashboard__welcome__spacer">EMAIL</span> <span class="dashboard__welcome__and__edit__card--green
+          <span><span class="dashboard__welcome__spacer">EMAIL</span> <span class="dashboard__welcome__and__edit__card--green
                                     dashboard__welcome__and__edit__profile
                                     dashboard__links__to__projects__profile__edit__and__contribution__show"
                                     data-action="click->dashboard#editUserInfo"><%= @user.email %></span></span>
           <% if @user.is_ngo %>
-            <span>● <span class="dashboard__welcome__spacer">TYPE</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile">NGO</span></span>
+            <span><span class="dashboard__welcome__spacer">TYPE</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile">NGO</span></span>
             <% @user.projects.each do |project| %>
               <div class="dashboard__welcome__and__edit__card__profile__section__projects">
-                <span>● <span class="dashboard__welcome__spacer">PROJECT(<%= project_number %>)</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile"><%= link_to "#{project.name}", project_path(project.id), class: "dashboard__links__to__projects__profile__edit__and__contribution__show" %></span></span>
+                <span><span class="dashboard__welcome__spacer">PROJECT(<%= project_number %>)</span> <span class="dashboard__welcome__and__edit__card--green dashboard__welcome__and__edit__profile"><%= link_to "#{project.name}", project_path(project.id), class: "dashboard__links__to__projects__profile__edit__and__contribution__show" %></span></span>
                 <%# <span id="dashboard__projects__delete"><%= link_to "Delete", project_path(project.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{project.name}?"} %></span>
                 <% project_number += 1 %>
               </div>
