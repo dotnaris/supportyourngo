@@ -20,11 +20,26 @@
   text-align: center;
 }
 
-.projects__card__background {
-  height: 140px;
-  background-size: cover;
+// .projects__card__background {
+//   height: 140px;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: url(https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
+// }
+
+.projects__card__background img{
+  height: 150px;
+  width: 100%;
+}
+
+.index__show__photo{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
   background-position: center;
-  background-image: url(https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 5vw;
 }
 
 .card__link {
