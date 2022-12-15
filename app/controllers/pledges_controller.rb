@@ -17,15 +17,19 @@ class PledgesController < ApplicationController
     end
   end
 
+  def edit
+    @pledge = Pledge.find(params[:id])
+  end
+
   def update
-    pledge = Pledge.find(params[:id])
-    pledge.update(pledge_params)
-    redirect_to project_path(pledge.project)
+    @pledge = Pledge.find(params[:id])
+    @pledge.update(pledge_params)
+    redirect_to project_path(@pledge.project)
   end
 
   def destroy
-    pledge = Pledge.find(params[:id])
-    pledge.destroy
+    @pledge = Pledge.find(params[:id])
+    @pledge.destroy
   end
 
   private
