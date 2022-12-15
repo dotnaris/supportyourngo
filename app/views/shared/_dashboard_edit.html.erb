@@ -20,19 +20,19 @@
           <%= c.submit %>
         </div>
         <span class="dashboard__welcome__and__edit__card__profile__section__projects__pledge">● Pledges</span>
-        <div class="dashboard__edit__section__edit">
-          <% if project.user == current_user %>
-            <% project.pledges.each do |pledge| %>
-              <%= simple_form_for(pledge) do |f| %>
-                <%= f.input :title %>
-                <%= f.input :reward %>
-                <%= f.input :description %>
-                <%= f.input :price %>
-                <%= f.submit %>
-              <% end %>
+      <% end %>
+      <div class="dashboard__edit__section__edit">
+        <% if project.user == current_user %>
+          <% project.pledges.each do |pledge| %>
+            <%= simple_form_for(pledge) do |f| %>
+              <%= f.input :title %>
+              <%= f.input :reward %>
+              <%= f.input :description %>
+              <%= f.input :price %>
+              <%= f.submit %>
             <% end %>
           <% end %>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
 <% end %>
 </div>
