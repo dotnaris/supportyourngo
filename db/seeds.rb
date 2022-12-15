@@ -68,7 +68,7 @@ sample_texts = ["The Forest Foundation is fighting the plastic pollution in the 
 
 projects_name = ["Save the Amazon rainforest", "Save biodiversity", "Help coffee farmers", "Water is a human right", "Stop climate change", "Collect plastics from the ocean", "Fair trade goods",
                 "1.5 degrees", "Protect our lands and waters", "Microgrants for the environment", "Gender equality", "Fight poverty", "Healthcare for everyone",
-                "Fair trade regulations for India", "Health care for refugees", "Protecting wildlife", "Help our seed file", "Stop killind our rainforests", "Help a child", "No more SHEIN", "Protect our biodiversity",
+                "Fair trade regulations for India", "Health care for refugees", "Protecting wildlife", "Help our seed file", "Stop killing our rainforests", "Help a child", "No more SHEIN", "Protect our biodiversity",
                 "Zero hunger", "Humanitarian aid now", "Sustainable harvesting practices", "Stop child abuse", "Stop pesticide usage!", "Conserve our planet", "Protect chimpanzees", "Clean water for everyone",
                 "Equal rights for women and girls", "Education for every child", "Climate change education", "No more fast fashion", "Preserve rights of the indigenous", "Conserve the habitat of orangutans", "Protect the rights of migrants"]
 
