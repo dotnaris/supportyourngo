@@ -65,10 +65,10 @@ sample_texts = ["The Rainforest Foundation works to protect the rights of indige
                 "The Borneo Orangutan Survival Foundation works to conserve the habitat of the critically endangered Bornean orangutan and to rehabilitate and release orphaned and displaced orangutans back into the wild. They also work to protect forests, educate local communities, and support conservation efforts in Borneo.",
                 "The Migrant Rights International is a non-profit organization that works to promote and protect the rights of migrants and refugees around the world. They provide support and assistance to migrants, and work to raise awareness about the challenges and rights of migrants."]
 
-projects_name = ["Save the Amazon rainforest", "Save biodiversity", "Help coffee farmers", "Water is a human right", "Stop climate change", "Let's collect plastics from the ocean", "Fair trade goods",
-                "1.5 degrees", "Protect our lands and waters", "Microgrants for fighting environmental issues", "Gender equality - Women for women", "Fight poverty", "Healthcare for everyone",
+projects_name = ["Save the Amazon rainforest", "Save biodiversity", "Help coffee farmers", "Water is a human right", "Stop climate change", "Collect plastics from the ocean", "Fair trade goods",
+                "1.5 degrees", "Protect our lands and waters", "Microgrants to protect the environment", "Gender equality", "Fight poverty", "Healthcare for everyone",
                 "Fair trade regulations for India", "Health care and education for refugees", "Protecting wildlife", "Stop killind our rainforests", "Help a child", "No more SHEIN", "Protect our biodiversity",
-                "Zero hunger", "Humanitarian aid now", "Sustainable harvesting practices", "Stop child abuse", "Stop pesticide usage!", "Conserve our planet", "Protect chimpanzees", "Make clean water accessible for everyone",
+                "Zero hunger", "Humanitarian aid now", "Sustainable harvesting practices", "Stop child abuse", "Stop pesticide usage!", "Conserve our planet", "Protect chimpanzees", "Clean water for everyone",
                 "Equal rights for women and girls", "Education for every child", "Climate change education", "No more fast fashion", "Preserve rights of the indigenous", "Conserve the habitat of orangutans", "Protect the rights of migrants"]
 
 company_name = ["The Rainforest Foundation", "Wildlife Conservation Society", "The Fair Trade Coffee Company", "The Clean Water Fund", "Climate Action Network", "The Ocean Conservancy", "The Fair Trade Association", "The Environmental Defense Fund", "The Nature Conservancy", "The Global Greengrants Fund",

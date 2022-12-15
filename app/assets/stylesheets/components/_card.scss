@@ -35,13 +35,12 @@
 .projects__card img{
   height: 130px;
   width: 100%;
-  background-position: center;
   object-fit: cover;
 }
 
 
 .card__name {
-  padding: 4px 5px 10px 5px;
+  padding: 4px 0px 10px 0px;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
@@ -59,12 +58,11 @@
   text-decoration: none;
 }
 
-// .projects__text__description {
-//   overflow: hidden;
-//   max-width: 50ch;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-// }
+.projects__text__description {
+  max-width: 60ch;
+  text-overflow: ellipsis;
+  padding: 0px 0px 5px 0px;;
+}
 
 .card__link::after {
   position: absolute;
