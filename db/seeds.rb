@@ -29,57 +29,58 @@ sample_titles = ["Support your NGO with a donation",
                 "How to support an Non Profit Organization",
                 "How to support an non profit organization"]
 
-sample_texts = ["The Rainforest Foundation works to protect the rights of indigenous communities and the biodiversity of the Amazon rainforest. Through sustainable development projects and advocacy efforts, we strive to ensure a fair and just future for all.",
-                "At the Wildlife Conservation Society, we tackle some of the most pressing issues facing wildlife and wild places. From reducing plastic pollution in oceans to protecting elephants from poaching, our projects aim to make a lasting impact.",
-                "The Fair Trade Coffee Company works with small-scale farmers in developing countries to produce high-quality, ethically-sourced coffee. By providing fair wages and promoting sustainable farming practices, we support communities and protect the environment.",
-                "The Clean Water Fund works to improve access to clean and safe drinking water in communities around the world. Through education, advocacy, and community-based projects, we strive to protect this essential resource for current and future generations.",
-                "At the Climate Action Network, we bring together hundreds of organizations to take action on climate change. From lobbying for stronger policies to supporting local renewable energy projects, we work to create a safer and more sustainable future for all.",
-                "The Ocean Conservancy is dedicated to protecting the world's oceans and the life they support. From cleaning up marine debris to conserving critical habitat, our projects aim to ensure a healthy future for our oceans and all who depend on them.",
-                "The Fair Trade Association promotes fair trade principles and practices to create more equitable and sustainable global trade. Through education and certification programs, we support farmers and workers in developing countries and help consumers make more ethical purchasing choices.",
-                "The Environmental Defense Fund works to find practical solutions to the most urgent environmental challenges. From reducing greenhouse gas emissions to protecting biodiversity, our projects aim to create a healthier and more sustainable future for all.",
-                "The Nature Conservancy is a global conservation organization working to protect the lands and waters on which all life depends. From restoring forests and grasslands to protecting coral reefs and other critical habitats, our projects aim to safeguard the natural world for future generations.",
-                "The Global Greengrants Fund provides small grants to grassroots organizations working on environmental and social justice issues. Their projects range from protecting forests and rivers to promoting clean energy and safe food systems.",
-                "Women for Women International supports women in war-torn regions with financial aid, job training, and rights education. They also help women access health care and other services, empowering them to rebuild their lives and communities.",
-                "Oxfam is a global organization that works to end the injustice of poverty. They provide emergency relief, development programs, and campaigning efforts to address issues like inequality, discrimination, and climate change.",
-                "Doctors Without Borders delivers medical care to people affected by conflict, epidemics, natural disasters, and other crises. They provide emergency aid and long-term support, with a focus on reaching the most vulnerable and hard-to-reach populations.",
-                "The Fair Trade Alliance Kerala works to promote fair trade practices and support small-scale farmers and artisans in India. They focus on issues like fair prices, good working conditions, and environmental sustainability in the production of goods like coffee and tea.",
-                "The International Rescue Committee responds to the world's worst humanitarian crises, providing health care, education, and protection to refugees and displaced people. They also work to restore safety, dignity, and hope to communities torn apart by conflict and disaster.",
-                "The Wildlife Conservation Society protects wildlife and wild places around the world. Through science, conservation, and education, they work to preserve species and ecosystems, and to help communities and governments adopt sustainable practices.",
-                "The Rainforest Action Network campaigns for the forests, their inhabitants, and the natural systems that sustain life by transforming the global marketplace through education, grassroots organizing, and non-violent direct action.",
-                "Save the Children provides children in need with healthcare, education, protection, and emergency relief. They work to give children a healthy start in life, the opportunity to learn, and protection from harm.",
-                "Greenpeace is a global, independent campaigning organization that uses non-violent, creative confrontation to expose global environmental problems and to force solutions for a green and peaceful future.",
-                "The World Wildlife Fund works to protect the diversity of life on Earth and the future of nature. They focus on the conservation of species and their habitats, and on addressing global threats like climate change, deforestation, and pollution.",
-                "The World Food Programme is the world's largest humanitarian organization, working to end hunger and malnutrition. They provide food assistance to people in need, and work to improve the food security and nutrition of communities and households around the world.",
-                "The International Committee of the Red Cross provides humanitarian aid to people affected by armed conflict, natural disasters, and other emergencies. They work to protect and assist people affected by crises, and to promote respect for international humanitarian law.",
-                "Sustainable Harvest International works to empower rural families in Central America and the Amazon to break the cycle of poverty and protect the environment. They provide training, support, and access to markets for small-scale farmers and indigenous communities.",
-                "Amnesty International is a global movement of more than seven million people who campaign for human rights. They work to defend people who are denied justice, freedom, and dignity, and to end abuses of human rights.",
-                "The Pesticide Action Network is a global network of organizations working to replace the use of hazardous pesticides with ecologically sound and socially just alternatives. They promote sustainable agriculture, healthy food systems, and environmental justice.",
-                "The International Union for Conservation of Nature is a global organization that works to conserve nature and promote sustainable use of natural resources. They provide scientific data and advice, and support conservation efforts around the world.",
-                "The Jane Goodall Institute works to protect chimpanzees and their habitats, and to support the communities that coexist with them. They also promote conservation, sustainable development, and research on chimpanzee behavior and ecology.",
-                "The Water Project is a non-profit organization that works to provide clean, safe drinking water to communities in sub-Saharan Africa. They partner with local organizations to build wells, sanitation systems, and other water infrastructure, and to promote hygiene education.",
-                "The Global Fund for Women provides grants to organizations working to advance the rights of women and girls around the world. They support groups that are addressing issues like violence, poverty, and discrimination, and that are working to create positive change for women and girls.",
-                "UNICEF works to promote the rights and well-being of every child, in everything they do. They provide assistance to children and families in need, and work to protect children from violence, exploitation, and disease.",
-                "The Climate Reality Project is a non-profit organization founded by Al Gore that is dedicated to educating the public about the urgent need to address climate change. They work to empower individuals and communities to take action on climate, and to support the transition to a clean energy future.",
-                "The David Suzuki Foundation works to protect the health of the planet and its people. They focus on issues like climate change, oceans, and sustainability, and work to find solutions that are fair and effective.",
-                "The Rainforest Foundation UK works to protect the rights of the indigenous and forest communities who live in and around the world's rainforests. They support local organizations and campaigns, and work to promote fair and sustainable use of the rainforests' resources.",
-                "The Borneo Orangutan Survival Foundation works to conserve the habitat of the critically endangered Bornean orangutan and to rehabilitate and release orphaned and displaced orangutans back into the wild. They also work to protect forests, educate local communities, and support conservation efforts in Borneo.",
-                "The Migrant Rights International is a non-profit organization that works to promote and protect the rights of migrants and refugees around the world. They provide support and assistance to migrants, and work to raise awareness about the challenges and rights of migrants."]
+sample_texts = ["The Forest Foundation is fighting the plastic pollution in the oceans! We are helping to clean up the coasts and work together with local fishermen to get rid of waste that has accumulated in the sea. Join us today and make a difference!",
+                "Wildlife Society helps communities in need access essential services like health care and education. Our dedicated volunteers are working together with local organizations to bring resources and knowledge to those who need it most. Join us in making a difference!",
+                "Fair Trade Coffee is working to combat global warming through renewable energy sources. We are committed to finding more sustainable solutions that will help protect the environment and reduce our carbon footprint. Join us and make a difference today!",
+                "Clean Water Society is dedicated to protecting wild animals and preserving their habitats. We work with local communities to ensure that natural reserves are well-protected and that endangered species have a chance to thrive. Join us in our mission today!",
+                "Climate Action Fund is committed to helping families living in poverty access basic necessities such as food, water, clothing, and shelter. We work with local organizations to provide resources and knowledge to those who need it most. Join us in making a difference!",
+                "The Ocean Fund is dedicated to empowering women and girls around the world. We are committed to creating equal opportunities for all genders and fighting against gender-based discrimination. Join us today and make a difference!",
+                "The Fair Trade Society is working to create sustainable agriculture systems that benefit both people and the environment. We are committed to promoting organic, local, and fair-trade farming practices that will ensure food security while preserving natural resources. Join us in our mission today!",
+                "The Environmental Fund is fighting against human trafficking and modern slavery. We are committed to helping victims escape from their captors and connecting them with resources and support. Join us in the fight against injustice today!",
+                "The Nature Conservancy is taking action against climate change by promoting clean energy sources such as wind and solar power. We work with local organizations to ensure that renewable energy investments are made responsibly and that communities are properly compensated. Join us in making a difference!",
+                "The Greengrants Association is committed to protecting the rights of indigenous people around the world. We work with local organizations to ensure that their voices are heard and that their traditions are respected and preserved. Join us today and make a difference!",
+                "Women for Women is working to promote clean water access for all. We are committed to finding sustainable solutions to ensure that everyone has access to safe, clean drinking water. Join us in our mission today!",
+                "NGO.org is dedicated to reducing child labor and promoting the rights of young people around the world. We work with local organizations to provide education and resources to those who need it most. Join us in making a difference!",
+                "Doctors International is working to protect the environment and combat deforestation. We are committed to finding sustainable solutions that will help preserve the planet's natural resources for future generations. Join us in our mission today!",
+                "The Fair Trade Alliance is dedicated to providing aid and relief to refugees and displaced people around the world. We work with local organizations to ensure that those in need receive the help they need. Join us today and make a difference!",
+                "The Rescue Association is committed to promoting gender equality and empowering women in developing countries. We are dedicated to providing education, resources, and access to opportunities for all genders. Join us in our mission today!",
+                "Wildlife Conservation is taking action to reduce plastic pollution and protect the world’s oceans. We are committed to finding sustainable solutions that will help keep our oceans clean and preserve marine life. Join us in making a difference!",
+                "Rainforest Action is dedicated to helping children living in poverty get access to education and resources they need to succeed. We work with local organizations to ensure that young people have opportunities for growth and development. Join us in our mission today!",
+                "Save Children is working to combat hunger, malnutrition, and food insecurity around the world through sustainable farming initiatives. We are committed to providing resources, support, and education to those who need it most. Join us today and make a difference!",
+                "Green Society is fighting against human rights violations and advocating for the rights of all individuals around the world. We are dedicated to providing legal aid, resources, and support to those who need it most. Join us in our mission today!",
+                "World Wildlife Conservancy is taking action to protect endangered wildlife species and preserve their natural habitats. We work with local organizations to ensure that these threatened animals have a safe place to live and thrive. Join us in making a difference!",
+                "Food for the World is devoted to preserving cultural heritage sites around the world so that future generations can appreciate them for years to come. We work with local organizations to ensure that these historical places of importance are respected and protected from harm. Join us in our mission today!",
+                "International Sustainability Society is working to promote access to healthcare for all individuals around the world. We are dedicated to providing resources, support, and education so that everyone has access to quality medical care and treatment. Join us today and make a difference!",
+                "Sustainable Harvest Association is committed to fighting climate change and protecting the planet from further destruction. We work with local organizations to find sustainable solutions that will help reduce emissions and protect the environment for future generations. Join us in our mission today!",
+                "Safety for Children is devoted to ending animal cruelty and promoting the rights of all animals around the world. We are dedicated to providing resources, support, and education so that these sentient beings are treated with respect and care. Join us in making a difference!",
+                "The Pesticide Action Society is working to reduce pollution and protect the environment from further harm. We are committed to finding sustainable solutions that will help keep our planet healthy and clean for future generations. Join us today and make a difference!",
+                "The Rainforest Union is devoted to promoting peace, security, and stability around the world through nonviolent interventions and initiatives. We work with local organizations to ensure that all individuals have access to resources they need for peaceful resolution of conflicts. Join us in our mission today!",
+                "The Green Institute is fighting against poverty, inequality, and injustice around the world by providing resources, support, and education so that everyone has access to economic opportunities and a better quality of life. Join us in making a difference!",
+                "The Clean Water Fund is taking action to protect human rights and promote the rights of all individuals around the world. We are dedicated to providing legal aid, resources, and support so that everyone has access to justice and equality under the law. Join us in our mission today!",
+                "The Society for Women is devoted to preserving cultural diversity and promoting tolerance around the world through educational initiatives and programs. We work with local organizations to ensure that people of all backgrounds have access to resources they need for mutual understanding and respect. Join us today and make a difference!",
+                "NGO for safety is working to end gender discrimination, violence against women, and inequality, and to ensure that all individuals have access to equal rights, opportunities, and resources. We are dedicated to providing education and support so that everyone can live a life of dignity. Join us in our mission today!",
+                "The Climate Reality Association is committed to improving access to clean water for those who need it most by supporting local organizations with their initiatives, providing resources, and educating communities about the importance of a safe and reliable source of water. Join us in making a difference!",
+                "The Hiroto, Alex & Malte Foundation is devoted to protecting vulnerable populations from exploitation and abuse by advocating for their rights, providing legal aid, and offering support services so that these individuals have access to justice and safety. Join us in our mission today!",
+                "The Rainforest Society Japan is taking action to fight climate change and protect the environment by working with local organizations to find sustainable solutions that will reduce emissions and preserve natural habitats for future generations. Join us today and make a difference!",
+                "The Orangutan Survival Fund is dedicated to preserving indigenous traditions, cultures, languages, and sacred sites around the world so that these historical places of importance are respected and protected from harm. Join us in our mission today!",
+                "Migrant Rights is devoted to promoting education for all individuals around the world by providing resources, support, and educational opportunities so that everyone has access to quality learning opportunities. Join us in making a difference!",
+                "The Supportive NGO is committed to ending hunger and malnutrition around the world through nutrition initiatives, agricultural programs, and community education so that everyone has access to healthy, nutritious food. Join us in our mission today!"]
 
-projects_name = ["Save the Amazon rainforest", "Save biodiversity", "Help coffee farmers", "Water is a human right", "Stop climate change", "Let's collect plastics from the ocean", "Fair trade goods",
-                "1.5 degrees", "Protect our lands and waters", "Microgrants for fighting environmental issues", "Gender equality - Women for women", "Fight poverty", "Healthcare for everyone",
-                "Fair trade regulations for India", "Health care and education for refugees", "Protecting wildlife", "Stop killind our rainforests", "Help a child", "No more SHEIN", "Protect our biodiversity",
-                "Zero hunger", "Humanitarian aid now", "Sustainable harvesting practices", "Stop child abuse", "Stop pesticide usage!", "Conserve our planet", "Protect chimpanzees", "Make clean water accessible for everyone",
+projects_name = ["Save the Amazon rainforest", "Save biodiversity", "Help coffee farmers", "Water is a human right", "Stop climate change", "Collect plastics from the ocean", "Fair trade goods",
+                "1.5 degrees", "Protect our lands and waters", "Microgrants for the environment", "Gender equality", "Fight poverty", "Healthcare for everyone",
+                "Fair trade regulations for India", "Health care for refugees", "Protecting wildlife", "Help our seed file", "Stop killind our rainforests", "Help a child", "No more SHEIN", "Protect our biodiversity",
+                "Zero hunger", "Humanitarian aid now", "Sustainable harvesting practices", "Stop child abuse", "Stop pesticide usage!", "Conserve our planet", "Protect chimpanzees", "Clean water for everyone",
                 "Equal rights for women and girls", "Education for every child", "Climate change education", "No more fast fashion", "Preserve rights of the indigenous", "Conserve the habitat of orangutans", "Protect the rights of migrants"]
 
-company_name = ["The Rainforest Foundation", "Wildlife Conservation Society", "The Fair Trade Coffee Company", "The Clean Water Fund", "Climate Action Network", "The Ocean Conservancy", "The Fair Trade Association", "The Environmental Defense Fund", "The Nature Conservancy", "The Global Greengrants Fund",
-                "Women for Women International", "Oxfam", "Doctors Without Borders", "The Fair Trade Alliance Kerala", "The International Rescue Committee", "The Wildlife Conservation Society", "The Rainforest Action Network", "Save the Children", "Greenpeace",  "The World Wildlife Fund", "The World Food Programme",
-                "The International Committee", "Sustainable Harvest International", "Amnesty International", "The Pesticide Action Network", "The International Union", "The Jane Goodall Institute", "The Water Project", "The Global Fund for Women", "UNICEF", "The Climate Reality Project", "The David Suzuki Foundation",
-                "The Rainforest Foundation UK", "The Borneo Orangutan Survival Foundation", "The Migrant Rights International"]
+company_name = ["The Forest Foundation", "Wildlife Society", "Fair Trade Coffee", "Clean Water Society", "Climate Action Fund", "The Ocean Fund", "The Fair Trade Society", "The Environmental Fund", "The Nature Conservancy", "The Greengrants Association",
+                "Women for Women", "NGO.org", "Doctors International", "The Fair Trade Alliance", "The Rescue Association", "Wildlife Conservation", "The Hiroto, Alex & Malte Foundation", "Rainforest Action", "Save Children", "Green Society",  "World Wildlife Conservancy", "Food for the World",
+                "International Sustainability Society", "Sustainable Harvest Association", "Safety for Children", "The Pesticide Action Society", "The Rainforest Union", "The Green Institute", "The Clean Water Fund", "The Society for Women", "NGO for safety", "The Climate Reality Association",
+                "The Rainforest Society Japan", "The Orangutan Survival Fund", "Migrant Rights", "The Supportive NGO"]
 
-sample_locations = ["Brazil", "Kenya", "Colombia", "Lybia", "Belgium", "South Africa", "Vietnam", "Honduras", "Indonesia", "Venezuela", "Iran", "Somalia", "Congo", "India", "Eritrea", "Tanzania", "Indonesia", "Mali", "Australia", "Argentina", "Rwanda", "Afghanistan", "Brazil", "Iran", "United States of America", "Germany", "Senegal", "Ethiopia", "Turkey", "Haiti", "Mexico", "Japan", "United Kingdom", "Borneo", "France"]
+sample_locations = ["Brazil", "Kenya", "Colombia", "Lybia", "Belgium", "South Africa", "Vietnam", "Honduras", "Indonesia", "Venezuela", "Iran", "Somalia", "Congo", "India", "Eritrea", "Tanzania", "LeWagon Remote", "Indonesia", "Mali", "Australia", "Argentina", "Rwanda", "Afghanistan", "Brazil", "Iran", "United States of America", "Germany", "Senegal", "Ethiopia", "Turkey", "Haiti", "Mexico", "Japan", "United Kingdom", "Borneo", "France"]
 
-amounts = ["50", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11,600,00", "23,200,00", "46,400,00", "92,800,00", "185,600,00",
-           "371,200,00", "742,400,00", "148,400,00", "384,00", "768,00", "1,536,00", "3,072,00", "6,144,00", "12,288,00", "24,576,00", "49,152,00", "98,304,00", "196,608,00", "393,216,00", "786,432,00", "1,572,864,00"]
+amounts = ["50,00", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11600,00", "23200,00", "46400,00", "92800,00", "18560,00",
+           "37200,00", "74400,00", "14800,00", "384,00", "768,00", "1536,00", "3072,00", "6144,00", "12288,00", "24576,00", "49152,00", "98304,00", "19660,00", "33216,00", "78432,00", "15864,00"]
 
 sample_prices = [10, 20, 30, 50, 100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600]
 
@@ -119,14 +120,17 @@ puts "**********      -  -                  **********"
 puts ""
 sleep 3
 
-35.times do
+n = 0
+
+36.times do
   project = Project.new(
-    name: projects_name.sample,
-    location: sample_locations.sample,
+    name: projects_name[n],
+    location: sample_locations[n],
     user: users.sample,
-    description: sample_texts.sample,
+    description: sample_texts[n],
     paragraph_title: sample_titles.sample
   )
+  n += 1
   project.save!
   counter2 += 1
   puts ""
@@ -165,9 +169,9 @@ puts "========================="
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 50 Projects created ✔︎      **********"
+puts "********** 35 Projects created ✔︎      **********"
 puts "**********      -  -                  **********"
-puts "********** And 50 Pledges created ✔︎   **********"
+puts "********** And 35 Pledges created ✔︎   **********"
 puts "**********      -  -                  **********"
 puts ""
 sleep 3

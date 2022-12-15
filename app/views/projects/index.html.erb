@@ -60,28 +60,28 @@
       <% $photos_new = [] %>
     <% end %>
     <% @projects.reverse_each do |project|  %>
-      <%= link_to project_path(project.id) do %><br>
-        <div class="projects__card">
-          <% if !$counter_new.include?(project.id) %>
-            <% $counter << project.id %>
-            <% $photos << photos.sample %>
-            <img src="<%= $photos[$counter.index(project.id)] %>" alt="" class="index__show__photo">
-          <% else %>
-            <img src="<%= $photos_new[$counter_new.index(project.id)] %>" alt="" class="index__show__photo">
-          <% end %>
-          <div class="projects__text">
-            <div class="card__name"> <%= project.name %></div>
-            <div class="projects__text__description"> <%= project.description.length >= 75 ? "#{project.description[0..75]}..." : project.description %><br></div>
-            by <%= project.user.name %> <br>
-            <%= icon("fa-solid", "location-dot") %> <%= project.location %> <br>
-            <% sum = 0 %>
-            <% project.contributions.each do |contribution| %>
-              <% sum += contribution.amount %>
+      <div class="projects__card">
+        <%= link_to project_path(project.id) do %>
+            <% if !$counter_new.include?(project.id) %>
+              <% $counter << project.id %>
+              <% $photos << photos.sample %>
+              <img src="<%= $photos[$counter.index(project.id)] %>" alt="" class="index__show__photo">
+            <% else %>
+              <img src="<%= $photos_new[$counter_new.index(project.id)] %>" alt="" class="index__show__photo">
             <% end %>
-            <%= number_to_currency(sum, precision: 0) %> pledged until today!
-          </div>
-        </div>
-      <% end %>
+            <div class="projects__text">
+              <div class="card__name"> <%= project.name %></div>
+              <div class="projects__text__description"> <%= project.description.length >= 80 ? "#{project.description[0..80]}..." : project.description %><br></div>
+              by <%= project.user.name %> <br>
+              <%= icon("fa-solid", "location-dot") %> <%= project.location %> <br>
+              <% sum = 0 %>
+              <% project.contributions.each do |contribution| %>
+                <% sum += contribution.amount %>
+              <% end %>
+              <%= number_to_currency(sum, precision: 0) %> pledged until today!
+            </div>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </main>
