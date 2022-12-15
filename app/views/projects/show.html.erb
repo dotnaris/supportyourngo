@@ -7,7 +7,11 @@
         <%# <% if @project.photo.attached? %>
         <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <%# <% else %>
-          <img src="<%= $photos[$counter.index(@project.id)] %>" alt="" class="show__photo">
+          <% if !$counter_new.include?(@project.id) %>
+            <img src="<%= $photos[$counter.index(@project.id)] %>" alt="" class="show__photo">
+          <% else %>
+            <img src="<%= $photos_new[$counter_new.index(@project.id)] %>" alt="" class="show__photo">
+          <% end %>
         <%# <% end %>
       </div>
       <div class="price__section">
