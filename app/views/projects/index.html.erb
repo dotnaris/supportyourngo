@@ -53,14 +53,20 @@
 <main class="fix-spacing">
   <h1 class="title__quick__design">Find your favourite project</h1>
   <div class="projects__list">
-    <% $counter = [] %>
-    <% $photos = [] %>
+    <% if $counter.nil? %>
+      <% $counter = [] %>
+      <% $photos = [] %>
+    <% end %>
     <% @projects.each do |project|  %>
       <%= link_to project_path(project.id) do %><br>
         <div class="projects__card">
-          <% $counter << project.id %>
-          <% $photos << photos.sample %>
-          <img src="<%= $photos[$counter.index(project.id)] %>" alt="" class="index__show__photo">
+          <% if !$counter_new.include?(project.id) %>
+            <% $counter << project.id %>
+            <% $photos << photos.sample %>
+            <img src="<%= $photos[$counter.index(project.id)] %>" alt="" class="index__show__photo">
+          <% else %>
+            <img src="<%= $photos_new[$counter_new.index(project.id)] %>" alt="" class="index__show__photo">
+          <% end %>
           <div class="projects__text">
             <div class="card__name"> <%= project.name %></div>
             <div class="projects__text__description"> <%= project.description.length >= 75 ? "#{project.description[0..75]}..." : project.description %><br></div>
