@@ -66,7 +66,7 @@ sample_texts = ["The Rainforest Foundation works to protect the rights of indige
                 "The Migrant Rights International is a non-profit organization that works to promote and protect the rights of migrants and refugees around the world. They provide support and assistance to migrants, and work to raise awareness about the challenges and rights of migrants."]
 
 projects_name = ["Save the Amazon rainforest", "Save biodiversity", "Help coffee farmers", "Water is a human right", "Stop climate change", "Collect plastics from the ocean", "Fair trade goods",
-                "1.5 degrees", "Protect our lands and waters", "Microgrants to protect the environment", "Gender equality", "Fight poverty", "Healthcare for everyone",
+                "1.5 degrees", "Protect our lands and waters", "Microgrants for the environment", "Gender equality", "Fight poverty", "Healthcare for everyone",
                 "Fair trade regulations for India", "Health care and education for refugees", "Protecting wildlife", "Stop killind our rainforests", "Help a child", "No more SHEIN", "Protect our biodiversity",
                 "Zero hunger", "Humanitarian aid now", "Sustainable harvesting practices", "Stop child abuse", "Stop pesticide usage!", "Conserve our planet", "Protect chimpanzees", "Clean water for everyone",
                 "Equal rights for women and girls", "Education for every child", "Climate change education", "No more fast fashion", "Preserve rights of the indigenous", "Conserve the habitat of orangutans", "Protect the rights of migrants"]
@@ -78,8 +78,8 @@ company_name = ["The Rainforest Foundation", "Wildlife Conservation Society", "T
 
 sample_locations = ["Brazil", "Kenya", "Colombia", "Lybia", "Belgium", "South Africa", "Vietnam", "Honduras", "Indonesia", "Venezuela", "Iran", "Somalia", "Congo", "India", "Eritrea", "Tanzania", "Indonesia", "Mali", "Australia", "Argentina", "Rwanda", "Afghanistan", "Brazil", "Iran", "United States of America", "Germany", "Senegal", "Ethiopia", "Turkey", "Haiti", "Mexico", "Japan", "United Kingdom", "Borneo", "France"]
 
-amounts = ["50", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11,600,00", "23,200,00", "46,400,00", "92,800,00", "185,600,00",
-           "371,200,00", "742,400,00", "148,400,00", "384,00", "768,00", "1,536,00", "3,072,00", "6,144,00", "12,288,00", "24,576,00", "49,152,00", "98,304,00", "196,608,00", "393,216,00", "786,432,00", "1,572,864,00"]
+amounts = ["50,00", "100,00", "200,00", "300,00", "600,00", "1200,00", "2400,00", "5800,00", "11600,00", "23200,00", "46400,00", "92800,00", "18560,00",
+           "37200,00", "74400,00", "14800,00", "384,00", "768,00", "1536,00", "3072,00", "6144,00", "12288,00", "24576,00", "49152,00", "98304,00", "19660,00", "33216,00", "78432,00", "15864,00"]
 
 sample_prices = [10, 20, 30, 50, 100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600]
 
@@ -165,9 +165,9 @@ puts "========================="
 
 puts ""
 puts "********** Woo Foo!!                  **********"
-puts "********** 50 Projects created ✔︎      **********"
+puts "********** 35 Projects created ✔︎      **********"
 puts "**********      -  -                  **********"
-puts "********** And 50 Pledges created ✔︎   **********"
+puts "********** And 35 Pledges created ✔︎   **********"
 puts "**********      -  -                  **********"
 puts ""
 sleep 3

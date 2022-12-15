@@ -56,8 +56,10 @@
     <% if $counter.nil? %>
       <% $counter = [] %>
       <% $photos = [] %>
+      <% $counter_new = [] %>
+      <% $photos_new = [] %>
     <% end %>
-    <% @projects.each do |project|  %>
+    <% @projects.reverse_each do |project|  %>
       <div class="projects__card">
         <%= link_to project_path(project.id) do %>
             <% if !$counter_new.include?(project.id) %>
