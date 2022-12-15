@@ -71,7 +71,7 @@
             <% end %>
             <div class="projects__text">
               <div class="card__name"> <%= project.name %></div>
-              <div class="projects__text__description"> <%= project.description.length >= 90 ? "#{project.description[0..90]}..." : project.description %><br></div>
+              <div class="projects__text__description"> <%= project.description.length >= 80 ? "#{project.description[0..80]}..." : project.description %><br></div>
               by <%= project.user.name %> <br>
               <%= icon("fa-solid", "location-dot") %> <%= project.location %> <br>
               <% sum = 0 %>
