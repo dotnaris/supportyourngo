@@ -54,11 +54,8 @@
           <img src="https://images.unsplash.com/photo-1562027224-de24a4d4acf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" class="show__photo">
         <% elsif @project.name == "Clean up our coastlines!" %>
           <img src="https://images.unsplash.com/photo-1592354218822-e43de51a8b33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="" class="show__photo">
-        <% elsif %>
+        <% else %>
           <img src="https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" alt="" class="show__photo">
-        <% else @project.photo.attached? %>
-          <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
-        <% end %>
         <h4><%= @project.paragraph_title %></h4>
         <p><%= @project.description %></p>
       </div>
