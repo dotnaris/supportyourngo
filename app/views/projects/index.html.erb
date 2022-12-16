@@ -62,7 +62,11 @@
     <% @projects.reverse_each do |project|  %>
       <div class="projects__card">
         <%= link_to project_path(project.id) do %>
-            <% if !$counter_new.include?(project.id) %>
+            <% if project.name == "Save our oceans!" %>
+              <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" alt="" class="index__show__photo">
+            <% elsif project.name == "Clean up our coastlines!" %>
+              <img src="https://images.unsplash.com/photo-1526951521990-620dc14c214b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="index__show__photo">
+            <% elsif !$counter_new.include?(project.id) %>
               <% $counter << project.id %>
               <% $photos << photos.sample %>
               <img src="<%= $photos[$counter.index(project.id)] %>" alt="" class="index__show__photo">
