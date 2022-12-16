@@ -7,12 +7,15 @@
         <%# <% if @project.photo.attached? %>
         <%# <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
         <%# <% else %>
-          <% if !$counter_new.include?(@project.id) %>
+          <% if @project.name == "Save our oceans!" %>
+            <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" alt="" class="show__photo">
+          <% elsif @project.name == "Clean up our coastlines!" %>
+            <img src="https://images.unsplash.com/photo-1526951521990-620dc14c214b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="show__photo">
+          <% elsif !$counter_new.include?(@project.id) %>
             <img src="<%= $photos[$counter.index(@project.id)] %>" alt="" class="show__photo">
           <% else %>
             <img src="<%= $photos_new[$counter_new.index(@project.id)] %>" alt="" class="show__photo">
           <% end %>
-        <%# <% end %>
       </div>
       <div class="price__section">
         <div class="price__section__details">
@@ -47,8 +50,10 @@
     <div class="show__lower__side">
       <div class="story">
         <h2>Story</h2>
-        <% if @project.photo.attached? %>
-          <%= cl_image_tag @project.photo.key, width: 250, height: 150 %>
+        <% if @project.name == "Save our oceans!" %>
+          <img src="https://images.unsplash.com/photo-1562027224-de24a4d4acf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" class="show__photo">
+        <% elsif @project.name == "Clean up our coastlines!" %>
+          <img src="https://images.unsplash.com/photo-1592354218822-e43de51a8b33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="" class="show__photo">
         <% else %>
           <img src="https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80" alt="" class="show__photo">
         <% end %>
