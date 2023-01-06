@@ -32,6 +32,10 @@ div.nav{
   transition: 0.2s;
 }
 
+.nav__home i{
+  color: black;
+}
+
 .navbar--white{
   background-color: white;
   box-shadow: $ngo-shadow;
