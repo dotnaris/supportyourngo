@@ -48,6 +48,18 @@
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
+  .dashboard__left{
+    width: 30vw;
+  }
+
+  .dashboard__left h4{
+    font-size: smaller !important;
+  }
+  span.dashboard__contents__links,
+  a.dashboard__contents__links,
+  span.dashboard__welcome__and__edit__card--green{
+    font-size: 10px !important;
+  }
 }
 
 @media (max-width: 440px) {
